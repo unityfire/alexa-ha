@@ -1,0 +1,12 @@
+{
+  "name": "Alexa-HA",
+  "version": "1.0.0",
+  "description": "An Amazon Echo skill for controlling your Home Automation server via voice",
+  "main": "index.js",
+  "author": "arch1v1st (https://github.com/unityfire/alexa-ha)",
+  "license": "EPL",
+  "dependencies": {
+    "alexa-app": "^2.1.0",
+    "request": "^2.65.0"
+  }
+}
