@@ -15,16 +15,13 @@ An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration w
 
 The current version is focused on perfecting Alexa support for [OpenHAB].  Other HA solutions may be added in the future.
 
-### DEMONSTRATION
-VIDEO PLACEHOLDER
-
 ### TECHNOLOGY STACK
 Alexa-HA's technology stack is primarily comprised of the following key open source projects:
 
 * [node.js] - evented I/O for the backend
 * [alexa-app] - A Node.js module to simplify creation of Alexa (Amazon Echo) apps (Skills) using Node.js
 * [alexa-app-server] - A web server module for Alexa (Amazon Echo) apps (Skills)
-* [expressjs] - fast Node.js network app framework
+* [express.js] - fast Node.js network app framework
 * [request] - A Node.js module for making http requests
 
 Your HA Controller does the heavy lifting of integrating with various downstream technlologies/protocols, and Echo combined with the Alexa-HA Skill translates your voice commands into HA actions.
@@ -34,18 +31,18 @@ Alexa-HA leverages the [Alexa Skills Kit] to communicate with your internal HA s
 
 * Semi-direct (i.e. Echo -> AWS ASK -> NodeJS/Express -> HA)
 * Proxied through a webserver (i.e. Echo -> AWS ASK -> Apache/Nginx -> NodeJS -> HA)
-* In-cloud via [AWS Lambda] micro services (i.e. Echo -> AWS ASK -> AWS Lambda -> HA)  
+* In-cloud via [AWS Lambda] micro services (i.e. Echo -> AWS ASK -> AWS Lambda -> HA)
  
 We prefer the second option of self-hosting a webserver and NodeJS application on the same network as your HA server/appliance, which proxies most of the communication internally for improved security and control.  In all cases end-to-end SSL encryption is required through proper trusted CA's or self signed certificates. Between the SSL transport encrypt, custom application checks that confirm the requestors AWS ASK applicationId and userId match the configuration, as well as tracking all requestIds for audit trails, strong security is enforced.  This ensures you and only your Echo(s) can issue commands to your HA controller. 
 
-Note that due to the Amazon Echo/Alexa architecture it is NOT possible to keep everything on your local network - the voice processing must be conducted in the cloud, and you are required to setup port forwarding on your firewall to allow AWS access to an internally hosted service.  The AWS ASK service then issues commands to your HA controller through your public facing endpoint.  
+Note that due to the Amazon Echo/Alexa architecture it is NOT possible to keep everything on your local network - the voice processing must be conducted in the cloud, and you are required to setup port forwarding on your firewall to allow AWS access to an internally hosted service.  The AWS ASK service then issues commands to your HA controller through your public facing endpoint.
 
 Currently you cannot simply install Alexa-HA through the Alexa App store, rather its required to setup your own Skill through the [Amazon Developer Portal].  In some ways this is advantageous as you can better customize the skill to your homes layout, desired scenes, and controllable devices.  You can also personalize the skill 'Invocation Name'.  To get started with configuring your own Alexa-HA skill, see:
  * [Getting started with Alexa Skills Kit]
  * [INSTALL.md]
 
 ### VERSION HISTORY
-1.0 (02/28/2016) - Initial public release!
+1.0 (02/29/2016) - Initial public release!
 
 ### PLANNED ENHANCEMENTS
 - Automatic device discovery
@@ -84,7 +81,7 @@ Countless hours have been put into development and refinement of this open sourc
    [node.js]: <http://nodejs.org>
    [alexa-app]: <https://www.npmjs.com/package/alexa-app>
    [alexa-app-server]: <https://www.npmjs.com/package/alexa-app-server>
-   [expressjs]: <http://expressjs.com>
+   [express.js]: <http://expressjs.com>
    [request]: <https://www.npmjs.com/package/request>
    
    [Amazon Echo]: <https://en.wikipedia.org/wiki/Amazon_Echo>
