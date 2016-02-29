@@ -1,44 +1,46 @@
 # Setup Your HA Controller to work with Alexa-HA
-Currently only [OpenHAB] is supported - others HA solutions to follow.  These installation steps can carried out directly on your HA server or better yet another more isolated server on the same network.  Note depending on your environment, it is best to create a restricted user that runs Alexa-HA and its dependencies rather than simply using a global root/administrator for everything.  That is outside of the scope of the current installation documentation...
+Currently only [OpenHAB] is supported - others HA solutions to follow.  These installation steps can carried out directly on your HA server or better yet a seperate server on the same network.  Depending on your environment, it is best to create a restricted user that runs Alexa-HA and its dependencies rather than simply using a global root/administrator for everything.  That is outside of the scope of the current installation documentation...
 
-NOTE:  These installation instructions are a bit rough, complex and UNDER CONSTRUCTION at the moment but should get the job done!  It is assumed you are familiar with service/webserver configurations, SSL certificates, and firewall/router setup.  The setup process will be greatly simplified in the future...
+NOTE:  These installation instructions are a bit rough, complex and UNDER CONSTRUCTION at the moment but should get the job done!  It is assumed you are familiar with service/webserver configurations, SSL certificates, and firewall/router setup.  This process will be greatly simplified in the future...
 
 To begin:
-- Ideally provision a new server/VM to host this for enhanced security, but these services are lightweight and can be installed on existing servers as well (i.e. on the OpenHAB server, however another dedicated server/VM is very much preferred)
+- Ideally provision a new machine/VM as a dedicated server to host Alexa-HA for enhanced security, but these services are lightweight and can be installed on existing servers as well (i.e. on the OpenHAB server)
 - Install [node.js]
 - Install [npm]
 - Install [alexa-app]
 - Install [alexa-app-server] 
 - Install [request]
-- Install [pm2] (optional, for setting Alexa-HA as a background service)
+- Install [pm2] (optional, but very useful for setting Alexa-HA as a background service)
+- Apply a temporary [patch] to alexa-utterances (which was installed as a dependency for alexa-app), required to support the CUSTOM SLOT types - should not be necessary after the next release of alexa-app!
 
 You now have all the dependencies met and can continue with configuring and starting the Alexa-HA Skill.
 
 - Checkout the code or just download the ZIP from [Alexa-HA]'s github page to the Alexa-App-Server's /example/app/ directory (i.e. example/app/Alexa-HA)
 - Copy config_default.js to config.js
 - Edit config.js 
-- Set the various AWS ASK related settings - applicationId/userId values and more available from [Amazon Developer Portal]
+- Set the various AWS ASK related settings as needed - applicationId/userId values and more available from [Amazon Developer Portal]
 - If you want to use [Wolfram Alpha] with Alexa-HA (i.e. to have it 'research' stuff for you via voice, optional!), register and enter your API key
-- Open up your HA's various configuration files (i.e. items/sitemaps/rules) for reference in another window; use these to setup the rest of config.js as desired. The most important part of configuring this is that beyond the General Configuration section, the mappings setup in the HA* & config.item/mode/metric sections in Alexa-HA's config.js are correctly pointed to the items in use on your HA controller!  Alexa-HA uses this to determine which items in your home do what, and where...  You may also need to create new groups (specifically for lighting) to control many items at a time via voice!
-- Create a few new items in your OpenHAB configuration/items/* file to be used only by Alexa-HA.  These are used only as a fallback for custom/arbitrary voice commands (which can trigger custom rules on the HA server):
+- Open up your various OpenHAB configuration files (i.e. items/sitemaps/rules) for reference in another window; use these to setup the rest of config.js as desired. The most important part of configuring this is that beyond the General Configuration section, the mappings setup in the HA* & config.item/mode/metric sections in Alexa-HA's config.js are correctly pointed to the items/modes/devices in OpenHAB!  Alexa-HA uses this to determine which items in your home do what, and where...  
+- Create a few new items in your OpenHAB configuration/items/* file to be used by Alexa-HA.  These are used only as a fallback for custom/arbitrary voice commands (which can trigger custom rules on the OpenHAB server):
 ```
 String ECHO_VoiceCMD "ECHO CMD: [%s]"
 String ECHO_Answer "ECHO Answer: [%s]"
 Switch ECHO_Processed "ECHO Proc [%s]"
 ```
-- The rest of the config.js file can be revisited/improved later (i.e. units/colors/utterances/etc sections can be customized).
+- You may also need to create new groups on the HA server (especially for lighting) so Alexa-HA can control many items (i.e. in the same room) at a time.
+- The rest of the config.js file can be revisited/improved later (i.e. units/colors/utterances/etc sections may be further customized).
 - Save & Exit
-- Consider editing Alexa-App-Server 'example/server.js' and changing to a non-standard port number
+- Consider editing Alexa-App-Server 'example/server.js' and changing the service to use a non-standard port number
 - You can now start the Alexa-App-Server and Alexa-HA app in the foreground with 'node server.js' or keep it running in the background with 'pm2 start server.js' ('pm2 status' displays additional useful info)
 - Visit http://INTERNAL_IP:PORT/alexa/Alexa-HA/ - which should show the Alexa Tester page.  This confirms that the service is up and listening.
-- You now have the option of exposing your internal Node.js/Express service directly to the public, or setting it up behind a webserver such as Apache or Nginx.  In all cases an SSL certificate (trusted, or alternatively a self signed cert can be uploaded via [Amazon Developer Portal]) must be used for HTTPS.  For example, assuming you already have a SSL-enabled Apache webserver, edit Apache's 'sites-available/default-ssl' config file and add the following inside of the VirtualHost configuration (proxied address/ports depend on your internal setup!):
+- You now have the option of exposing your internal Node.js/Express service directly to the public, or setting it up behind a webserver such as Apache or Nginx.  In all cases an SSL certificate (trusted, or alternatively a self signed cert can be uploaded via [Amazon Developer Portal]) must be used for HTTPS.  For example, assuming you already have a SSL-enabled Apache webserver, edit Apache's 'sites-available/default-ssl' config file and add the following inside of the VirtualHost configuration (proxied address/ports depend entirely on your network setup!):
 ```
     <Location /api>
         ProxyPass http://localhost:10000
         ProxyPassReverse http://localhost:10000
     </Location>
 ```
-- Setup a port forwarding rule to route external public requests to the new Node.js internal service.  If you have an public static IP address (from your ISP), use it.  If not, consider a dynamic DNS service which will route a static FQDN to your dynamic IP.  In both cases, we recommend selecting a 'high port' of 30000+ to use for the communication from the public to Alexa-HA.  For example, a public static IP:Port of '123.123.123.123:30000' is forwarded (by the firewally/router) to an internal private IP:port of '192.168.1.50:10000'.  
+- Setup a port forwarding rule to route external public requests to the new Node.js/Express internal service.  If you have an public static IP address (from your ISP), use it.  If not, consider a dynamic DNS service which will route a static FQDN to your dynamic IP.  In both cases, we recommend selecting a 'high port' of 30000+ to use for the communication from the public to Alexa-HA.  For example, a public static IP:Port of '123.123.123.123:30000' is forwarded (by the firewally/router) to an internal private IP:port of '192.168.1.50:10000'.  
 - Restart all services  (Alexa-App-Server & webserver) for the changes to take effect. 
 - You should now be able to access 'https://MY_FQDN/api/alexa/Alexa-HA' and see the 'Alexa Tester' page from the ouside (which is required for the next steps work)!  If not, you have a service or firewall config issue that needs to be addressed before continuing.
 
@@ -91,7 +93,13 @@ outside
 - IMPORTANT!  Save these changes, but you do not need to continue on to fully publishing the app!  Your new custom Service & Skill is now setup to control ONLY YOUR HOME!  Do not make it public.
 - Say 'Alexa, open Jarvis' (or whatever your 'Invocation Name' is) and get started!
 
-NOTE:  If you change the Alexa-HA files or config.js, you may need to restart the service(s) and upload the Skill changes to the [Amazon Developer Portal] before all changes will take effect!
+NOTE:  If you change the Alexa-HA files, including config.js, you need to restart the service(s) and re-upload the Interaction Model to the [Amazon Developer Portal] before all changes will take effect!
+
+Additional considerations:
+- Lock down your webserver as much as possible, only allow the AWS ASK IP's to access Alexa-HA (which may vary!)
+- Enable production server flags to hide version numbers
+- Setup fail2ban, to proactively block clients by IP which make too many requests to the service in a short period of time
+- Avoid running everything on a single box!  We do not recommend exposing your Home Automation controller directly to the internet!
 
 [//]: # 
 
@@ -104,10 +112,11 @@ NOTE:  If you change the Alexa-HA files or config.js, you may need to restart th
    [request]: <https://www.npmjs.com/package/request>
    [pm2]: <https://www.npmjs.com/package/pm2>
    
+   [patch]: <https://github.com/MaxwellPayne/alexa-utterances/commit/8599208037ada7020a3ab8c6fc979e31a2ff934c>
+   
    [OpenHAB]: <http://www.openhab.org/>
    [Wolfram Alpha]: <https://www.wolframalpha.com/>
    
    [Amazon Developer Portal]: <https://developer.amazon.com>
    [AWS Lambda]: <https://aws.amazon.com/lambda/>
    [tutorial]: <https://developer.amazon.com/appsandservices/community/post/TxDJWS16KUPVKO/New-Alexa-Skills-Kit-Template-Build-a-Trivia-Skill-in-under-an-Hour>
-

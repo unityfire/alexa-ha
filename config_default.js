@@ -4,6 +4,7 @@ var config = {};
 /******************************** GENERAL CONFIGURATION *****************************************/
 // Name of the application/skill, which does not need to match the skills 'Invocation Name',
 // Defines both the Alexa-App-Server endpoint and the skills own name used in cards.
+//   https://developer.amazon.com
 config.applicationName = 'Alexa-HA';
 // AWS ASK applicationId, resembles 'amzn1.echo-sdk-ams.app.[your-unique-value-here]'
 config.applicationId = 'amzn1.echo-sdk-ams.app.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
@@ -180,9 +181,6 @@ config.color = {
 /******************* ASK Utterances ************************/
 // Configure ASK Intent utterances using Alexa-App - reference:
 //  https://www.npmjs.com/package/alexa-app#schema-and-utterances for syntax
-// NOTE - the custom slot support (i.e. '{-|Location}') currently requires a patched version of Alexa Utterances index.js:
-//  https://github.com/rickwargo/alexa-utterances/commit/43fbe74c69205ede8cd2663bd13cfb7a734cbe53
-// After modifying utterances or intents, be sure to visit the alexa-app-server endpoint to grab and manually update the skill on the AWS ASK developer page!
 config.utterances = {
     // Switch devices ON/OFF in a particular room
     'Switch': [
@@ -280,12 +278,16 @@ config.utterances = {
 /******************* ASK Responses *************************/
 // Help response & card
 config.help = {
-    'say': ['You can ask or tell me to do all sorts of things.  For example, try saying turn all lights on, dim living lights to 50 percent, ' +
-    'change office color to blue, set house thermostat to 72 degrees, or research why is the sky blue.  ' +
-    'I have sent a cheat sheet of commands to your Alexa App for further reference.'],
-    'card': ['Cheat sheet: Switch on all lights / Dim living room lights to 50%  / Set office color to Blue' +
-    ' / Set house thermostat to 72 degrees / Set house mode to relax / What is the kitchen humidity / What is the house power consumption / ' +
-    'Research why is the sky blue']
+    'say':  [
+            'You can ask or tell me to do all sorts of things.  For example, try saying turn all lights on, dim living lights to 50 percent, ' +
+            'change office color to blue, set house thermostat to 72 degrees, or research why is the sky blue.  ' +
+            'I have sent a cheat sheet of commands to your Alexa App for further reference.'
+            ],
+    'card': [
+            'Cheat sheet: Switch on all lights / Dim living room lights to 50%  / Set office color to Blue' +
+            ' / Set house thermostat to 72 degrees / Set house mode to relax / What is the kitchen humidity / What is the house power consumption / ' +
+            'Research why is the sky blue'
+            ]
 };
 
 // Exports
