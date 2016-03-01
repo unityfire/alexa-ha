@@ -1,0 +1,437 @@
+Switch	to turn {OFF|Action} the {lights|ItemName} in the {Location}
+Switch	 turn {ON|Action} the {motion lighting|ItemName} in the {Location}
+Switch	to switch {OFF|Action} the {fan|ItemName} in the {Location}
+Switch	 switch {ON|Action} the {stove|ItemName} in the {Location}
+Switch	to flip {OFF|Action} the {music|ItemName} in the {Location}
+Switch	 flip {ON|Action} the {light|ItemName} in the {Location}
+Switch	to turn {OFF|Action} my {lights|ItemName} in the {Location}
+Switch	 turn {ON|Action} my {motion lighting|ItemName} in the {Location}
+Switch	to switch {OFF|Action} my {fan|ItemName} in the {Location}
+Switch	 switch {ON|Action} my {stove|ItemName} in the {Location}
+Switch	to flip {OFF|Action} my {music|ItemName} in the {Location}
+Switch	 flip {ON|Action} my {light|ItemName} in the {Location}
+Switch	to turn {OFF|Action} {lights|ItemName} in the {Location}
+Switch	 turn {ON|Action} {motion lighting|ItemName} in the {Location}
+Switch	to switch {OFF|Action} {fan|ItemName} in the {Location}
+Switch	 switch {ON|Action} {stove|ItemName} in the {Location}
+Switch	to flip {OFF|Action} {music|ItemName} in the {Location}
+Switch	 flip {ON|Action} {light|ItemName} in the {Location}
+Switch	to turn {OFF|Action} the {lights|ItemName} {Location}
+Switch	 turn {ON|Action} the {motion lighting|ItemName} {Location}
+Switch	to switch {OFF|Action} the {fan|ItemName} {Location}
+Switch	 switch {ON|Action} the {stove|ItemName} {Location}
+Switch	to flip {OFF|Action} the {music|ItemName} {Location}
+Switch	 flip {ON|Action} the {light|ItemName} {Location}
+Switch	to turn {OFF|Action} my {lights|ItemName} {Location}
+Switch	 turn {ON|Action} my {motion lighting|ItemName} {Location}
+Switch	to switch {OFF|Action} my {fan|ItemName} {Location}
+Switch	 switch {ON|Action} my {stove|ItemName} {Location}
+Switch	to flip {OFF|Action} my {music|ItemName} {Location}
+Switch	 flip {ON|Action} my {light|ItemName} {Location}
+Switch	to turn {OFF|Action} {lights|ItemName} {Location}
+Switch	 turn {ON|Action} {motion lighting|ItemName} {Location}
+Switch	to switch {OFF|Action} {fan|ItemName} {Location}
+Switch	 switch {ON|Action} {stove|ItemName} {Location}
+Switch	to flip {OFF|Action} {music|ItemName} {Location}
+Switch	 flip {ON|Action} {light|ItemName} {Location}
+Switch	turn {OFF|Action} the {Location} {lights|ItemName}
+Switch	switch {ON|Action} the {Location} {motion lighting|ItemName}
+Switch	flip {OFF|Action} the {Location} {fan|ItemName}
+Switch	turn {ON|Action} my {Location} {stove|ItemName}
+Switch	switch {OFF|Action} my {Location} {music|ItemName}
+Switch	flip {ON|Action} my {Location} {light|ItemName}
+Switch	turn {OFF|Action} {Location} {lights|ItemName}
+Switch	switch {ON|Action} {Location} {motion lighting|ItemName}
+Switch	flip {OFF|Action} {Location} {fan|ItemName}
+Switch	to turn {ON|Action} {Location} the {stove|ItemName}
+Switch	turn {OFF|Action} {Location} the {music|ItemName}
+Switch	to switch {ON|Action} {Location} the {light|ItemName}
+Switch	switch {OFF|Action} {Location} the {lights|ItemName}
+Switch	to flip {ON|Action} {Location} the {motion lighting|ItemName}
+Switch	flip {OFF|Action} {Location} the {fan|ItemName}
+SetColor	to set the {Location} light to {Color}
+SetColor	 set the {Location} light to {Color}
+SetColor	to change the {Location} light to {Color}
+SetColor	 change the {Location} light to {Color}
+SetColor	to switch the {Location} light to {Color}
+SetColor	 switch the {Location} light to {Color}
+SetColor	to color the {Location} light to {Color}
+SetColor	 color the {Location} light to {Color}
+SetColor	to set {Location} light to {Color}
+SetColor	 set {Location} light to {Color}
+SetColor	to change {Location} light to {Color}
+SetColor	 change {Location} light to {Color}
+SetColor	to switch {Location} light to {Color}
+SetColor	 switch {Location} light to {Color}
+SetColor	to color {Location} light to {Color}
+SetColor	 color {Location} light to {Color}
+SetColor	to set the {Location} lights to {Color}
+SetColor	 set the {Location} lights to {Color}
+SetColor	to change the {Location} lights to {Color}
+SetColor	 change the {Location} lights to {Color}
+SetColor	to switch the {Location} lights to {Color}
+SetColor	 switch the {Location} lights to {Color}
+SetColor	to color the {Location} lights to {Color}
+SetColor	 color the {Location} lights to {Color}
+SetColor	to set {Location} lights to {Color}
+SetColor	 set {Location} lights to {Color}
+SetColor	to change {Location} lights to {Color}
+SetColor	 change {Location} lights to {Color}
+SetColor	to switch {Location} lights to {Color}
+SetColor	 switch {Location} lights to {Color}
+SetColor	to color {Location} lights to {Color}
+SetColor	 color {Location} lights to {Color}
+SetColor	to set the {Location} light {Color}
+SetColor	 set the {Location} light {Color}
+SetColor	to change the {Location} light {Color}
+SetColor	 change the {Location} light {Color}
+SetColor	to switch the {Location} light {Color}
+SetColor	 switch the {Location} light {Color}
+SetColor	to color the {Location} light {Color}
+SetColor	 color the {Location} light {Color}
+SetColor	to set {Location} light {Color}
+SetColor	 set {Location} light {Color}
+SetColor	to change {Location} light {Color}
+SetColor	 change {Location} light {Color}
+SetColor	to switch {Location} light {Color}
+SetColor	 switch {Location} light {Color}
+SetColor	to color {Location} light {Color}
+SetColor	 color {Location} light {Color}
+SetColor	to set the {Location} lights {Color}
+SetColor	 set the {Location} lights {Color}
+SetColor	to change the {Location} lights {Color}
+SetColor	 change the {Location} lights {Color}
+SetColor	to switch the {Location} lights {Color}
+SetColor	 switch the {Location} lights {Color}
+SetColor	to color the {Location} lights {Color}
+SetColor	 color the {Location} lights {Color}
+SetColor	to set {Location} lights {Color}
+SetColor	 set {Location} lights {Color}
+SetColor	to change {Location} lights {Color}
+SetColor	 change {Location} lights {Color}
+SetColor	to switch {Location} lights {Color}
+SetColor	 switch {Location} lights {Color}
+SetColor	to color {Location} lights {Color}
+SetColor	 color {Location} lights {Color}
+SetColor	to set the light in the {Location} to {Color}
+SetColor	 set the light in the {Location} to {Color}
+SetColor	to change the light in the {Location} to {Color}
+SetColor	 change the light in the {Location} to {Color}
+SetColor	to switch the light in the {Location} to {Color}
+SetColor	 switch the light in the {Location} to {Color}
+SetColor	to color the light in the {Location} to {Color}
+SetColor	 color the light in the {Location} to {Color}
+SetColor	to set light in the {Location} to {Color}
+SetColor	 set light in the {Location} to {Color}
+SetColor	to change light in the {Location} to {Color}
+SetColor	 change light in the {Location} to {Color}
+SetColor	to switch light in the {Location} to {Color}
+SetColor	 switch light in the {Location} to {Color}
+SetColor	to color light in the {Location} to {Color}
+SetColor	 color light in the {Location} to {Color}
+SetColor	to set the lights in the {Location} to {Color}
+SetColor	 set the lights in the {Location} to {Color}
+SetColor	to change the lights in the {Location} to {Color}
+SetColor	 change the lights in the {Location} to {Color}
+SetColor	to switch the lights in the {Location} to {Color}
+SetColor	 switch the lights in the {Location} to {Color}
+SetColor	to color the lights in the {Location} to {Color}
+SetColor	 color the lights in the {Location} to {Color}
+SetColor	to set lights in the {Location} to {Color}
+SetColor	 set lights in the {Location} to {Color}
+SetColor	to change lights in the {Location} to {Color}
+SetColor	 change lights in the {Location} to {Color}
+SetColor	to switch lights in the {Location} to {Color}
+SetColor	 switch lights in the {Location} to {Color}
+SetColor	to color lights in the {Location} to {Color}
+SetColor	 color lights in the {Location} to {Color}
+SetColor	to set the light in the {Location} {Color}
+SetColor	 set the light in the {Location} {Color}
+SetColor	to change the light in the {Location} {Color}
+SetColor	 change the light in the {Location} {Color}
+SetColor	to switch the light in the {Location} {Color}
+SetColor	 switch the light in the {Location} {Color}
+SetColor	to color the light in the {Location} {Color}
+SetColor	 color the light in the {Location} {Color}
+SetColor	to set light in the {Location} {Color}
+SetColor	 set light in the {Location} {Color}
+SetColor	to change light in the {Location} {Color}
+SetColor	 change light in the {Location} {Color}
+SetColor	to switch light in the {Location} {Color}
+SetColor	 switch light in the {Location} {Color}
+SetColor	to color light in the {Location} {Color}
+SetColor	 color light in the {Location} {Color}
+SetColor	to set the lights in the {Location} {Color}
+SetColor	 set the lights in the {Location} {Color}
+SetColor	to change the lights in the {Location} {Color}
+SetColor	 change the lights in the {Location} {Color}
+SetColor	to switch the lights in the {Location} {Color}
+SetColor	 switch the lights in the {Location} {Color}
+SetColor	to color the lights in the {Location} {Color}
+SetColor	 color the lights in the {Location} {Color}
+SetColor	to set lights in the {Location} {Color}
+SetColor	 set lights in the {Location} {Color}
+SetColor	to change lights in the {Location} {Color}
+SetColor	 change lights in the {Location} {Color}
+SetColor	to switch lights in the {Location} {Color}
+SetColor	 switch lights in the {Location} {Color}
+SetColor	to color lights in the {Location} {Color}
+SetColor	 color lights in the {Location} {Color}
+SetLevel	to dim the {light|ItemName} in the {Location} to {five|Percent} percent
+SetLevel	 dim the {lights|ItemName} in the {Location} to {ten|Percent} percent
+SetLevel	to turn down the {light|ItemName} in the {Location} to {fifteen|Percent} percent
+SetLevel	 turn down the {lights|ItemName} in the {Location} to {twenty|Percent} percent
+SetLevel	to turn up the {light|ItemName} in the {Location} to {twenty five|Percent} percent
+SetLevel	 turn up the {lights|ItemName} in the {Location} to {thirty|Percent} percent
+SetLevel	to soften the {light|ItemName} in the {Location} to {thirty five|Percent} percent
+SetLevel	 soften the {lights|ItemName} in the {Location} to {forty|Percent} percent
+SetLevel	to set the {light|ItemName} in the {Location} to {forty five|Percent} percent
+SetLevel	 set the {lights|ItemName} in the {Location} to {fifty|Percent} percent
+SetLevel	to dim {light|ItemName} in the {Location} to {fifty five|Percent} percent
+SetLevel	 dim {lights|ItemName} in the {Location} to {sixty|Percent} percent
+SetLevel	to turn down {light|ItemName} in the {Location} to {sixty five|Percent} percent
+SetLevel	 turn down {lights|ItemName} in the {Location} to {seventy|Percent} percent
+SetLevel	to turn up {light|ItemName} in the {Location} to {seventy five|Percent} percent
+SetLevel	 turn up {lights|ItemName} in the {Location} to {eighty|Percent} percent
+SetLevel	to soften {light|ItemName} in the {Location} to {eighty five|Percent} percent
+SetLevel	 soften {lights|ItemName} in the {Location} to {ninety|Percent} percent
+SetLevel	to set {light|ItemName} in the {Location} to {ninety five|Percent} percent
+SetLevel	 set {lights|ItemName} in the {Location} to {one hundred|Percent} percent
+SetLevel	to dim the {light|ItemName} {Location} to {zero|Percent} percent
+SetLevel	 dim the {lights|ItemName} {Location} to {five|Percent} percent
+SetLevel	to turn down the {light|ItemName} {Location} to {ten|Percent} percent
+SetLevel	 turn down the {lights|ItemName} {Location} to {fifteen|Percent} percent
+SetLevel	to turn up the {light|ItemName} {Location} to {twenty|Percent} percent
+SetLevel	 turn up the {lights|ItemName} {Location} to {twenty five|Percent} percent
+SetLevel	to soften the {light|ItemName} {Location} to {thirty|Percent} percent
+SetLevel	 soften the {lights|ItemName} {Location} to {thirty five|Percent} percent
+SetLevel	to set the {light|ItemName} {Location} to {forty|Percent} percent
+SetLevel	 set the {lights|ItemName} {Location} to {forty five|Percent} percent
+SetLevel	to dim {light|ItemName} {Location} to {fifty|Percent} percent
+SetLevel	 dim {lights|ItemName} {Location} to {fifty five|Percent} percent
+SetLevel	to turn down {light|ItemName} {Location} to {sixty|Percent} percent
+SetLevel	 turn down {lights|ItemName} {Location} to {sixty five|Percent} percent
+SetLevel	to turn up {light|ItemName} {Location} to {seventy|Percent} percent
+SetLevel	 turn up {lights|ItemName} {Location} to {seventy five|Percent} percent
+SetLevel	to soften {light|ItemName} {Location} to {eighty|Percent} percent
+SetLevel	 soften {lights|ItemName} {Location} to {eighty five|Percent} percent
+SetLevel	to set {light|ItemName} {Location} to {ninety|Percent} percent
+SetLevel	 set {lights|ItemName} {Location} to {ninety five|Percent} percent
+SetLevel	to dim the {light|ItemName} in the {Location} to {one hundred|Percent}
+SetLevel	 dim the {lights|ItemName} in the {Location} to {zero|Percent}
+SetLevel	to turn down the {light|ItemName} in the {Location} to {five|Percent}
+SetLevel	 turn down the {lights|ItemName} in the {Location} to {ten|Percent}
+SetLevel	to turn up the {light|ItemName} in the {Location} to {fifteen|Percent}
+SetLevel	 turn up the {lights|ItemName} in the {Location} to {twenty|Percent}
+SetLevel	to soften the {light|ItemName} in the {Location} to {twenty five|Percent}
+SetLevel	 soften the {lights|ItemName} in the {Location} to {thirty|Percent}
+SetLevel	to set the {light|ItemName} in the {Location} to {thirty five|Percent}
+SetLevel	 set the {lights|ItemName} in the {Location} to {forty|Percent}
+SetLevel	to dim {light|ItemName} in the {Location} to {forty five|Percent}
+SetLevel	 dim {lights|ItemName} in the {Location} to {fifty|Percent}
+SetLevel	to turn down {light|ItemName} in the {Location} to {fifty five|Percent}
+SetLevel	 turn down {lights|ItemName} in the {Location} to {sixty|Percent}
+SetLevel	to turn up {light|ItemName} in the {Location} to {sixty five|Percent}
+SetLevel	 turn up {lights|ItemName} in the {Location} to {seventy|Percent}
+SetLevel	to soften {light|ItemName} in the {Location} to {seventy five|Percent}
+SetLevel	 soften {lights|ItemName} in the {Location} to {eighty|Percent}
+SetLevel	to set {light|ItemName} in the {Location} to {eighty five|Percent}
+SetLevel	 set {lights|ItemName} in the {Location} to {ninety|Percent}
+SetLevel	to dim the {light|ItemName} {Location} to {ninety five|Percent}
+SetLevel	 dim the {lights|ItemName} {Location} to {one hundred|Percent}
+SetLevel	to turn down the {light|ItemName} {Location} to {zero|Percent}
+SetLevel	 turn down the {lights|ItemName} {Location} to {five|Percent}
+SetLevel	to turn up the {light|ItemName} {Location} to {ten|Percent}
+SetLevel	 turn up the {lights|ItemName} {Location} to {fifteen|Percent}
+SetLevel	to soften the {light|ItemName} {Location} to {twenty|Percent}
+SetLevel	 soften the {lights|ItemName} {Location} to {twenty five|Percent}
+SetLevel	to set the {light|ItemName} {Location} to {thirty|Percent}
+SetLevel	 set the {lights|ItemName} {Location} to {thirty five|Percent}
+SetLevel	to dim {light|ItemName} {Location} to {forty|Percent}
+SetLevel	 dim {lights|ItemName} {Location} to {forty five|Percent}
+SetLevel	to turn down {light|ItemName} {Location} to {fifty|Percent}
+SetLevel	 turn down {lights|ItemName} {Location} to {fifty five|Percent}
+SetLevel	to turn up {light|ItemName} {Location} to {sixty|Percent}
+SetLevel	 turn up {lights|ItemName} {Location} to {sixty five|Percent}
+SetLevel	to soften {light|ItemName} {Location} to {seventy|Percent}
+SetLevel	 soften {lights|ItemName} {Location} to {seventy five|Percent}
+SetLevel	to set {light|ItemName} {Location} to {eighty|Percent}
+SetLevel	 set {lights|ItemName} {Location} to {eighty five|Percent}
+SetLevel	dim the {Location} {light|ItemName} to {ninety|Percent} percent
+SetLevel	turn down the {Location} {lights|ItemName} to {ninety five|Percent} percent
+SetLevel	turn up the {Location} {light|ItemName} to {one hundred|Percent} percent
+SetLevel	soften the {Location} {lights|ItemName} to {zero|Percent} percent
+SetLevel	set the {Location} {light|ItemName} to {five|Percent} percent
+SetLevel	dim {Location} {lights|ItemName} to {ten|Percent} percent
+SetLevel	turn down {Location} {light|ItemName} to {fifteen|Percent} percent
+SetLevel	turn up {Location} {lights|ItemName} to {twenty|Percent} percent
+SetLevel	soften {Location} {light|ItemName} to {twenty five|Percent} percent
+SetLevel	set {Location} {lights|ItemName} to {thirty|Percent} percent
+SetLevel	dim the {Location} {light|ItemName} to {thirty five|Percent}
+SetLevel	turn down the {Location} {lights|ItemName} to {forty|Percent}
+SetLevel	turn up the {Location} {light|ItemName} to {forty five|Percent}
+SetLevel	soften the {Location} {lights|ItemName} to {fifty|Percent}
+SetLevel	set the {Location} {light|ItemName} to {fifty five|Percent}
+SetLevel	dim {Location} {lights|ItemName} to {sixty|Percent}
+SetLevel	turn down {Location} {light|ItemName} to {sixty five|Percent}
+SetLevel	turn up {Location} {lights|ItemName} to {seventy|Percent}
+SetLevel	soften {Location} {light|ItemName} to {seventy five|Percent}
+SetLevel	set {Location} {lights|ItemName} to {eighty|Percent}
+SetLevel	dim the {Location} {light|ItemName} to {eighty five|Percent} percent
+SetLevel	dim {light|ItemName} in the {Location} to {ninety|Percent} percent
+SetLevel	turn down {lights|ItemName} in the {Location} to {ninety five|Percent} percent
+SetLevel	turn up {light|ItemName} in the {Location} to {one hundred|Percent} percent
+SetLevel	soften {lights|ItemName} in the {Location} to {zero|Percent} percent
+SetLevel	set {light|ItemName} in the {Location} to {five|Percent} percent
+SetLevel	dim {lights|ItemName} {Location} to {ten|Percent} percent
+SetLevel	turn down {light|ItemName} {Location} to {fifteen|Percent} percent
+SetLevel	turn up {lights|ItemName} {Location} to {twenty|Percent} percent
+SetLevel	soften {light|ItemName} {Location} to {twenty five|Percent} percent
+SetLevel	set {lights|ItemName} {Location} to {thirty|Percent} percent
+SetLevel	dim {light|ItemName} in the {Location} to {thirty five|Percent}
+SetLevel	turn down {lights|ItemName} in the {Location} to {forty|Percent}
+SetLevel	turn up {light|ItemName} in the {Location} to {forty five|Percent}
+SetLevel	soften {lights|ItemName} in the {Location} to {fifty|Percent}
+SetLevel	set {light|ItemName} in the {Location} to {fifty five|Percent}
+SetLevel	dim {lights|ItemName} {Location} to {sixty|Percent}
+SetLevel	turn down {light|ItemName} {Location} to {sixty five|Percent}
+SetLevel	turn up {lights|ItemName} {Location} to {seventy|Percent}
+SetLevel	soften {light|ItemName} {Location} to {seventy five|Percent}
+SetLevel	set {lights|ItemName} {Location} to {eighty|Percent}
+SetLevel	dim {light|ItemName} in the {Location} to {eighty five|Percent} percent
+SetTemp	to set the {Location} thermostat to {sixty|Degree} degrees
+SetTemp	 set the {Location} thermostat to {sixty one|Degree} degrees
+SetTemp	to set {Location} thermostat to {sixty two|Degree} degrees
+SetTemp	 set {Location} thermostat to {sixty three|Degree} degrees
+SetTemp	to set the {Location} temperature to {sixty four|Degree} degrees
+SetTemp	 set the {Location} temperature to {sixty five|Degree} degrees
+SetTemp	to set {Location} temperature to {sixty six|Degree} degrees
+SetTemp	 set {Location} temperature to {sixty seven|Degree} degrees
+SetTemp	to set the {Location} thermostat to {sixty eight|Degree}
+SetTemp	 set the {Location} thermostat to {sixty nine|Degree}
+SetTemp	to set {Location} thermostat to {seventy|Degree}
+SetTemp	 set {Location} thermostat to {seventy one|Degree}
+SetTemp	to set the {Location} temperature to {seventy two|Degree}
+SetTemp	 set the {Location} temperature to {seventy three|Degree}
+SetTemp	to set {Location} temperature to {seventy four|Degree}
+SetTemp	 set {Location} temperature to {seventy five|Degree}
+SetTemp	to set the {Location} thermostat to {seventy six|Degree} degrees
+SetTemp	 set the {Location} thermostat to {seventy seven|Degree} degrees
+SetTemp	to set {Location} thermostat to {seventy eight|Degree} degrees
+SetTemp	 set {Location} thermostat to {seventy nine|Degree} degrees
+SetTemp	to set the {Location} temperature to {eighty|Degree} degrees
+SetMode	to set the {house|ModeType} mode to {work|ModeName}
+SetMode	 set the {house|ModeType} mode to {dinner|ModeName}
+SetMode	to change the {house|ModeType} mode to {party|ModeName}
+SetMode	 change the {house|ModeType} mode to {bed|ModeName}
+SetMode	to switch the {house|ModeType} mode to {away|ModeName}
+SetMode	 switch the {house|ModeType} mode to {panic|ModeName}
+SetMode	to set {house|ModeType} mode to {relax|ModeName}
+SetMode	 set {house|ModeType} mode to {gaming|ModeName}
+SetMode	to change {house|ModeType} mode to {theatre|ModeName}
+SetMode	 change {house|ModeType} mode to {shower|ModeName}
+SetMode	to switch {house|ModeType} mode to {wake up|ModeName}
+SetMode	 switch {house|ModeType} mode to {TV|ModeName}
+SetMode	to set the {house|ModeType} mode to {off|ModeName}
+SetMode	to set the {lighting|ModeType} mode to {all on|ModeName}
+SetMode	 set the {lighting|ModeType} mode to {focus|ModeName}
+SetMode	to change the {lighting|ModeType} mode to {energize|ModeName}
+SetMode	 change the {lighting|ModeType} mode to {relax|ModeName}
+SetMode	to switch the {lighting|ModeType} mode to {party|ModeName}
+SetMode	 switch the {lighting|ModeType} mode to {night light|ModeName}
+SetMode	to set {lighting|ModeType} mode to {bed time|ModeName}
+SetMode	 set {lighting|ModeType} mode to {love shack|ModeName}
+SetMode	to change {lighting|ModeType} mode to {lava|ModeName}
+SetMode	 change {lighting|ModeType} mode to {all off|ModeName}
+SetMode	to switch {lighting|ModeType} mode to {all on|ModeName}
+SetMode	 switch {lighting|ModeType} mode to {focus|ModeName}
+SetMode	to set the {security|ModeType} mode to {away|ModeName}
+SetMode	 set the {security|ModeType} mode to {off|ModeName}
+SetMode	to change the {security|ModeType} mode to {sleep|ModeName}
+SetMode	 change the {security|ModeType} mode to {home|ModeName}
+SetMode	to switch the {security|ModeType} mode to {away|ModeName}
+SetMode	 switch the {security|ModeType} mode to {off|ModeName}
+SetMode	to set {security|ModeType} mode to {sleep|ModeName}
+SetMode	 set {security|ModeType} mode to {home|ModeName}
+SetMode	to change {security|ModeType} mode to {away|ModeName}
+SetMode	 change {security|ModeType} mode to {off|ModeName}
+SetMode	to switch {security|ModeType} mode to {sleep|ModeName}
+SetMode	 switch {security|ModeType} mode to {home|ModeName}
+GetState	to get the {luminance|MetricName} in the {Location}
+GetState	 get the {power consumption|MetricName} in the {Location}
+GetState	to check the {temperature|MetricName} in the {Location}
+GetState	 check the {humidity|MetricName} in the {Location}
+GetState	to whats the {luminance|MetricName} in the {Location}
+GetState	 whats the {power consumption|MetricName} in the {Location}
+GetState	to get {temperature|MetricName} in the {Location}
+GetState	 get {humidity|MetricName} in the {Location}
+GetState	to check {luminance|MetricName} in the {Location}
+GetState	 check {power consumption|MetricName} in the {Location}
+GetState	to whats {temperature|MetricName} in the {Location}
+GetState	 whats {humidity|MetricName} in the {Location}
+GetState	to get the {luminance|MetricName} {Location}
+GetState	 get the {power consumption|MetricName} {Location}
+GetState	to check the {temperature|MetricName} {Location}
+GetState	 check the {humidity|MetricName} {Location}
+GetState	to whats the {luminance|MetricName} {Location}
+GetState	 whats the {power consumption|MetricName} {Location}
+GetState	to get {temperature|MetricName} {Location}
+GetState	 get {humidity|MetricName} {Location}
+GetState	to check {luminance|MetricName} {Location}
+GetState	 check {power consumption|MetricName} {Location}
+GetState	to whats {temperature|MetricName} {Location}
+GetState	 whats {humidity|MetricName} {Location}
+GetState	get the {Location} {luminance|MetricName}
+GetState	check the {Location} {power consumption|MetricName}
+GetState	whats the {Location} {temperature|MetricName}
+GetState	get {Location} {humidity|MetricName}
+GetState	check {Location} {luminance|MetricName}
+GetState	whats {Location} {power consumption|MetricName}
+VoiceCMD	{lets party|Input}
+VoiceCMD	{call my phone|Input}
+VoiceCMD	{call work|Input}
+VoiceCMD	{call my bank|Input}
+VoiceCMD	{status update|Input}
+VoiceCMD	for a {status update|Input}
+VoiceCMD	{status update|Input}
+VoiceCMD	whats the {weather like|Input}
+VoiceCMD	{weather like|Input}
+VoiceCMD	{say a quote|Input}
+VoiceCMD	{its cold in here|Input}
+VoiceCMD	{its hot in here|Input}
+Research	to research {what is the atomic weight of boron|Question}
+Research	 research {what is the atomic weight of boron|Question}
+Research	to research {what is thirty divided by five|Question}
+Research	 research {what is thirty divided by five|Question}
+Research	to research {what did Alexander Graham Bell invent|Question}
+Research	 research {what did Alexander Graham Bell invent|Question}
+Research	to research {what does eleven plus seven equal|Question}
+Research	 research {what does eleven plus seven equal|Question}
+Research	to research {when is sunset tonight|Question}
+Research	 research {when is sunset tonight|Question}
+Research	to research {how tall is mount everest|Question}
+Research	 research {how tall is mount everest|Question}
+Research	to research {how many miles in an acre|Question}
+Research	 research {how many miles in an acre|Question}
+Research	to research {how do you take a derivative|Question}
+Research	 research {how do you take a derivative|Question}
+Research	to research {where did George Washington die|Question}
+Research	 research {where did George Washington die|Question}
+Research	to research {where are the pyramids|Question}
+Research	 research {where are the pyramids|Question}
+Research	to research {Why is the sky blue|Question}
+Research	 research {Why is the sky blue|Question}
+StopIntent	to stop that
+StopIntent	 stop that
+StopIntent	to stop
+StopIntent	 stop
+CancelIntent	to cancel that
+CancelIntent	 cancel that
+CancelIntent	to cancel
+CancelIntent	 cancel
+HelpIntent	for help me
+HelpIntent	to help me
+HelpIntent	 help me
+HelpIntent	for help
+HelpIntent	to help
+HelpIntent	 help

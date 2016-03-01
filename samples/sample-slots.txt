@@ -1,0 +1,28 @@
+/******************* COLOR_TYPE *********************/
+white
+red
+orange
+yellow
+green
+aqua
+blue
+purple
+magenta
+pink
+black
+
+/***************** LOCATION_TYPE *******************/
+all
+house
+living room
+great room
+kitchen
+master bedroom
+guest bedroom
+bathroom
+data center
+garage
+office
+foyer
+outside
+utility
