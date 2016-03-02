@@ -186,7 +186,8 @@ config.utterances = {
     'Switch': [
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {in the |} {-|Location}",
         "{turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
-        "{to |}{turn|switch|flip} {ON|OFF|Action} {-|Location} the {light|lights|motion lighting|fan|stove|music|ItemName}"
+        "{to |}{turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
+        "{to |}{turn|switch|flip} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action}"
     ],
     // Set HSB color values for lights in a particular room
     'SetColor': [

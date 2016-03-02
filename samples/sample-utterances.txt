@@ -43,12 +43,42 @@ Switch	flip {ON|Action} my {Location} {light|ItemName}
 Switch	turn {OFF|Action} {Location} {lights|ItemName}
 Switch	switch {ON|Action} {Location} {motion lighting|ItemName}
 Switch	flip {OFF|Action} {Location} {fan|ItemName}
-Switch	to turn {ON|Action} {Location} the {stove|ItemName}
-Switch	turn {OFF|Action} {Location} the {music|ItemName}
-Switch	to switch {ON|Action} {Location} the {light|ItemName}
-Switch	switch {OFF|Action} {Location} the {lights|ItemName}
-Switch	to flip {ON|Action} {Location} the {motion lighting|ItemName}
-Switch	flip {OFF|Action} {Location} the {fan|ItemName}
+Switch	to turn {ON|Action} the {Location} {stove|ItemName}
+Switch	turn {OFF|Action} the {Location} {music|ItemName}
+Switch	to switch {ON|Action} the {Location} {light|ItemName}
+Switch	switch {OFF|Action} the {Location} {lights|ItemName}
+Switch	to flip {ON|Action} the {Location} {motion lighting|ItemName}
+Switch	flip {OFF|Action} the {Location} {fan|ItemName}
+Switch	to turn {ON|Action} my {Location} {stove|ItemName}
+Switch	turn {OFF|Action} my {Location} {music|ItemName}
+Switch	to switch {ON|Action} my {Location} {light|ItemName}
+Switch	switch {OFF|Action} my {Location} {lights|ItemName}
+Switch	to flip {ON|Action} my {Location} {motion lighting|ItemName}
+Switch	flip {OFF|Action} my {Location} {fan|ItemName}
+Switch	to turn {ON|Action} {Location} {stove|ItemName}
+Switch	turn {OFF|Action} {Location} {music|ItemName}
+Switch	to switch {ON|Action} {Location} {light|ItemName}
+Switch	switch {OFF|Action} {Location} {lights|ItemName}
+Switch	to flip {ON|Action} {Location} {motion lighting|ItemName}
+Switch	flip {OFF|Action} {Location} {fan|ItemName}
+Switch	to turn the {Location} {stove|ItemName} {ON|Action}
+Switch	turn the {Location} {music|ItemName} {OFF|Action}
+Switch	to switch the {Location} {light|ItemName} {ON|Action}
+Switch	switch the {Location} {lights|ItemName} {OFF|Action}
+Switch	to flip the {Location} {motion lighting|ItemName} {ON|Action}
+Switch	flip the {Location} {fan|ItemName} {OFF|Action}
+Switch	to turn my {Location} {stove|ItemName} {ON|Action}
+Switch	turn my {Location} {music|ItemName} {OFF|Action}
+Switch	to switch my {Location} {light|ItemName} {ON|Action}
+Switch	switch my {Location} {lights|ItemName} {OFF|Action}
+Switch	to flip my {Location} {motion lighting|ItemName} {ON|Action}
+Switch	flip my {Location} {fan|ItemName} {OFF|Action}
+Switch	to turn {Location} {stove|ItemName} {ON|Action}
+Switch	turn {Location} {music|ItemName} {OFF|Action}
+Switch	to switch {Location} {light|ItemName} {ON|Action}
+Switch	switch {Location} {lights|ItemName} {OFF|Action}
+Switch	to flip {Location} {motion lighting|ItemName} {ON|Action}
+Switch	flip {Location} {fan|ItemName} {OFF|Action}
 SetColor	to set the {Location} light to {Color}
 SetColor	 set the {Location} light to {Color}
 SetColor	to change the {Location} light to {Color}
@@ -177,149 +207,149 @@ SetColor	to switch lights in the {Location} {Color}
 SetColor	 switch lights in the {Location} {Color}
 SetColor	to color lights in the {Location} {Color}
 SetColor	 color lights in the {Location} {Color}
-SetLevel	to dim the {light|ItemName} in the {Location} to {five|Percent} percent
-SetLevel	 dim the {lights|ItemName} in the {Location} to {ten|Percent} percent
-SetLevel	to turn down the {light|ItemName} in the {Location} to {fifteen|Percent} percent
-SetLevel	 turn down the {lights|ItemName} in the {Location} to {twenty|Percent} percent
-SetLevel	to turn up the {light|ItemName} in the {Location} to {twenty five|Percent} percent
-SetLevel	 turn up the {lights|ItemName} in the {Location} to {thirty|Percent} percent
-SetLevel	to soften the {light|ItemName} in the {Location} to {thirty five|Percent} percent
-SetLevel	 soften the {lights|ItemName} in the {Location} to {forty|Percent} percent
-SetLevel	to set the {light|ItemName} in the {Location} to {forty five|Percent} percent
-SetLevel	 set the {lights|ItemName} in the {Location} to {fifty|Percent} percent
-SetLevel	to dim {light|ItemName} in the {Location} to {fifty five|Percent} percent
-SetLevel	 dim {lights|ItemName} in the {Location} to {sixty|Percent} percent
-SetLevel	to turn down {light|ItemName} in the {Location} to {sixty five|Percent} percent
-SetLevel	 turn down {lights|ItemName} in the {Location} to {seventy|Percent} percent
-SetLevel	to turn up {light|ItemName} in the {Location} to {seventy five|Percent} percent
-SetLevel	 turn up {lights|ItemName} in the {Location} to {eighty|Percent} percent
-SetLevel	to soften {light|ItemName} in the {Location} to {eighty five|Percent} percent
-SetLevel	 soften {lights|ItemName} in the {Location} to {ninety|Percent} percent
-SetLevel	to set {light|ItemName} in the {Location} to {ninety five|Percent} percent
-SetLevel	 set {lights|ItemName} in the {Location} to {one hundred|Percent} percent
-SetLevel	to dim the {light|ItemName} {Location} to {zero|Percent} percent
-SetLevel	 dim the {lights|ItemName} {Location} to {five|Percent} percent
-SetLevel	to turn down the {light|ItemName} {Location} to {ten|Percent} percent
-SetLevel	 turn down the {lights|ItemName} {Location} to {fifteen|Percent} percent
-SetLevel	to turn up the {light|ItemName} {Location} to {twenty|Percent} percent
-SetLevel	 turn up the {lights|ItemName} {Location} to {twenty five|Percent} percent
-SetLevel	to soften the {light|ItemName} {Location} to {thirty|Percent} percent
-SetLevel	 soften the {lights|ItemName} {Location} to {thirty five|Percent} percent
-SetLevel	to set the {light|ItemName} {Location} to {forty|Percent} percent
-SetLevel	 set the {lights|ItemName} {Location} to {forty five|Percent} percent
-SetLevel	to dim {light|ItemName} {Location} to {fifty|Percent} percent
-SetLevel	 dim {lights|ItemName} {Location} to {fifty five|Percent} percent
-SetLevel	to turn down {light|ItemName} {Location} to {sixty|Percent} percent
-SetLevel	 turn down {lights|ItemName} {Location} to {sixty five|Percent} percent
-SetLevel	to turn up {light|ItemName} {Location} to {seventy|Percent} percent
-SetLevel	 turn up {lights|ItemName} {Location} to {seventy five|Percent} percent
-SetLevel	to soften {light|ItemName} {Location} to {eighty|Percent} percent
-SetLevel	 soften {lights|ItemName} {Location} to {eighty five|Percent} percent
-SetLevel	to set {light|ItemName} {Location} to {ninety|Percent} percent
-SetLevel	 set {lights|ItemName} {Location} to {ninety five|Percent} percent
-SetLevel	to dim the {light|ItemName} in the {Location} to {one hundred|Percent}
-SetLevel	 dim the {lights|ItemName} in the {Location} to {zero|Percent}
-SetLevel	to turn down the {light|ItemName} in the {Location} to {five|Percent}
-SetLevel	 turn down the {lights|ItemName} in the {Location} to {ten|Percent}
-SetLevel	to turn up the {light|ItemName} in the {Location} to {fifteen|Percent}
-SetLevel	 turn up the {lights|ItemName} in the {Location} to {twenty|Percent}
-SetLevel	to soften the {light|ItemName} in the {Location} to {twenty five|Percent}
-SetLevel	 soften the {lights|ItemName} in the {Location} to {thirty|Percent}
-SetLevel	to set the {light|ItemName} in the {Location} to {thirty five|Percent}
-SetLevel	 set the {lights|ItemName} in the {Location} to {forty|Percent}
-SetLevel	to dim {light|ItemName} in the {Location} to {forty five|Percent}
-SetLevel	 dim {lights|ItemName} in the {Location} to {fifty|Percent}
-SetLevel	to turn down {light|ItemName} in the {Location} to {fifty five|Percent}
-SetLevel	 turn down {lights|ItemName} in the {Location} to {sixty|Percent}
-SetLevel	to turn up {light|ItemName} in the {Location} to {sixty five|Percent}
-SetLevel	 turn up {lights|ItemName} in the {Location} to {seventy|Percent}
-SetLevel	to soften {light|ItemName} in the {Location} to {seventy five|Percent}
-SetLevel	 soften {lights|ItemName} in the {Location} to {eighty|Percent}
-SetLevel	to set {light|ItemName} in the {Location} to {eighty five|Percent}
-SetLevel	 set {lights|ItemName} in the {Location} to {ninety|Percent}
-SetLevel	to dim the {light|ItemName} {Location} to {ninety five|Percent}
-SetLevel	 dim the {lights|ItemName} {Location} to {one hundred|Percent}
-SetLevel	to turn down the {light|ItemName} {Location} to {zero|Percent}
-SetLevel	 turn down the {lights|ItemName} {Location} to {five|Percent}
-SetLevel	to turn up the {light|ItemName} {Location} to {ten|Percent}
-SetLevel	 turn up the {lights|ItemName} {Location} to {fifteen|Percent}
-SetLevel	to soften the {light|ItemName} {Location} to {twenty|Percent}
-SetLevel	 soften the {lights|ItemName} {Location} to {twenty five|Percent}
-SetLevel	to set the {light|ItemName} {Location} to {thirty|Percent}
-SetLevel	 set the {lights|ItemName} {Location} to {thirty five|Percent}
-SetLevel	to dim {light|ItemName} {Location} to {forty|Percent}
-SetLevel	 dim {lights|ItemName} {Location} to {forty five|Percent}
-SetLevel	to turn down {light|ItemName} {Location} to {fifty|Percent}
-SetLevel	 turn down {lights|ItemName} {Location} to {fifty five|Percent}
-SetLevel	to turn up {light|ItemName} {Location} to {sixty|Percent}
-SetLevel	 turn up {lights|ItemName} {Location} to {sixty five|Percent}
-SetLevel	to soften {light|ItemName} {Location} to {seventy|Percent}
-SetLevel	 soften {lights|ItemName} {Location} to {seventy five|Percent}
-SetLevel	to set {light|ItemName} {Location} to {eighty|Percent}
-SetLevel	 set {lights|ItemName} {Location} to {eighty five|Percent}
-SetLevel	dim the {Location} {light|ItemName} to {ninety|Percent} percent
-SetLevel	turn down the {Location} {lights|ItemName} to {ninety five|Percent} percent
-SetLevel	turn up the {Location} {light|ItemName} to {one hundred|Percent} percent
-SetLevel	soften the {Location} {lights|ItemName} to {zero|Percent} percent
-SetLevel	set the {Location} {light|ItemName} to {five|Percent} percent
-SetLevel	dim {Location} {lights|ItemName} to {ten|Percent} percent
-SetLevel	turn down {Location} {light|ItemName} to {fifteen|Percent} percent
-SetLevel	turn up {Location} {lights|ItemName} to {twenty|Percent} percent
-SetLevel	soften {Location} {light|ItemName} to {twenty five|Percent} percent
-SetLevel	set {Location} {lights|ItemName} to {thirty|Percent} percent
-SetLevel	dim the {Location} {light|ItemName} to {thirty five|Percent}
-SetLevel	turn down the {Location} {lights|ItemName} to {forty|Percent}
-SetLevel	turn up the {Location} {light|ItemName} to {forty five|Percent}
-SetLevel	soften the {Location} {lights|ItemName} to {fifty|Percent}
-SetLevel	set the {Location} {light|ItemName} to {fifty five|Percent}
-SetLevel	dim {Location} {lights|ItemName} to {sixty|Percent}
-SetLevel	turn down {Location} {light|ItemName} to {sixty five|Percent}
-SetLevel	turn up {Location} {lights|ItemName} to {seventy|Percent}
-SetLevel	soften {Location} {light|ItemName} to {seventy five|Percent}
-SetLevel	set {Location} {lights|ItemName} to {eighty|Percent}
-SetLevel	dim the {Location} {light|ItemName} to {eighty five|Percent} percent
-SetLevel	dim {light|ItemName} in the {Location} to {ninety|Percent} percent
-SetLevel	turn down {lights|ItemName} in the {Location} to {ninety five|Percent} percent
-SetLevel	turn up {light|ItemName} in the {Location} to {one hundred|Percent} percent
-SetLevel	soften {lights|ItemName} in the {Location} to {zero|Percent} percent
-SetLevel	set {light|ItemName} in the {Location} to {five|Percent} percent
-SetLevel	dim {lights|ItemName} {Location} to {ten|Percent} percent
-SetLevel	turn down {light|ItemName} {Location} to {fifteen|Percent} percent
-SetLevel	turn up {lights|ItemName} {Location} to {twenty|Percent} percent
-SetLevel	soften {light|ItemName} {Location} to {twenty five|Percent} percent
-SetLevel	set {lights|ItemName} {Location} to {thirty|Percent} percent
-SetLevel	dim {light|ItemName} in the {Location} to {thirty five|Percent}
-SetLevel	turn down {lights|ItemName} in the {Location} to {forty|Percent}
-SetLevel	turn up {light|ItemName} in the {Location} to {forty five|Percent}
-SetLevel	soften {lights|ItemName} in the {Location} to {fifty|Percent}
-SetLevel	set {light|ItemName} in the {Location} to {fifty five|Percent}
-SetLevel	dim {lights|ItemName} {Location} to {sixty|Percent}
-SetLevel	turn down {light|ItemName} {Location} to {sixty five|Percent}
-SetLevel	turn up {lights|ItemName} {Location} to {seventy|Percent}
-SetLevel	soften {light|ItemName} {Location} to {seventy five|Percent}
-SetLevel	set {lights|ItemName} {Location} to {eighty|Percent}
-SetLevel	dim {light|ItemName} in the {Location} to {eighty five|Percent} percent
-SetTemp	to set the {Location} thermostat to {sixty|Degree} degrees
-SetTemp	 set the {Location} thermostat to {sixty one|Degree} degrees
-SetTemp	to set {Location} thermostat to {sixty two|Degree} degrees
-SetTemp	 set {Location} thermostat to {sixty three|Degree} degrees
-SetTemp	to set the {Location} temperature to {sixty four|Degree} degrees
-SetTemp	 set the {Location} temperature to {sixty five|Degree} degrees
-SetTemp	to set {Location} temperature to {sixty six|Degree} degrees
-SetTemp	 set {Location} temperature to {sixty seven|Degree} degrees
-SetTemp	to set the {Location} thermostat to {sixty eight|Degree}
-SetTemp	 set the {Location} thermostat to {sixty nine|Degree}
-SetTemp	to set {Location} thermostat to {seventy|Degree}
-SetTemp	 set {Location} thermostat to {seventy one|Degree}
-SetTemp	to set the {Location} temperature to {seventy two|Degree}
-SetTemp	 set the {Location} temperature to {seventy three|Degree}
-SetTemp	to set {Location} temperature to {seventy four|Degree}
-SetTemp	 set {Location} temperature to {seventy five|Degree}
-SetTemp	to set the {Location} thermostat to {seventy six|Degree} degrees
-SetTemp	 set the {Location} thermostat to {seventy seven|Degree} degrees
-SetTemp	to set {Location} thermostat to {seventy eight|Degree} degrees
-SetTemp	 set {Location} thermostat to {seventy nine|Degree} degrees
-SetTemp	to set the {Location} temperature to {eighty|Degree} degrees
+SetLevel	to dim the {light|ItemName} in the {Location} to {eighty five|Percent} percent 
+SetLevel	 dim the {lights|ItemName} in the {Location} to {ninety|Percent} percent 
+SetLevel	to turn down the {light|ItemName} in the {Location} to {ninety five|Percent} percent 
+SetLevel	 turn down the {lights|ItemName} in the {Location} to {one hundred|Percent} percent 
+SetLevel	to turn up the {light|ItemName} in the {Location} to {zero|Percent} percent 
+SetLevel	 turn up the {lights|ItemName} in the {Location} to {five|Percent} percent 
+SetLevel	to soften the {light|ItemName} in the {Location} to {ten|Percent} percent 
+SetLevel	 soften the {lights|ItemName} in the {Location} to {fifteen|Percent} percent 
+SetLevel	to set the {light|ItemName} in the {Location} to {twenty|Percent} percent 
+SetLevel	 set the {lights|ItemName} in the {Location} to {twenty five|Percent} percent 
+SetLevel	to dim {light|ItemName} in the {Location} to {thirty|Percent} percent 
+SetLevel	 dim {lights|ItemName} in the {Location} to {thirty five|Percent} percent 
+SetLevel	to turn down {light|ItemName} in the {Location} to {forty|Percent} percent 
+SetLevel	 turn down {lights|ItemName} in the {Location} to {forty five|Percent} percent 
+SetLevel	to turn up {light|ItemName} in the {Location} to {fifty|Percent} percent 
+SetLevel	 turn up {lights|ItemName} in the {Location} to {fifty five|Percent} percent 
+SetLevel	to soften {light|ItemName} in the {Location} to {sixty|Percent} percent 
+SetLevel	 soften {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
+SetLevel	to set {light|ItemName} in the {Location} to {seventy|Percent} percent 
+SetLevel	 set {lights|ItemName} in the {Location} to {seventy five|Percent} percent 
+SetLevel	to dim the {light|ItemName} {Location} to {eighty|Percent} percent 
+SetLevel	 dim the {lights|ItemName} {Location} to {eighty five|Percent} percent 
+SetLevel	to turn down the {light|ItemName} {Location} to {ninety|Percent} percent 
+SetLevel	 turn down the {lights|ItemName} {Location} to {ninety five|Percent} percent 
+SetLevel	to turn up the {light|ItemName} {Location} to {one hundred|Percent} percent 
+SetLevel	 turn up the {lights|ItemName} {Location} to {zero|Percent} percent 
+SetLevel	to soften the {light|ItemName} {Location} to {five|Percent} percent 
+SetLevel	 soften the {lights|ItemName} {Location} to {ten|Percent} percent 
+SetLevel	to set the {light|ItemName} {Location} to {fifteen|Percent} percent 
+SetLevel	 set the {lights|ItemName} {Location} to {twenty|Percent} percent 
+SetLevel	to dim {light|ItemName} {Location} to {twenty five|Percent} percent 
+SetLevel	 dim {lights|ItemName} {Location} to {thirty|Percent} percent 
+SetLevel	to turn down {light|ItemName} {Location} to {thirty five|Percent} percent 
+SetLevel	 turn down {lights|ItemName} {Location} to {forty|Percent} percent 
+SetLevel	to turn up {light|ItemName} {Location} to {forty five|Percent} percent 
+SetLevel	 turn up {lights|ItemName} {Location} to {fifty|Percent} percent 
+SetLevel	to soften {light|ItemName} {Location} to {fifty five|Percent} percent 
+SetLevel	 soften {lights|ItemName} {Location} to {sixty|Percent} percent 
+SetLevel	to set {light|ItemName} {Location} to {sixty five|Percent} percent 
+SetLevel	 set {lights|ItemName} {Location} to {seventy|Percent} percent 
+SetLevel	to dim the {light|ItemName} in the {Location} to {seventy five|Percent} 
+SetLevel	 dim the {lights|ItemName} in the {Location} to {eighty|Percent} 
+SetLevel	to turn down the {light|ItemName} in the {Location} to {eighty five|Percent} 
+SetLevel	 turn down the {lights|ItemName} in the {Location} to {ninety|Percent} 
+SetLevel	to turn up the {light|ItemName} in the {Location} to {ninety five|Percent} 
+SetLevel	 turn up the {lights|ItemName} in the {Location} to {one hundred|Percent} 
+SetLevel	to soften the {light|ItemName} in the {Location} to {zero|Percent} 
+SetLevel	 soften the {lights|ItemName} in the {Location} to {five|Percent} 
+SetLevel	to set the {light|ItemName} in the {Location} to {ten|Percent} 
+SetLevel	 set the {lights|ItemName} in the {Location} to {fifteen|Percent} 
+SetLevel	to dim {light|ItemName} in the {Location} to {twenty|Percent} 
+SetLevel	 dim {lights|ItemName} in the {Location} to {twenty five|Percent} 
+SetLevel	to turn down {light|ItemName} in the {Location} to {thirty|Percent} 
+SetLevel	 turn down {lights|ItemName} in the {Location} to {thirty five|Percent} 
+SetLevel	to turn up {light|ItemName} in the {Location} to {forty|Percent} 
+SetLevel	 turn up {lights|ItemName} in the {Location} to {forty five|Percent} 
+SetLevel	to soften {light|ItemName} in the {Location} to {fifty|Percent} 
+SetLevel	 soften {lights|ItemName} in the {Location} to {fifty five|Percent} 
+SetLevel	to set {light|ItemName} in the {Location} to {sixty|Percent} 
+SetLevel	 set {lights|ItemName} in the {Location} to {sixty five|Percent} 
+SetLevel	to dim the {light|ItemName} {Location} to {seventy|Percent} 
+SetLevel	 dim the {lights|ItemName} {Location} to {seventy five|Percent} 
+SetLevel	to turn down the {light|ItemName} {Location} to {eighty|Percent} 
+SetLevel	 turn down the {lights|ItemName} {Location} to {eighty five|Percent} 
+SetLevel	to turn up the {light|ItemName} {Location} to {ninety|Percent} 
+SetLevel	 turn up the {lights|ItemName} {Location} to {ninety five|Percent} 
+SetLevel	to soften the {light|ItemName} {Location} to {one hundred|Percent} 
+SetLevel	 soften the {lights|ItemName} {Location} to {zero|Percent} 
+SetLevel	to set the {light|ItemName} {Location} to {five|Percent} 
+SetLevel	 set the {lights|ItemName} {Location} to {ten|Percent} 
+SetLevel	to dim {light|ItemName} {Location} to {fifteen|Percent} 
+SetLevel	 dim {lights|ItemName} {Location} to {twenty|Percent} 
+SetLevel	to turn down {light|ItemName} {Location} to {twenty five|Percent} 
+SetLevel	 turn down {lights|ItemName} {Location} to {thirty|Percent} 
+SetLevel	to turn up {light|ItemName} {Location} to {thirty five|Percent} 
+SetLevel	 turn up {lights|ItemName} {Location} to {forty|Percent} 
+SetLevel	to soften {light|ItemName} {Location} to {forty five|Percent} 
+SetLevel	 soften {lights|ItemName} {Location} to {fifty|Percent} 
+SetLevel	to set {light|ItemName} {Location} to {fifty five|Percent} 
+SetLevel	 set {lights|ItemName} {Location} to {sixty|Percent} 
+SetLevel	dim the {Location} {light|ItemName} to {sixty five|Percent} percent 
+SetLevel	turn down the {Location} {lights|ItemName} to {seventy|Percent} percent 
+SetLevel	turn up the {Location} {light|ItemName} to {seventy five|Percent} percent 
+SetLevel	soften the {Location} {lights|ItemName} to {eighty|Percent} percent 
+SetLevel	set the {Location} {light|ItemName} to {eighty five|Percent} percent 
+SetLevel	dim {Location} {lights|ItemName} to {ninety|Percent} percent 
+SetLevel	turn down {Location} {light|ItemName} to {ninety five|Percent} percent 
+SetLevel	turn up {Location} {lights|ItemName} to {one hundred|Percent} percent 
+SetLevel	soften {Location} {light|ItemName} to {zero|Percent} percent 
+SetLevel	set {Location} {lights|ItemName} to {five|Percent} percent 
+SetLevel	dim the {Location} {light|ItemName} to {ten|Percent} 
+SetLevel	turn down the {Location} {lights|ItemName} to {fifteen|Percent} 
+SetLevel	turn up the {Location} {light|ItemName} to {twenty|Percent} 
+SetLevel	soften the {Location} {lights|ItemName} to {twenty five|Percent} 
+SetLevel	set the {Location} {light|ItemName} to {thirty|Percent} 
+SetLevel	dim {Location} {lights|ItemName} to {thirty five|Percent} 
+SetLevel	turn down {Location} {light|ItemName} to {forty|Percent} 
+SetLevel	turn up {Location} {lights|ItemName} to {forty five|Percent} 
+SetLevel	soften {Location} {light|ItemName} to {fifty|Percent} 
+SetLevel	set {Location} {lights|ItemName} to {fifty five|Percent} 
+SetLevel	dim the {Location} {light|ItemName} to {sixty|Percent} percent 
+SetLevel	dim {light|ItemName} in the {Location} to {sixty five|Percent} percent 
+SetLevel	turn down {lights|ItemName} in the {Location} to {seventy|Percent} percent 
+SetLevel	turn up {light|ItemName} in the {Location} to {seventy five|Percent} percent 
+SetLevel	soften {lights|ItemName} in the {Location} to {eighty|Percent} percent 
+SetLevel	set {light|ItemName} in the {Location} to {eighty five|Percent} percent 
+SetLevel	dim {lights|ItemName} {Location} to {ninety|Percent} percent 
+SetLevel	turn down {light|ItemName} {Location} to {ninety five|Percent} percent 
+SetLevel	turn up {lights|ItemName} {Location} to {one hundred|Percent} percent 
+SetLevel	soften {light|ItemName} {Location} to {zero|Percent} percent 
+SetLevel	set {lights|ItemName} {Location} to {five|Percent} percent 
+SetLevel	dim {light|ItemName} in the {Location} to {ten|Percent} 
+SetLevel	turn down {lights|ItemName} in the {Location} to {fifteen|Percent} 
+SetLevel	turn up {light|ItemName} in the {Location} to {twenty|Percent} 
+SetLevel	soften {lights|ItemName} in the {Location} to {twenty five|Percent} 
+SetLevel	set {light|ItemName} in the {Location} to {thirty|Percent} 
+SetLevel	dim {lights|ItemName} {Location} to {thirty five|Percent} 
+SetLevel	turn down {light|ItemName} {Location} to {forty|Percent} 
+SetLevel	turn up {lights|ItemName} {Location} to {forty five|Percent} 
+SetLevel	soften {light|ItemName} {Location} to {fifty|Percent} 
+SetLevel	set {lights|ItemName} {Location} to {fifty five|Percent} 
+SetLevel	dim {light|ItemName} in the {Location} to {sixty|Percent} percent 
+SetTemp	to set the {Location} thermostat to {sixty|Degree} degrees 
+SetTemp	 set the {Location} thermostat to {sixty one|Degree} degrees 
+SetTemp	to set {Location} thermostat to {sixty two|Degree} degrees 
+SetTemp	 set {Location} thermostat to {sixty three|Degree} degrees 
+SetTemp	to set the {Location} temperature to {sixty four|Degree} degrees 
+SetTemp	 set the {Location} temperature to {sixty five|Degree} degrees 
+SetTemp	to set {Location} temperature to {sixty six|Degree} degrees 
+SetTemp	 set {Location} temperature to {sixty seven|Degree} degrees 
+SetTemp	to set the {Location} thermostat to {sixty eight|Degree} 
+SetTemp	 set the {Location} thermostat to {sixty nine|Degree} 
+SetTemp	to set {Location} thermostat to {seventy|Degree} 
+SetTemp	 set {Location} thermostat to {seventy one|Degree} 
+SetTemp	to set the {Location} temperature to {seventy two|Degree} 
+SetTemp	 set the {Location} temperature to {seventy three|Degree} 
+SetTemp	to set {Location} temperature to {seventy four|Degree} 
+SetTemp	 set {Location} temperature to {seventy five|Degree} 
+SetTemp	to set the {Location} thermostat to {seventy six|Degree} degrees 
+SetTemp	 set the {Location} thermostat to {seventy seven|Degree} degrees 
+SetTemp	to set {Location} thermostat to {seventy eight|Degree} degrees 
+SetTemp	 set {Location} thermostat to {seventy nine|Degree} degrees 
+SetTemp	to set the {Location} temperature to {eighty|Degree} degrees 
 SetMode	to set the {house|ModeType} mode to {work|ModeName}
 SetMode	 set the {house|ModeType} mode to {dinner|ModeName}
 SetMode	to change the {house|ModeType} mode to {party|ModeName}
@@ -421,17 +451,17 @@ Research	to research {where are the pyramids|Question}
 Research	 research {where are the pyramids|Question}
 Research	to research {Why is the sky blue|Question}
 Research	 research {Why is the sky blue|Question}
-StopIntent	to stop that
-StopIntent	 stop that
-StopIntent	to stop
-StopIntent	 stop
-CancelIntent	to cancel that
-CancelIntent	 cancel that
-CancelIntent	to cancel
-CancelIntent	 cancel
-HelpIntent	for help me
-HelpIntent	to help me
-HelpIntent	 help me
-HelpIntent	for help
-HelpIntent	to help
-HelpIntent	 help
+StopIntent	to stop that 
+StopIntent	 stop that 
+StopIntent	to stop 
+StopIntent	 stop 
+CancelIntent	to cancel that 
+CancelIntent	 cancel that 
+CancelIntent	to cancel 
+CancelIntent	 cancel 
+HelpIntent	for help me 
+HelpIntent	to help me 
+HelpIntent	 help me 
+HelpIntent	for help 
+HelpIntent	to help 
+HelpIntent	 help 
