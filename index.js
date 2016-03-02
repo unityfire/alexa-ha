@@ -43,11 +43,11 @@ app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase..
 app.pre = function(request,response,type,id) {
     if (request.sessionDetails.application.applicationId !== config.applicationId) {
         response.fail("Invalid application ID");
-        console.log('Invalid application ID:' + config.applicationId);
+        console.log('Invalid application ID:' + request.sessionDetails.application.applicationId);
     }
     if (request.sessionDetails.userId !== config.userId) {
         response.fail("Invalid user ID");
-        console.log('Invalid userId: ' + config.userId );
+        console.log('Invalid userId: ' + request.sessionDetails.userId );
     }
     console.log('AWS ASK ' + type + ' received, sessionID: ' + request.sessionId);
 };
