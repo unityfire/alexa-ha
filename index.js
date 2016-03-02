@@ -8,12 +8,12 @@ var alexa = require('alexa-app');
 var wolfram = require('./lib/wolfram');
 
 // Load supporting library depending on the configured Home Automation controller
-if (config.HA_name == 'OpenHAB') {
+if (config.HA_name === 'OpenHAB') {
     var HA = require('./lib/openhab');
 }
 else {
-    console.log ('ERROR: ' + config.HA_name + 'is not currently supported!');
-    return;
+    console.log ('FATAL ERROR: the configured HA_name "' + config.HA_name + '" is not currently supported.');
+    process.exit(1);
 }
 
 // Reloaded by hotswap when code has changed (by alexa-app-server)
@@ -41,11 +41,11 @@ app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase..
 
 // Pre-execution security checks - before handling ensure request applicationId and userId match configured values
 app.pre = function(request,response,type,id) {
-    if (request.sessionDetails.application.applicationId != config.applicationId) {
+    if (request.sessionDetails.application.applicationId !== config.applicationId) {
         response.fail("Invalid application ID");
         console.log('Invalid application ID:' + config.applicationId);
     }
-    if (request.sessionDetails.userId != config.userId) {
+    if (request.sessionDetails.userId !== config.userId) {
         response.fail("Invalid user ID");
         console.log('Invalid userId: ' + config.userId );
     }
@@ -80,7 +80,7 @@ app.intent('Switch', {
     //console.log('RawResponseData: ',request.data);
     console.log('Switch Intent hit!  Slots are:' + action + '/' + itemName + '/' + location);
 
-    //Handle undefined ASK slots
+    // Handle undefined ASK slots
     if (itemName && location) {
         var HA_item = helper.getItem(itemName, location);
     }
@@ -88,15 +88,35 @@ app.intent('Switch', {
         response.say('I cannot currently control that');
         return;
     }
-
+    
     if (action && itemName && location && HA_item) {
-        HA.setState(HA_item, action);
-        response.say('Switching ' + action + ' your ' + location + ' ' + itemName);
-        response.card(appName,'I have switched ' + action + ' your ' + location + ' ' + itemName + '.');
-    }
-    else {
-        response.say('I could not switch ' + action + ' your ' + location + ' ' + itemName);
-    }
+        // Get current state
+        HA.getState(HA_item, function (err, state) {
+            if (err) {
+                console.log('HA getState failed:  ' + err.message);
+            }
+            // Check if the items current state and action match
+            if (state === action) {
+                console.log ('Your ' + location + ' ' + itemName + ' is already ' + action);
+                response.say('Your ' + location + ' ' + itemName + ' is already ' + action);
+                response.send();
+            }
+            // Set the new state for the item
+            else if (state !== action) {
+                HA.setState(HA_item, action);
+                console.log ('Switching ' + action + ' your ' + location + ' ' + itemName);
+                response.say('Switching ' + action + ' your ' + location + ' ' + itemName);
+                response.card(appName,'I have switched ' + action + ' your ' + location + ' ' + itemName + '.');
+                response.send();
+            }
+            // Unidentified item
+            else {
+                response.say('I could not switch ' + action + ' your ' + location + ' ' + itemName);
+                response.send();
+            }
+        });
+    }  
+    return false;
 });
 
 // Set HSB color for lights
@@ -111,7 +131,7 @@ app.intent('SetColor', {
     //console.log('RawResponseData: ',request.data);
     console.log('SetColor Intent hit!  Slots are:' + color + '/' + location);
 
-    //Handle undefined ASK slots
+    // Handle undefined ASK slots
     if (location && color) {
         //Set color intent, assume we are dealing with lighting...
         var HA_item = helper.getItem('lights',location);
@@ -121,15 +141,34 @@ app.intent('SetColor', {
         response.say('I cannot currently set that color');
         return;
     }
-
+    
     if (color && location && HSBColor && HA_item) {
-        HA.setState(HA_item, HSBColor);
-        response.say('Setting your ' + location + ' lights color to ' + color);
-        response.card(appName,'I have set your ' + location + ' lights color to ' + color + '.');
+        // Get current color
+        HA.getState(HA_item, function (err, state) {
+            if (err) {
+                console.log('HA getState failed:  ' + err.message);
+            }
+            // Check if the current color and new color match
+            if (state === HSBColor) {
+                console.log ('Your ' + location + ' lights color is already ' + color);
+                response.say('Your ' + location + ' lights color is already ' + color);
+                response.send();
+            }
+            // Set the new state for the item
+            else if (state !== HSBColor) {
+                HA.setState(HA_item, HSBColor);
+                response.say('Setting your ' + location + ' lights color to ' + color);
+                response.card(appName,'I have set your ' + location + ' lights color to ' + color + '.');
+                response.send();
+            }
+            // Unidentified item
+            else {
+                response.say('I could not set your ' + location + ' lights color to ' + color);
+                response.send();
+            }
+        });
     }
-    else {
-        response.say('I could not set your ' + location + ' lights color to ' + color);
-    }
+    return false;
 });
 
 // Set dimming levels of lights
@@ -145,7 +184,7 @@ app.intent('SetLevel', {
     //console.log('RawResponseData: ',request.data);
     console.log('Dim Intent hit!  Slots are:' + percent + '/' + itemName + '/' + location);
 
-    //Handle undefined ASK slots
+    // Handle undefined ASK slots
     if (itemName && location) {
         var HA_item = helper.getItem(itemName,location);
     }
@@ -153,15 +192,34 @@ app.intent('SetLevel', {
         response.say('I cannot currently dim that device');
         return;
     }
-
-    if ((percent && itemName && location) && (percent >= 0 && percent <= 100) && (HA_item)) {
-        HA.setState(HA_item, percent);
-        response.say('Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
-        response.card(appName,'I have dimmed your ' + location + ' ' + itemName + ' to ' + percent + ' percent.');
+    
+    if ((percent && itemName && location && HA_item) && (percent >= 0 && percent <= 100)) {
+        // Get current color
+        HA.getState(HA_item, function (err, state) {
+            if (err) {
+                console.log('HA getState failed:  ' + err.message);
+            }
+            // Check if the current dimmer level and new level match
+            if (state === percent) {
+                console.log ('Your ' + location + ' lights color are already at ' + percent + ' percent');
+                response.say('Your ' + location + ' lights color are already at ' + percent + ' percent');
+                response.send();
+            }
+            // Set the new state for the item
+            else if (state !== percent) {
+                HA.setState(HA_item, percent);
+                response.say('Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
+                response.card(appName,'I have dimmed your ' + location + ' ' + itemName + ' to ' + percent + ' percent.');
+                response.send();
+            }
+            // Unidentified item
+            else {
+                response.say('I cannot dim your ' + location + ' ' + itemName + ' to ' + percent + 'percent');
+                response.send();
+            }
+        });
     }
-    else {
-        response.say('I cannot dim your ' + location + ' ' + itemName + ' to ' + percent + 'percent');
-    }
+    return false;
 });
 
 // Set thermostat temperatures
@@ -174,9 +232,9 @@ app.intent('SetTemp', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('SetTemp Intent hit!  Slots are:' + degree);
+    console.log('SetTemp Intent hit!  Slots are:' + degree + '/' + location);
 
-    //Handle undefined ASK slots
+    // Handle undefined ASK slots
     if (degree && location) {
         var HA_item = helper.getItem('thermostat',location);
     }
@@ -184,15 +242,34 @@ app.intent('SetTemp', {
         response.say('I cannot currently set that temperature');
         return;
     }
-
-    if (degree && degree > 60 && degree < 80) {
-        HA.setState(HA_item, degree);
-        response.say('Setting your home temperature to ' + degree + ' degrees');
-        response.card(appName, 'I have set your home temperature to ' + degree + ' degrees.');
+    
+    if (degree && degree > 60 && degree < 80 && HA_item) {
+        // Get current temp
+        HA.getState(HA_item, function (err, state) {
+            if (err) {
+                console.log('HA getState failed:  ' + err.message);
+            }
+            // Check if the current target temp and new target temp match
+            if (state === degree) {
+                console.log ('Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
+                response.say('Your ' + location + ' targettemperature is already set to ' + degree + ' degrees');
+                response.send();
+            }
+            // Set the new state for the item
+            else if (state !== degree) {
+                HA.setState(HA_item, degree);
+                response.say('Setting your ' + location + ' target temperature to ' + degree + ' degrees');
+                response.card(appName, 'I have set your ' + location + ' target temperature to ' + degree + ' degrees.');
+                response.send();
+            }
+            // Unidentified item
+            else {
+                response.say('I cannot set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
+                response.send();
+            }
+        });
     }
-    else {
-        response.say('I cannot set your house to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
-    }
+    return false;
 });
 
 // Set modes (house/lighting/security scenes)
