@@ -129,4 +129,4 @@ If you made it this far, the next steps are relatively easy to finish your setup
 
 [//]: # 
 
-[INSTALL.md]: <https://github.com/unityfire/alexa-ha/INSTALL.md>
+[INSTALL.md]: <https://github.com/unityfire/alexa-ha/blob/master/INSTALL.md>
