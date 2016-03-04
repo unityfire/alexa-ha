@@ -1,4 +1,4 @@
-# Quick Start with Ubuntu 14.04 LTS Server
+# Alexa-HA QUICKSTART with Ubuntu 14.04 LTS Server
 The purpose of this document is to provide a minimalistic set of instructions on how to setup Alexa-HA.  For this, we are taking the Semi-direct approach (Echo -> AWS ASK -> NodeJS/Express -> HA) for routing the Echo requests to your Home Automation controller.
 
 NOTE:  We recommend proxying Node.js/Express.js behind a proper webserver like Apache/Nginx (i.e. Echo -> AWS ASK -> Apache/Nginx -> NodeJS -> HA), which decouples your application logic from the public facing server and provides an extra layer of security.  This is more complicated to configure however, and Alexa-App-Server is capable of doing everything we need here without this extra hop.
@@ -21,26 +21,26 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-# Create unprivileged user, to run Alexa-App-Server & Alexa-HA
+# Create an unprivileged user to run Alexa-App-Server & Alexa-HA
 ```
 sudo adduser alexa
 sudo su alexa
 cd ~
 ```
 
-# Install necessary node packages and dependencies, under alexa user
+# Install necessary node packages and dependencies under the 'alexa' user
 ```
 npm install alexa-app alexa-app-server alexa-utterances request pm2
 ```
 
-# Patch Alexa Utterances module (a temporary fix for ASK custom slot support!)
+# Patch alexa-utterances module (a temporary fix for ASK custom slot support!)
 ```
 cd ~/node_modules/alexa-utterances/
 wget https://github.com/unityfire/alexa-ha/files/155821/alexa-utterances_custom_slot_support.patch.txt
 patch -p1 < alexa-utterances_custom_slot_support.patch.txt
 ```
 
-# Copy Alexa-App-Server's examples directory to a new directory, reusing it as a stub
+# Copy Alexa-App-Server's examples directory to a new directory to a new stub 
 ```
 cp -R ~/node_modules/alexa-app-server/examples/ ~/node_modules/alexa-app-server/api/
 cd ~/node_modules/alexa-app-server/api/
@@ -130,7 +130,3 @@ If you made it this far, the next steps are relatively easy to finish your setup
 [//]: # 
 
 [INSTALL.md]: <https://github.com/unityfire/alexa-ha/INSTALL.md>
-
-
-
-
