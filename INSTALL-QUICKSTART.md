@@ -1,7 +1,7 @@
 # Alexa-HA QUICKSTART with Ubuntu 14.04 LTS Server
-The purpose of this document is to provide a minimalistic set of instructions on how to setup Alexa-HA.  For this, we are taking the Semi-direct approach (Echo -> AWS ASK -> NodeJS/Express -> HA) for routing the Echo requests to your Home Automation controller.
+The purpose of this document is to provide a minimalistic set of instructions on how to setup Alexa-HA, a customizable Skill for your Amazon Echo.  For this, we are taking the Semi-direct approach (Echo -> AWS ASK -> NodeJS/Express -> HA) for routing the Echo requests to your Home Automation controller.
 
-NOTE:  We recommend proxying Node.js/Express.js behind a proper webserver like Apache/Nginx (i.e. Echo -> AWS ASK -> Apache/Nginx -> NodeJS -> HA), which decouples your application logic from the public facing server and provides an extra layer of security.  This is more complicated to configure however, and Alexa-App-Server is capable of doing everything we need here without this extra hop.
+NOTE:  We recommend proxying Node.js/Express.js behind a proper webserver such as Apache/Nginx (i.e. Echo -> AWS ASK -> Apache/Nginx -> NodeJS -> HA), which decouples your application logic from the public facing server and provides an extra layer of security.  This is more complicated to configure however, and Alexa-App-Server is capable of doing everything we need here without this extra hop.
 
 ### Before you begin
 You will need the following to complete these quick start instructions!
@@ -40,7 +40,7 @@ wget https://github.com/unityfire/alexa-ha/files/155821/alexa-utterances_custom_
 patch -p1 < alexa-utterances_custom_slot_support.patch.txt
 ```
 
-# Copy Alexa-App-Server's examples directory to a new directory to a new stub 
+# Copy Alexa-App-Server's examples directory to a new 'stub' server 
 ```
 cp -R ~/node_modules/alexa-app-server/examples/ ~/node_modules/alexa-app-server/api/
 cd ~/node_modules/alexa-app-server/api/
@@ -49,15 +49,15 @@ cd ~/node_modules/alexa-app-server/api/
 # Remove existing demo apps, clone Alexa HA from GIT, and configure
 Be sure to select which branch you want in the command below!  Develop is for the latest and greatest, but use 'master' for the stable release of Alexa-HA!
 ```
-cd ~/node_modules/alexa-app-server/api/apps
-rm -rf *
+rm -rf ~/node_modules/alexa-app-server/api/apps/*
+cd ~/node_modules/alexa-app-server/api/apps/
 git clone -b develop https://github.com/unityfire/alexa-ha.git
 cd alexa-ha
 cp config_default.js config.js
 nano config.js
 ```
-- Set the various AWS ASK related settings as needed - applicationId/userId values and more available from Amazon Developer Portal
-- If you want to use Wolfram Alpha with Alexa-HA (i.e. to have it 'research' stuff for you via voice, optional!), register and enter your API key
+- Set the various AWS ASK related settings as needed - applicationId is available from Amazon Developer Portal
+- If you want to use Wolfram Alpha with Alexa-HA (i.e. to have it 'research' anything for you via voice, which is optional!), register and enter your API key
 - Open up your various OpenHAB configuration files (i.e. items/sitemaps/rules) for reference in another window; use these to setup the rest of config.js as desired. The most important part of configuring this is that beyond the General Configuration section, the mappings setup in the HA* & config.item/mode/metric sections in Alexa-HA's config.js are correctly pointed to the items/modes/devices in OpenHAB! Alexa-HA uses this to determine which items in your home do what, and where...
 - Save config.js and exit
 - Create a few new items in your OpenHAB configuration/items/* file to be used by Alexa-HA. These are used only as a fallback for custom/arbitrary voice commands (which can trigger custom rules on the OpenHAB server):
@@ -79,7 +79,7 @@ Remember to upload the contents of your ```~/node_modules/alexa-app-server/api/s
 
 # Modify server.js to suit your needs
 ```
-cd alexa-ha
+cd ~/node_modules/alexa-app-server/api/apps/alexa-ha
 nano server.js
 ```
 Here is mine for example (note the non-standard app_root & ports, and HTTPS is enabled as its required for an AWS ASK):
@@ -118,7 +118,7 @@ https://LOCAL_IP/api/alexa-ha
 # Setup perimeter router/firewall to port forward to the host IP 
 (depends, out of scope)
 
-# Setup internal and external DNS to map to the correct hostname 
+# Setup internal and external DNS to map to the correct hostname/IP
 (depends, out of scope) 
 
 # Test from URL from the outside
