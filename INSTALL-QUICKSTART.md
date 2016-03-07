@@ -30,12 +30,12 @@ cd ~
 
 #### Install necessary node packages and dependencies under the 'alexa' user
 ```
-npm install alexa-app alexa-app-server alexa-utterances request pm2
+npm install alexa-app alexa-app-server request
 ```
 
 #### Patch alexa-utterances module (a temporary fix for ASK custom slot support!)
 ```
-cd ~/node_modules/alexa-utterances/
+cd ~/node_modules/alexa-app/node_modules/alexa-utterances/
 wget https://github.com/unityfire/alexa-ha/files/155821/alexa-utterances_custom_slot_support.patch.txt
 patch -p1 < alexa-utterances_custom_slot_support.patch.txt
 ```
