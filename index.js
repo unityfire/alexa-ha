@@ -339,7 +339,7 @@ app.intent('GetState', {
         var HA_unit = helper.getUnit(metricName);
     }
     else {
-        response.say('I cannot get the devices state');
+        response.say('I cannot get that devices state');
         response.send();
         return;
     }
@@ -377,7 +377,7 @@ app.intent('GetMode', {
         var HA_item = helper.getItem('mode', modeType);
         
         if (!HA_item) {
-            response.say('I cannot get that mode');
+            response.say('I could not get the ' + modeType + ' mode');
             response.send();
             return;
         }
