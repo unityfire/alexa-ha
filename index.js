@@ -116,7 +116,7 @@ app.intent('Switch', {
             }
         });
     } else {
-        response.say('I cannot currently control your ' + location + ' ' + itemName);
+        response.say('I cannot currently switch your ' + location + ' ' + itemName);
         response.send();
     }
     return false;
@@ -356,7 +356,7 @@ app.intent('GetState', {
         });
     }
     else {
-        response.say('I could not determine how to get the ' + metricName + ' in the ' + location);
+        response.say('I cannot currently get the ' + metricName + ' in the ' + location);
         response.send();
     }
     return false;
