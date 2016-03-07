@@ -172,7 +172,7 @@ app.intent('SetColor', {
         });
     }
     else {
-        response.say('I cannot currently set your ' + location + ' lights to ' + color);
+        response.say('I cannot currently set your ' + location + ' lights color to ' + color);
         response.send();
     }
     return false;
@@ -221,7 +221,7 @@ app.intent('SetLevel', {
             }
             // Unidentified item
             else {
-                response.say('I cannot dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
+                response.say('I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.send();
             }
         });
@@ -275,7 +275,7 @@ app.intent('SetTemp', {
             }
             // Unidentified item
             else {
-                response.say('I cannot set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
+                response.say('I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
                 response.send();
             }
         });
@@ -315,7 +315,7 @@ app.intent('SetMode', {
         response.card(appName, 'I have changed your ' + modeType + ' mode to ' + modeName + '.');
     }
     else {
-        response.say('I cannot currently set your ' + modeType + ' mode to ' + modeName);
+        response.say('I could currently set your ' + modeType + ' mode to ' + modeName);
         response.send();
     }
 });
