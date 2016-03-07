@@ -87,6 +87,15 @@
       ]
     },
     {
+      "intent": "GetMode",
+      "slots": [
+        {
+          "name": "ModeType",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
       "intent": "VoiceCMD",
       "slots": [
         {
