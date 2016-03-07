@@ -4,7 +4,7 @@ var config = require('./config');
 // Get itemName from itemType & location
 function getItem(itemType, location) {
     //Handle variances of itemType for config value lookup
-    if (itemType == 'lighting' || itemType == 'light') {
+    if (itemType === 'lighting' || itemType === 'light') {
         //console.log('getItem itemType modified:' + itemType);
         itemType = 'lights';
     }
@@ -16,7 +16,7 @@ function getItem(itemType, location) {
         location = location.replace(' room','');
     }
 
-    for(key in config.item) {
+    for(var key in config.item) {
         console.log('getItem key:' + key);
         if(config.item.hasOwnProperty(itemType)) {
             //console.log('getItem val:' + config.item[itemType][location]);
@@ -35,7 +35,7 @@ function getMetric(metricName, location) {
         location = location.replace(' room','');
     }
 
-    for(key in config.metric) {
+    for(var key in config.metric) {
         if(config.metric.hasOwnProperty(metricName)) {
             //console.log('getMetric val:' + config.metric[metricName][location]);
             return config.metric[metricName][location];
@@ -46,7 +46,7 @@ function getMetric(metricName, location) {
 
 // Get unit from metricName
 function getUnit(metricName) {
-    for(key in config.unit) {
+    for(var key in config.unit) {
         if(config.unit.hasOwnProperty(metricName)) {
             return config.unit[metricName];
         }
@@ -56,7 +56,7 @@ function getUnit(metricName) {
 
 // Get HSB value from colorName
 function getColor(colorName) {
-    for(key in config.color) {
+    for(var key in config.color) {
         if(config.color.hasOwnProperty(colorName)) {
             return config.color[colorName];
         }
@@ -66,10 +66,20 @@ function getColor(colorName) {
 
 // Get itemName from modeType & modeName
 function getMode(modeType,modeName) {
-    for(key in config.mode) {
+    for(var key in config.mode) {
         if(config.mode.hasOwnProperty(modeType)) {
             //console.log('getMode val:' + config.mode[modeType][modeName]);
             return config.mode[modeType][modeName];
+        }
+    }
+    return false;
+}
+
+// Get modeName from modeType & modeId
+function getModeName(modeType,modeId) {    
+    for(var key in config.mode[modeType]) {
+        if (config.mode[modeType][key] === modeId) {
+          return key;
         }
     }
     return false;
@@ -81,3 +91,4 @@ module.exports.getMetric = getMetric;
 module.exports.getUnit = getUnit;
 module.exports.getColor = getColor;
 module.exports.getMode = getMode;
+module.exports.getModeName = getModeName;
