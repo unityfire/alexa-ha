@@ -181,54 +181,64 @@ config.color = {
 // Configure ASK Intent utterances using Alexa-App - reference:
 //  https://www.npmjs.com/package/alexa-app#schema-and-utterances for syntax
 config.utterances = {
-    // Switch devices ON/OFF
+    // Switch devices ON/OFF in a particular room
     'Switch': [
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {in the |} {-|Location}",
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
         "{to |} {turn|switch|flip} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action}",
-        "{to |} {turn|switch|flip} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action} {in the |} {-|Location}"
-        
+        "{to |} {turn|switch|flip} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action} {in the |} {-|Location}",
+        "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}"
     ],
-    // Set HSB color values for lights
+    // Set HSB color values for lights in a particular room
     'SetColor': [
-        "{to |} {set|change|switch} {the|my |} {light|lights} color {to |} {-|Color} {in the |} {-|Location} ",
-        "{to |} {set|change|switch} {the|my |} {light|lights} color in the {-|Location} {to |} {-|Color}",
-        "{to |} {set|change|switch} {the|my |} {-|Location} {light|lights} color {to |} {-|Color}",
-        "color {the|my |} {light|lights} in the {-|Location} {to |} {-|Color}",
-        "color {the|my |} {-|Location} {light|lights} {to |} {-|Color}"
+        "{to |} {set|change|switch} {the|my |} {-|Location} {light|lights|lighting} color {to |} {-|Color}",
+        "{to |} {set|change|switch} {the|my |} {light|lights|lighting} color in the {-|Location} {to |} {-|Color}",
+        "color {the|my |} {light|lights|lighting} in the {-|Location} {to |} {-|Color}",
+        "color {the|my |} {-|Location} {light|lights} {to |} {-|Color}",
+        "make {the|my |} {-|Location} {light|lights} {-|Color}"
     ],
-    // Dim lights 
+    // Dim lights in a particular room
     'SetLevel': [
-        "{to |} {dim|turn down|turn up|soften} {the|my |} {light|lights|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} percent",
-        "{to |} {dim|turn down|turn up|soften} {the|my |} {-|Location} {light|lights|ItemName} to {0-100 by 5|Percent} percent"
-        
+        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {light|lights|lighting|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
+        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}"
     ],
-    // Set target thermostat target temperatures
+    // Set target temperature for house HVAC
     'SetTemp': [
-        "{to |} {set|change} {the|my |} {-|Location} {thermostat|temperature} to {60-80|Degree} {degrees |}",
-        "{to |} {set|change} {the|my |} {-|Location} {thermostat|temperature} to {60-80|Degree} {degrees |}"
+        "{to |} {set|change|adjust} {the|my |} {-|Location} {thermostat|temperature} to {60-80|Degree} {degrees |}",
+        "{to |} {set|change|adjust} {the|my |} {thermostat|temperature} {in the|in my |} {-|Location} to {60-80|Degree} {degrees |}"
     ],
     // Set house/lighting/security/etc scenes
     'SetMode': [
         "{to |} {set|change|switch} {the|my |} {house|ModeType} mode to {off|work|dinner|party|bed|away|panic|relax|gaming|theatre|shower|wake up|TV|ModeName}",
         "{to |} {set|change|switch} {the|my |} {lighting|ModeType} mode to {all off|all on|focus|energize|relax|party|night light|bed time|love shack|lava|ModeName}",
-        "{to |} {set|change|switch} {the|my |} {security|ModeType} mode to {off|sleep|home|away|ModeName}"
+        "{to |} {set|change|switch} {the|my |} {security|ModeType} mode to {off|sleep|home|away|ModeName}",
+        "{to |} {set|change|switch} {the|my |} {house|ModeType} to {off|work|dinner|party|bed|away|panic|relax|gaming|theatre|shower|wake up|TV|ModeName} mode",
+        "{to |} {set|change|switch} {the|my |} {lighting|ModeType} to {all off|all on|focus|energize|relax|party|night light|bed time|love shack|lava|ModeName} mode",
+        "{to |} {set|change|switch} {the|my |} {security|ModeType} to {off|sleep|home|away|ModeName} mode"
     ],
     // Get current item state values
     'GetState': [
-        "{to |} {get|check|whats} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
-        "{to |} {get|check|whats} {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}"
+        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
+        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}",
+        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
+        "whats {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}"
+
+    ],
+    // Get current house/lighting/security/etc scene
+    'GetMode': [
+        "{to |} {get|check} {the|my |} {house|lighting|security|ModeType} mode {set to |}",
+        "whats {the|my |} {house|lighting|security|ModeType} mode {set to |}"
     ],
     // Execute 'raw' voice commands, request/response handled entirely by custom HA server rules
     'VoiceCMD': [
         "{lets party|Input}",
         "{call my bank|call my phone|call work|Input}",
         "{status update|Input}",
-        "{for|give me |} {a |}{status update|Input}",
-        "{whats the|hows the| how is the |}{weather like|Input}",
-        "{say|} {a |} {quote|Input}",
-        "{its|it is |} {cold in here|Input}",
-        "{its|it is |} {hot in here|Input}"
+        "{for a |}{status update|Input}",
+        "{whats the |}{weather like|Input}",
+        "{say a |} {quote|Input}",
+        "{its} {cold in here|Input}",
+        "{its} {hot in here|Input}"
     ],
     // Research something arbitrary via Wolfram API call
     'Research': [
