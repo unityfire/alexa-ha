@@ -86,6 +86,7 @@ app.intent('Switch', {
     }
     else {
         response.say('I cannot currently control that');
+        response.send();
         return;
     }
     
@@ -104,7 +105,6 @@ app.intent('Switch', {
             // Set the new state for the item
             else if (state !== action) {
                 HA.setState(HA_item, action);
-                console.log ('Switching ' + action + ' your ' + location + ' ' + itemName);
                 response.say('Switching ' + action + ' your ' + location + ' ' + itemName);
                 response.card(appName,'I have switched ' + action + ' your ' + location + ' ' + itemName + '.');
                 response.send();
@@ -115,7 +115,10 @@ app.intent('Switch', {
                 response.send();
             }
         });
-    }  
+    } else {
+        response.say('I cannot currently control your ' + location + ' ' + itemName);
+        response.send();
+    }
     return false;
 });
 
@@ -139,6 +142,7 @@ app.intent('SetColor', {
     }
     else {
         response.say('I cannot currently set that color');
+        response.send();
         return;
     }
     
@@ -150,7 +154,6 @@ app.intent('SetColor', {
             }
             // Check if the current color and new color match
             if (state === HSBColor) {
-                console.log ('Your ' + location + ' lights color is already ' + color);
                 response.say('Your ' + location + ' lights color is already ' + color);
                 response.send();
             }
@@ -167,6 +170,10 @@ app.intent('SetColor', {
                 response.send();
             }
         });
+    }
+    else {
+        response.say('I cannot currently set your ' + location + ' lights to ' + color);
+        response.send();
     }
     return false;
 });
@@ -190,6 +197,7 @@ app.intent('SetLevel', {
     }
     else {
         response.say('I cannot currently dim that device');
+        response.send();
         return;
     }
     
@@ -201,7 +209,6 @@ app.intent('SetLevel', {
             }
             // Check if the current dimmer level and new level match
             if (state === percent) {
-                console.log ('Your ' + location + ' lights color are already at ' + percent + ' percent');
                 response.say('Your ' + location + ' lights color are already at ' + percent + ' percent');
                 response.send();
             }
@@ -214,10 +221,14 @@ app.intent('SetLevel', {
             }
             // Unidentified item
             else {
-                response.say('I cannot dim your ' + location + ' ' + itemName + ' to ' + percent + 'percent');
+                response.say('I cannot dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.send();
             }
         });
+    }
+    else {
+        response.say('I cannot currently set your ' + location + ' lights to ' + percent + ' percent');
+        response.send();
     }
     return false;
 });
@@ -240,6 +251,7 @@ app.intent('SetTemp', {
     }
     else {
         response.say('I cannot currently set that temperature');
+        response.send();
         return;
     }
     
@@ -251,8 +263,7 @@ app.intent('SetTemp', {
             }
             // Check if the current target temp and new target temp match
             if (state === degree) {
-                console.log ('Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
-                response.say('Your ' + location + ' targettemperature is already set to ' + degree + ' degrees');
+                response.say('Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
                 response.send();
             }
             // Set the new state for the item
@@ -268,6 +279,10 @@ app.intent('SetTemp', {
                 response.send();
             }
         });
+    }
+    else {
+        response.say('I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees');
+        response.send();
     }
     return false;
 });
@@ -290,6 +305,7 @@ app.intent('SetMode', {
     }
     else {
         response.say('I cannot currently set that mode');
+        response.send();
         return;
     }
 
@@ -300,6 +316,7 @@ app.intent('SetMode', {
     }
     else {
         response.say('I cannot set your ' + modeType + ' mode to ' + modeName);
+        response.send();
     }
 });
 
@@ -323,6 +340,7 @@ app.intent('GetState', {
     }
     else {
         response.say('I cannot currently determine how to get that value');
+        response.send();
         return;
     }
 
@@ -340,6 +358,45 @@ app.intent('GetState', {
     else {
         response.say('I could not determine how to get the ' + metricName + ' in the ' + location);
         response.send();
+    }
+    return false;
+});
+
+// Set modes (house/lighting/security scenes)
+app.intent('GetMode', {
+    "slots":{"ModeType":"LITERAL"}
+    ,"utterances":config.utterances.GetMode
+},function(request,response) {
+    var modeType = request.slot('ModeType');
+
+    // DEBUG response
+    //console.log('RawResponseData: ',request.data);
+    console.log('GetMode Intent hit!  Slots are:' + modeType);
+
+    if (modeType) {
+        var HA_item = helper.getItem('mode', modeType);
+        
+        if (!HA_item) {
+            response.say('I cannot currently get that mode');
+            response.send();
+            return;
+        }
+        
+        HA.getState(HA_item, function (err, modeId) {
+            if (err) {
+                console.log('HA getState failed:  ' + err.message);
+            } else if (modeId) {
+                var modeName = helper.getModeName(modeType,modeId);
+                response.say('Your ' + modeType + ' mode is set to ' + modeName);
+                response.card(appName, 'Your ' + modeType + ' mode is set to ' + modeName + '.');
+                response.send();
+            }
+        });
+    }
+    else {
+        response.say('I cannot currently get that mode');
+        response.send();
+        return;
     }
     return false;
 });
