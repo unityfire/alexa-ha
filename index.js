@@ -85,7 +85,7 @@ app.intent('Switch', {
         var HA_item = helper.getItem(itemName, location);
     }
     else {
-        response.say('I cannot currently control that');
+        response.say('I cannot switch that');
         response.send();
         return;
     }
@@ -141,7 +141,7 @@ app.intent('SetColor', {
         var HSBColor = helper.getColor(color);
     }
     else {
-        response.say('I cannot currently set that color');
+        response.say('I cannot set that color');
         response.send();
         return;
     }
@@ -196,7 +196,7 @@ app.intent('SetLevel', {
         var HA_item = helper.getItem(itemName,location);
     }
     else {
-        response.say('I cannot currently dim that device');
+        response.say('I cannot dim that device');
         response.send();
         return;
     }
@@ -250,7 +250,7 @@ app.intent('SetTemp', {
         var HA_item = helper.getItem('thermostat',location);
     }
     else {
-        response.say('I cannot currently set that temperature');
+        response.say('I cannot set that temperature');
         response.send();
         return;
     }
@@ -304,7 +304,7 @@ app.intent('SetMode', {
         var HA_item = helper.getItem('mode', modeType);
     }
     else {
-        response.say('I cannot currently set that mode');
+        response.say('I cannot set that mode');
         response.send();
         return;
     }
@@ -315,7 +315,7 @@ app.intent('SetMode', {
         response.card(appName, 'I have changed your ' + modeType + ' mode to ' + modeName + '.');
     }
     else {
-        response.say('I cannot set your ' + modeType + ' mode to ' + modeName);
+        response.say('I cannot currently set your ' + modeType + ' mode to ' + modeName);
         response.send();
     }
 });
@@ -339,7 +339,7 @@ app.intent('GetState', {
         var HA_unit = helper.getUnit(metricName);
     }
     else {
-        response.say('I cannot currently determine how to get that value');
+        response.say('I cannot get the devices state');
         response.send();
         return;
     }
@@ -377,7 +377,7 @@ app.intent('GetMode', {
         var HA_item = helper.getItem('mode', modeType);
         
         if (!HA_item) {
-            response.say('I cannot currently get that mode');
+            response.say('I cannot get that mode');
             response.send();
             return;
         }
@@ -394,7 +394,7 @@ app.intent('GetMode', {
         });
     }
     else {
-        response.say('I cannot currently get that mode');
+        response.say('I cannot currently get the ' + modeType + ' mode');
         response.send();
         return;
     }
