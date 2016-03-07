@@ -160,6 +160,24 @@ SetColor	to change {Location} lights color to {Color}
 SetColor	 change {Location} lights color to {Color}
 SetColor	to switch {Location} lights color to {Color}
 SetColor	 switch {Location} lights color to {Color}
+SetColor	to set the {Location} lighting color to {Color}
+SetColor	 set the {Location} lighting color to {Color}
+SetColor	to change the {Location} lighting color to {Color}
+SetColor	 change the {Location} lighting color to {Color}
+SetColor	to switch the {Location} lighting color to {Color}
+SetColor	 switch the {Location} lighting color to {Color}
+SetColor	to set my {Location} lighting color to {Color}
+SetColor	 set my {Location} lighting color to {Color}
+SetColor	to change my {Location} lighting color to {Color}
+SetColor	 change my {Location} lighting color to {Color}
+SetColor	to switch my {Location} lighting color to {Color}
+SetColor	 switch my {Location} lighting color to {Color}
+SetColor	to set {Location} lighting color to {Color}
+SetColor	 set {Location} lighting color to {Color}
+SetColor	to change {Location} lighting color to {Color}
+SetColor	 change {Location} lighting color to {Color}
+SetColor	to switch {Location} lighting color to {Color}
+SetColor	 switch {Location} lighting color to {Color}
 SetColor	to set the {Location} light color {Color}
 SetColor	 set the {Location} light color {Color}
 SetColor	to change the {Location} light color {Color}
@@ -196,6 +214,24 @@ SetColor	to change {Location} lights color {Color}
 SetColor	 change {Location} lights color {Color}
 SetColor	to switch {Location} lights color {Color}
 SetColor	 switch {Location} lights color {Color}
+SetColor	to set the {Location} lighting color {Color}
+SetColor	 set the {Location} lighting color {Color}
+SetColor	to change the {Location} lighting color {Color}
+SetColor	 change the {Location} lighting color {Color}
+SetColor	to switch the {Location} lighting color {Color}
+SetColor	 switch the {Location} lighting color {Color}
+SetColor	to set my {Location} lighting color {Color}
+SetColor	 set my {Location} lighting color {Color}
+SetColor	to change my {Location} lighting color {Color}
+SetColor	 change my {Location} lighting color {Color}
+SetColor	to switch my {Location} lighting color {Color}
+SetColor	 switch my {Location} lighting color {Color}
+SetColor	to set {Location} lighting color {Color}
+SetColor	 set {Location} lighting color {Color}
+SetColor	to change {Location} lighting color {Color}
+SetColor	 change {Location} lighting color {Color}
+SetColor	to switch {Location} lighting color {Color}
+SetColor	 switch {Location} lighting color {Color}
 SetColor	to set the light color in the {Location} to {Color}
 SetColor	 set the light color in the {Location} to {Color}
 SetColor	to change the light color in the {Location} to {Color}
@@ -232,6 +268,24 @@ SetColor	to change lights color in the {Location} to {Color}
 SetColor	 change lights color in the {Location} to {Color}
 SetColor	to switch lights color in the {Location} to {Color}
 SetColor	 switch lights color in the {Location} to {Color}
+SetColor	to set the lighting color in the {Location} to {Color}
+SetColor	 set the lighting color in the {Location} to {Color}
+SetColor	to change the lighting color in the {Location} to {Color}
+SetColor	 change the lighting color in the {Location} to {Color}
+SetColor	to switch the lighting color in the {Location} to {Color}
+SetColor	 switch the lighting color in the {Location} to {Color}
+SetColor	to set my lighting color in the {Location} to {Color}
+SetColor	 set my lighting color in the {Location} to {Color}
+SetColor	to change my lighting color in the {Location} to {Color}
+SetColor	 change my lighting color in the {Location} to {Color}
+SetColor	to switch my lighting color in the {Location} to {Color}
+SetColor	 switch my lighting color in the {Location} to {Color}
+SetColor	to set lighting color in the {Location} to {Color}
+SetColor	 set lighting color in the {Location} to {Color}
+SetColor	to change lighting color in the {Location} to {Color}
+SetColor	 change lighting color in the {Location} to {Color}
+SetColor	to switch lighting color in the {Location} to {Color}
+SetColor	 switch lighting color in the {Location} to {Color}
 SetColor	to set the light color in the {Location} {Color}
 SetColor	 set the light color in the {Location} {Color}
 SetColor	to change the light color in the {Location} {Color}
@@ -268,18 +322,42 @@ SetColor	to change lights color in the {Location} {Color}
 SetColor	 change lights color in the {Location} {Color}
 SetColor	to switch lights color in the {Location} {Color}
 SetColor	 switch lights color in the {Location} {Color}
+SetColor	to set the lighting color in the {Location} {Color}
+SetColor	 set the lighting color in the {Location} {Color}
+SetColor	to change the lighting color in the {Location} {Color}
+SetColor	 change the lighting color in the {Location} {Color}
+SetColor	to switch the lighting color in the {Location} {Color}
+SetColor	 switch the lighting color in the {Location} {Color}
+SetColor	to set my lighting color in the {Location} {Color}
+SetColor	 set my lighting color in the {Location} {Color}
+SetColor	to change my lighting color in the {Location} {Color}
+SetColor	 change my lighting color in the {Location} {Color}
+SetColor	to switch my lighting color in the {Location} {Color}
+SetColor	 switch my lighting color in the {Location} {Color}
+SetColor	to set lighting color in the {Location} {Color}
+SetColor	 set lighting color in the {Location} {Color}
+SetColor	to change lighting color in the {Location} {Color}
+SetColor	 change lighting color in the {Location} {Color}
+SetColor	to switch lighting color in the {Location} {Color}
+SetColor	 switch lighting color in the {Location} {Color}
 SetColor	color the light in the {Location} to {Color}
 SetColor	color my light in the {Location} to {Color}
 SetColor	color light in the {Location} to {Color}
 SetColor	color the lights in the {Location} to {Color}
 SetColor	color my lights in the {Location} to {Color}
 SetColor	color lights in the {Location} to {Color}
+SetColor	color the lighting in the {Location} to {Color}
+SetColor	color my lighting in the {Location} to {Color}
+SetColor	color lighting in the {Location} to {Color}
 SetColor	color the light in the {Location} {Color}
 SetColor	color my light in the {Location} {Color}
 SetColor	color light in the {Location} {Color}
 SetColor	color the lights in the {Location} {Color}
 SetColor	color my lights in the {Location} {Color}
 SetColor	color lights in the {Location} {Color}
+SetColor	color the lighting in the {Location} {Color}
+SetColor	color my lighting in the {Location} {Color}
+SetColor	color lighting in the {Location} {Color}
 SetColor	color the {Location} light to {Color}
 SetColor	color my {Location} light to {Color}
 SetColor	color {Location} light to {Color}
@@ -292,6 +370,12 @@ SetColor	color {Location} light {Color}
 SetColor	color the {Location} lights {Color}
 SetColor	color my {Location} lights {Color}
 SetColor	color {Location} lights {Color}
+SetColor	make the {Location} light {Color}
+SetColor	make my {Location} light {Color}
+SetColor	make {Location} light {Color}
+SetColor	make the {Location} lights {Color}
+SetColor	make my {Location} lights {Color}
+SetColor	make {Location} lights {Color}
 SetLevel	to dim the {light|ItemName} in the {Location} to {zero|Percent} percent 
 SetLevel	 dim the {lights|ItemName} in the {Location} to {five|Percent} percent 
 SetLevel	to turn down the {lighting|ItemName} in the {Location} to {ten|Percent} percent 
@@ -472,126 +556,6 @@ SetLevel	to soften {Location} {lighting|ItemName} to {forty|Percent}
 SetLevel	 soften {Location} {light|ItemName} to {forty five|Percent} 
 SetLevel	to adjust {Location} {lights|ItemName} to {fifty|Percent} 
 SetLevel	 adjust {Location} {lighting|ItemName} to {fifty five|Percent} 
-SetLevel	to dim the {light|ItemName} in the {Location} to {sixty|Percent} percent 
-SetLevel	 dim the {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
-SetLevel	to turn down the {lighting|ItemName} in the {Location} to {seventy|Percent} percent 
-SetLevel	 turn down the {light|ItemName} in the {Location} to {seventy five|Percent} percent 
-SetLevel	to turn up the {lights|ItemName} in the {Location} to {eighty|Percent} percent 
-SetLevel	 turn up the {lighting|ItemName} in the {Location} to {eighty five|Percent} percent 
-SetLevel	to soften the {light|ItemName} in the {Location} to {ninety|Percent} percent 
-SetLevel	 soften the {lights|ItemName} in the {Location} to {ninety five|Percent} percent 
-SetLevel	to adjust the {lighting|ItemName} in the {Location} to {one hundred|Percent} percent 
-SetLevel	 adjust the {light|ItemName} in the {Location} to {zero|Percent} percent 
-SetLevel	to dim my {lights|ItemName} in the {Location} to {five|Percent} percent 
-SetLevel	 dim my {lighting|ItemName} in the {Location} to {ten|Percent} percent 
-SetLevel	to turn down my {light|ItemName} in the {Location} to {fifteen|Percent} percent 
-SetLevel	 turn down my {lights|ItemName} in the {Location} to {twenty|Percent} percent 
-SetLevel	to turn up my {lighting|ItemName} in the {Location} to {twenty five|Percent} percent 
-SetLevel	 turn up my {light|ItemName} in the {Location} to {thirty|Percent} percent 
-SetLevel	to soften my {lights|ItemName} in the {Location} to {thirty five|Percent} percent 
-SetLevel	 soften my {lighting|ItemName} in the {Location} to {forty|Percent} percent 
-SetLevel	to adjust my {light|ItemName} in the {Location} to {forty five|Percent} percent 
-SetLevel	 adjust my {lights|ItemName} in the {Location} to {fifty|Percent} percent 
-SetLevel	to dim {lighting|ItemName} in the {Location} to {fifty five|Percent} percent 
-SetLevel	 dim {light|ItemName} in the {Location} to {sixty|Percent} percent 
-SetLevel	to turn down {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
-SetLevel	 turn down {lighting|ItemName} in the {Location} to {seventy|Percent} percent 
-SetLevel	to turn up {light|ItemName} in the {Location} to {seventy five|Percent} percent 
-SetLevel	 turn up {lights|ItemName} in the {Location} to {eighty|Percent} percent 
-SetLevel	to soften {lighting|ItemName} in the {Location} to {eighty five|Percent} percent 
-SetLevel	 soften {light|ItemName} in the {Location} to {ninety|Percent} percent 
-SetLevel	to adjust {lights|ItemName} in the {Location} to {ninety five|Percent} percent 
-SetLevel	 adjust {lighting|ItemName} in the {Location} to {one hundred|Percent} percent 
-SetLevel	to dim the {light|ItemName} {Location} to {zero|Percent} percent 
-SetLevel	 dim the {lights|ItemName} {Location} to {five|Percent} percent 
-SetLevel	to turn down the {lighting|ItemName} {Location} to {ten|Percent} percent 
-SetLevel	 turn down the {light|ItemName} {Location} to {fifteen|Percent} percent 
-SetLevel	to turn up the {lights|ItemName} {Location} to {twenty|Percent} percent 
-SetLevel	 turn up the {lighting|ItemName} {Location} to {twenty five|Percent} percent 
-SetLevel	to soften the {light|ItemName} {Location} to {thirty|Percent} percent 
-SetLevel	 soften the {lights|ItemName} {Location} to {thirty five|Percent} percent 
-SetLevel	to adjust the {lighting|ItemName} {Location} to {forty|Percent} percent 
-SetLevel	 adjust the {light|ItemName} {Location} to {forty five|Percent} percent 
-SetLevel	to dim my {lights|ItemName} {Location} to {fifty|Percent} percent 
-SetLevel	 dim my {lighting|ItemName} {Location} to {fifty five|Percent} percent 
-SetLevel	to turn down my {light|ItemName} {Location} to {sixty|Percent} percent 
-SetLevel	 turn down my {lights|ItemName} {Location} to {sixty five|Percent} percent 
-SetLevel	to turn up my {lighting|ItemName} {Location} to {seventy|Percent} percent 
-SetLevel	 turn up my {light|ItemName} {Location} to {seventy five|Percent} percent 
-SetLevel	to soften my {lights|ItemName} {Location} to {eighty|Percent} percent 
-SetLevel	 soften my {lighting|ItemName} {Location} to {eighty five|Percent} percent 
-SetLevel	to adjust my {light|ItemName} {Location} to {ninety|Percent} percent 
-SetLevel	 adjust my {lights|ItemName} {Location} to {ninety five|Percent} percent 
-SetLevel	to dim {lighting|ItemName} {Location} to {one hundred|Percent} percent 
-SetLevel	 dim {light|ItemName} {Location} to {zero|Percent} percent 
-SetLevel	to turn down {lights|ItemName} {Location} to {five|Percent} percent 
-SetLevel	 turn down {lighting|ItemName} {Location} to {ten|Percent} percent 
-SetLevel	to turn up {light|ItemName} {Location} to {fifteen|Percent} percent 
-SetLevel	 turn up {lights|ItemName} {Location} to {twenty|Percent} percent 
-SetLevel	to soften {lighting|ItemName} {Location} to {twenty five|Percent} percent 
-SetLevel	 soften {light|ItemName} {Location} to {thirty|Percent} percent 
-SetLevel	to adjust {lights|ItemName} {Location} to {thirty five|Percent} percent 
-SetLevel	 adjust {lighting|ItemName} {Location} to {forty|Percent} percent 
-SetLevel	to dim the {light|ItemName} in the {Location} to {forty five|Percent} 
-SetLevel	 dim the {lights|ItemName} in the {Location} to {fifty|Percent} 
-SetLevel	to turn down the {lighting|ItemName} in the {Location} to {fifty five|Percent} 
-SetLevel	 turn down the {light|ItemName} in the {Location} to {sixty|Percent} 
-SetLevel	to turn up the {lights|ItemName} in the {Location} to {sixty five|Percent} 
-SetLevel	 turn up the {lighting|ItemName} in the {Location} to {seventy|Percent} 
-SetLevel	to soften the {light|ItemName} in the {Location} to {seventy five|Percent} 
-SetLevel	 soften the {lights|ItemName} in the {Location} to {eighty|Percent} 
-SetLevel	to adjust the {lighting|ItemName} in the {Location} to {eighty five|Percent} 
-SetLevel	 adjust the {light|ItemName} in the {Location} to {ninety|Percent} 
-SetLevel	to dim my {lights|ItemName} in the {Location} to {ninety five|Percent} 
-SetLevel	 dim my {lighting|ItemName} in the {Location} to {one hundred|Percent} 
-SetLevel	to turn down my {light|ItemName} in the {Location} to {zero|Percent} 
-SetLevel	 turn down my {lights|ItemName} in the {Location} to {five|Percent} 
-SetLevel	to turn up my {lighting|ItemName} in the {Location} to {ten|Percent} 
-SetLevel	 turn up my {light|ItemName} in the {Location} to {fifteen|Percent} 
-SetLevel	to soften my {lights|ItemName} in the {Location} to {twenty|Percent} 
-SetLevel	 soften my {lighting|ItemName} in the {Location} to {twenty five|Percent} 
-SetLevel	to adjust my {light|ItemName} in the {Location} to {thirty|Percent} 
-SetLevel	 adjust my {lights|ItemName} in the {Location} to {thirty five|Percent} 
-SetLevel	to dim {lighting|ItemName} in the {Location} to {forty|Percent} 
-SetLevel	 dim {light|ItemName} in the {Location} to {forty five|Percent} 
-SetLevel	to turn down {lights|ItemName} in the {Location} to {fifty|Percent} 
-SetLevel	 turn down {lighting|ItemName} in the {Location} to {fifty five|Percent} 
-SetLevel	to turn up {light|ItemName} in the {Location} to {sixty|Percent} 
-SetLevel	 turn up {lights|ItemName} in the {Location} to {sixty five|Percent} 
-SetLevel	to soften {lighting|ItemName} in the {Location} to {seventy|Percent} 
-SetLevel	 soften {light|ItemName} in the {Location} to {seventy five|Percent} 
-SetLevel	to adjust {lights|ItemName} in the {Location} to {eighty|Percent} 
-SetLevel	 adjust {lighting|ItemName} in the {Location} to {eighty five|Percent} 
-SetLevel	to dim the {light|ItemName} {Location} to {ninety|Percent} 
-SetLevel	 dim the {lights|ItemName} {Location} to {ninety five|Percent} 
-SetLevel	to turn down the {lighting|ItemName} {Location} to {one hundred|Percent} 
-SetLevel	 turn down the {light|ItemName} {Location} to {zero|Percent} 
-SetLevel	to turn up the {lights|ItemName} {Location} to {five|Percent} 
-SetLevel	 turn up the {lighting|ItemName} {Location} to {ten|Percent} 
-SetLevel	to soften the {light|ItemName} {Location} to {fifteen|Percent} 
-SetLevel	 soften the {lights|ItemName} {Location} to {twenty|Percent} 
-SetLevel	to adjust the {lighting|ItemName} {Location} to {twenty five|Percent} 
-SetLevel	 adjust the {light|ItemName} {Location} to {thirty|Percent} 
-SetLevel	to dim my {lights|ItemName} {Location} to {thirty five|Percent} 
-SetLevel	 dim my {lighting|ItemName} {Location} to {forty|Percent} 
-SetLevel	to turn down my {light|ItemName} {Location} to {forty five|Percent} 
-SetLevel	 turn down my {lights|ItemName} {Location} to {fifty|Percent} 
-SetLevel	to turn up my {lighting|ItemName} {Location} to {fifty five|Percent} 
-SetLevel	 turn up my {light|ItemName} {Location} to {sixty|Percent} 
-SetLevel	to soften my {lights|ItemName} {Location} to {sixty five|Percent} 
-SetLevel	 soften my {lighting|ItemName} {Location} to {seventy|Percent} 
-SetLevel	to adjust my {light|ItemName} {Location} to {seventy five|Percent} 
-SetLevel	 adjust my {lights|ItemName} {Location} to {eighty|Percent} 
-SetLevel	to dim {lighting|ItemName} {Location} to {eighty five|Percent} 
-SetLevel	 dim {light|ItemName} {Location} to {ninety|Percent} 
-SetLevel	to turn down {lights|ItemName} {Location} to {ninety five|Percent} 
-SetLevel	 turn down {lighting|ItemName} {Location} to {one hundred|Percent} 
-SetLevel	to turn up {light|ItemName} {Location} to {zero|Percent} 
-SetLevel	 turn up {lights|ItemName} {Location} to {five|Percent} 
-SetLevel	to soften {lighting|ItemName} {Location} to {ten|Percent} 
-SetLevel	 soften {light|ItemName} {Location} to {fifteen|Percent} 
-SetLevel	to adjust {lights|ItemName} {Location} to {twenty|Percent} 
-SetLevel	 adjust {lighting|ItemName} {Location} to {twenty five|Percent} 
 SetTemp	to set the {Location} thermostat to {sixty|Degree} degrees 
 SetTemp	 set the {Location} thermostat to {sixty one|Degree} degrees 
 SetTemp	to change the {Location} thermostat to {sixty two|Degree} degrees 
@@ -664,222 +628,222 @@ SetTemp	to change {Location} temperature to {sixty five|Degree}
 SetTemp	 change {Location} temperature to {sixty six|Degree} 
 SetTemp	to adjust {Location} temperature to {sixty seven|Degree} 
 SetTemp	 adjust {Location} temperature to {sixty eight|Degree} 
-SetTemp	to set the thermostat in the to {sixty nine|Degree} degrees 
-SetTemp	 set the thermostat in the to {seventy|Degree} degrees 
-SetTemp	to change the thermostat in the to {seventy one|Degree} degrees 
-SetTemp	 change the thermostat in the to {seventy two|Degree} degrees 
-SetTemp	to adjust the thermostat in the to {seventy three|Degree} degrees 
-SetTemp	 adjust the thermostat in the to {seventy four|Degree} degrees 
-SetTemp	to set my thermostat in the to {seventy five|Degree} degrees 
-SetTemp	 set my thermostat in the to {seventy six|Degree} degrees 
-SetTemp	to change my thermostat in the to {seventy seven|Degree} degrees 
-SetTemp	 change my thermostat in the to {seventy eight|Degree} degrees 
-SetTemp	to adjust my thermostat in the to {seventy nine|Degree} degrees 
-SetTemp	 adjust my thermostat in the to {eighty|Degree} degrees 
-SetTemp	to set thermostat in the to {sixty|Degree} degrees 
-SetTemp	 set thermostat in the to {sixty one|Degree} degrees 
-SetTemp	to change thermostat in the to {sixty two|Degree} degrees 
-SetTemp	 change thermostat in the to {sixty three|Degree} degrees 
-SetTemp	to adjust thermostat in the to {sixty four|Degree} degrees 
-SetTemp	 adjust thermostat in the to {sixty five|Degree} degrees 
-SetTemp	to set the temperature in the to {sixty six|Degree} degrees 
-SetTemp	 set the temperature in the to {sixty seven|Degree} degrees 
-SetTemp	to change the temperature in the to {sixty eight|Degree} degrees 
-SetTemp	 change the temperature in the to {sixty nine|Degree} degrees 
-SetTemp	to adjust the temperature in the to {seventy|Degree} degrees 
-SetTemp	 adjust the temperature in the to {seventy one|Degree} degrees 
-SetTemp	to set my temperature in the to {seventy two|Degree} degrees 
-SetTemp	 set my temperature in the to {seventy three|Degree} degrees 
-SetTemp	to change my temperature in the to {seventy four|Degree} degrees 
-SetTemp	 change my temperature in the to {seventy five|Degree} degrees 
-SetTemp	to adjust my temperature in the to {seventy six|Degree} degrees 
-SetTemp	 adjust my temperature in the to {seventy seven|Degree} degrees 
-SetTemp	to set temperature in the to {seventy eight|Degree} degrees 
-SetTemp	 set temperature in the to {seventy nine|Degree} degrees 
-SetTemp	to change temperature in the to {eighty|Degree} degrees 
-SetTemp	 change temperature in the to {sixty|Degree} degrees 
-SetTemp	to adjust temperature in the to {sixty one|Degree} degrees 
-SetTemp	 adjust temperature in the to {sixty two|Degree} degrees 
-SetTemp	to set the thermostat in my to {sixty three|Degree} degrees 
-SetTemp	 set the thermostat in my to {sixty four|Degree} degrees 
-SetTemp	to change the thermostat in my to {sixty five|Degree} degrees 
-SetTemp	 change the thermostat in my to {sixty six|Degree} degrees 
-SetTemp	to adjust the thermostat in my to {sixty seven|Degree} degrees 
-SetTemp	 adjust the thermostat in my to {sixty eight|Degree} degrees 
-SetTemp	to set my thermostat in my to {sixty nine|Degree} degrees 
-SetTemp	 set my thermostat in my to {seventy|Degree} degrees 
-SetTemp	to change my thermostat in my to {seventy one|Degree} degrees 
-SetTemp	 change my thermostat in my to {seventy two|Degree} degrees 
-SetTemp	to adjust my thermostat in my to {seventy three|Degree} degrees 
-SetTemp	 adjust my thermostat in my to {seventy four|Degree} degrees 
-SetTemp	to set thermostat in my to {seventy five|Degree} degrees 
-SetTemp	 set thermostat in my to {seventy six|Degree} degrees 
-SetTemp	to change thermostat in my to {seventy seven|Degree} degrees 
-SetTemp	 change thermostat in my to {seventy eight|Degree} degrees 
-SetTemp	to adjust thermostat in my to {seventy nine|Degree} degrees 
-SetTemp	 adjust thermostat in my to {eighty|Degree} degrees 
-SetTemp	to set the temperature in my to {sixty|Degree} degrees 
-SetTemp	 set the temperature in my to {sixty one|Degree} degrees 
-SetTemp	to change the temperature in my to {sixty two|Degree} degrees 
-SetTemp	 change the temperature in my to {sixty three|Degree} degrees 
-SetTemp	to adjust the temperature in my to {sixty four|Degree} degrees 
-SetTemp	 adjust the temperature in my to {sixty five|Degree} degrees 
-SetTemp	to set my temperature in my to {sixty six|Degree} degrees 
-SetTemp	 set my temperature in my to {sixty seven|Degree} degrees 
-SetTemp	to change my temperature in my to {sixty eight|Degree} degrees 
-SetTemp	 change my temperature in my to {sixty nine|Degree} degrees 
-SetTemp	to adjust my temperature in my to {seventy|Degree} degrees 
-SetTemp	 adjust my temperature in my to {seventy one|Degree} degrees 
-SetTemp	to set temperature in my to {seventy two|Degree} degrees 
-SetTemp	 set temperature in my to {seventy three|Degree} degrees 
-SetTemp	to change temperature in my to {seventy four|Degree} degrees 
-SetTemp	 change temperature in my to {seventy five|Degree} degrees 
-SetTemp	to adjust temperature in my to {seventy six|Degree} degrees 
-SetTemp	 adjust temperature in my to {seventy seven|Degree} degrees 
-SetTemp	to set the thermostat to {seventy eight|Degree} degrees 
-SetTemp	 set the thermostat to {seventy nine|Degree} degrees 
-SetTemp	to change the thermostat to {eighty|Degree} degrees 
-SetTemp	 change the thermostat to {sixty|Degree} degrees 
-SetTemp	to adjust the thermostat to {sixty one|Degree} degrees 
-SetTemp	 adjust the thermostat to {sixty two|Degree} degrees 
-SetTemp	to set my thermostat to {sixty three|Degree} degrees 
-SetTemp	 set my thermostat to {sixty four|Degree} degrees 
-SetTemp	to change my thermostat to {sixty five|Degree} degrees 
-SetTemp	 change my thermostat to {sixty six|Degree} degrees 
-SetTemp	to adjust my thermostat to {sixty seven|Degree} degrees 
-SetTemp	 adjust my thermostat to {sixty eight|Degree} degrees 
-SetTemp	to set thermostat to {sixty nine|Degree} degrees 
-SetTemp	 set thermostat to {seventy|Degree} degrees 
-SetTemp	to change thermostat to {seventy one|Degree} degrees 
-SetTemp	 change thermostat to {seventy two|Degree} degrees 
-SetTemp	to adjust thermostat to {seventy three|Degree} degrees 
-SetTemp	 adjust thermostat to {seventy four|Degree} degrees 
-SetTemp	to set the temperature to {seventy five|Degree} degrees 
-SetTemp	 set the temperature to {seventy six|Degree} degrees 
-SetTemp	to change the temperature to {seventy seven|Degree} degrees 
-SetTemp	 change the temperature to {seventy eight|Degree} degrees 
-SetTemp	to adjust the temperature to {seventy nine|Degree} degrees 
-SetTemp	 adjust the temperature to {eighty|Degree} degrees 
-SetTemp	to set my temperature to {sixty|Degree} degrees 
-SetTemp	 set my temperature to {sixty one|Degree} degrees 
-SetTemp	to change my temperature to {sixty two|Degree} degrees 
-SetTemp	 change my temperature to {sixty three|Degree} degrees 
-SetTemp	to adjust my temperature to {sixty four|Degree} degrees 
-SetTemp	 adjust my temperature to {sixty five|Degree} degrees 
-SetTemp	to set temperature to {sixty six|Degree} degrees 
-SetTemp	 set temperature to {sixty seven|Degree} degrees 
-SetTemp	to change temperature to {sixty eight|Degree} degrees 
-SetTemp	 change temperature to {sixty nine|Degree} degrees 
-SetTemp	to adjust temperature to {seventy|Degree} degrees 
-SetTemp	 adjust temperature to {seventy one|Degree} degrees 
-SetTemp	to set the thermostat in the to {seventy two|Degree} 
-SetTemp	 set the thermostat in the to {seventy three|Degree} 
-SetTemp	to change the thermostat in the to {seventy four|Degree} 
-SetTemp	 change the thermostat in the to {seventy five|Degree} 
-SetTemp	to adjust the thermostat in the to {seventy six|Degree} 
-SetTemp	 adjust the thermostat in the to {seventy seven|Degree} 
-SetTemp	to set my thermostat in the to {seventy eight|Degree} 
-SetTemp	 set my thermostat in the to {seventy nine|Degree} 
-SetTemp	to change my thermostat in the to {eighty|Degree} 
-SetTemp	 change my thermostat in the to {sixty|Degree} 
-SetTemp	to adjust my thermostat in the to {sixty one|Degree} 
-SetTemp	 adjust my thermostat in the to {sixty two|Degree} 
-SetTemp	to set thermostat in the to {sixty three|Degree} 
-SetTemp	 set thermostat in the to {sixty four|Degree} 
-SetTemp	to change thermostat in the to {sixty five|Degree} 
-SetTemp	 change thermostat in the to {sixty six|Degree} 
-SetTemp	to adjust thermostat in the to {sixty seven|Degree} 
-SetTemp	 adjust thermostat in the to {sixty eight|Degree} 
-SetTemp	to set the temperature in the to {sixty nine|Degree} 
-SetTemp	 set the temperature in the to {seventy|Degree} 
-SetTemp	to change the temperature in the to {seventy one|Degree} 
-SetTemp	 change the temperature in the to {seventy two|Degree} 
-SetTemp	to adjust the temperature in the to {seventy three|Degree} 
-SetTemp	 adjust the temperature in the to {seventy four|Degree} 
-SetTemp	to set my temperature in the to {seventy five|Degree} 
-SetTemp	 set my temperature in the to {seventy six|Degree} 
-SetTemp	to change my temperature in the to {seventy seven|Degree} 
-SetTemp	 change my temperature in the to {seventy eight|Degree} 
-SetTemp	to adjust my temperature in the to {seventy nine|Degree} 
-SetTemp	 adjust my temperature in the to {eighty|Degree} 
-SetTemp	to set temperature in the to {sixty|Degree} 
-SetTemp	 set temperature in the to {sixty one|Degree} 
-SetTemp	to change temperature in the to {sixty two|Degree} 
-SetTemp	 change temperature in the to {sixty three|Degree} 
-SetTemp	to adjust temperature in the to {sixty four|Degree} 
-SetTemp	 adjust temperature in the to {sixty five|Degree} 
-SetTemp	to set the thermostat in my to {sixty six|Degree} 
-SetTemp	 set the thermostat in my to {sixty seven|Degree} 
-SetTemp	to change the thermostat in my to {sixty eight|Degree} 
-SetTemp	 change the thermostat in my to {sixty nine|Degree} 
-SetTemp	to adjust the thermostat in my to {seventy|Degree} 
-SetTemp	 adjust the thermostat in my to {seventy one|Degree} 
-SetTemp	to set my thermostat in my to {seventy two|Degree} 
-SetTemp	 set my thermostat in my to {seventy three|Degree} 
-SetTemp	to change my thermostat in my to {seventy four|Degree} 
-SetTemp	 change my thermostat in my to {seventy five|Degree} 
-SetTemp	to adjust my thermostat in my to {seventy six|Degree} 
-SetTemp	 adjust my thermostat in my to {seventy seven|Degree} 
-SetTemp	to set thermostat in my to {seventy eight|Degree} 
-SetTemp	 set thermostat in my to {seventy nine|Degree} 
-SetTemp	to change thermostat in my to {eighty|Degree} 
-SetTemp	 change thermostat in my to {sixty|Degree} 
-SetTemp	to adjust thermostat in my to {sixty one|Degree} 
-SetTemp	 adjust thermostat in my to {sixty two|Degree} 
-SetTemp	to set the temperature in my to {sixty three|Degree} 
-SetTemp	 set the temperature in my to {sixty four|Degree} 
-SetTemp	to change the temperature in my to {sixty five|Degree} 
-SetTemp	 change the temperature in my to {sixty six|Degree} 
-SetTemp	to adjust the temperature in my to {sixty seven|Degree} 
-SetTemp	 adjust the temperature in my to {sixty eight|Degree} 
-SetTemp	to set my temperature in my to {sixty nine|Degree} 
-SetTemp	 set my temperature in my to {seventy|Degree} 
-SetTemp	to change my temperature in my to {seventy one|Degree} 
-SetTemp	 change my temperature in my to {seventy two|Degree} 
-SetTemp	to adjust my temperature in my to {seventy three|Degree} 
-SetTemp	 adjust my temperature in my to {seventy four|Degree} 
-SetTemp	to set temperature in my to {seventy five|Degree} 
-SetTemp	 set temperature in my to {seventy six|Degree} 
-SetTemp	to change temperature in my to {seventy seven|Degree} 
-SetTemp	 change temperature in my to {seventy eight|Degree} 
-SetTemp	to adjust temperature in my to {seventy nine|Degree} 
-SetTemp	 adjust temperature in my to {eighty|Degree} 
-SetTemp	to set the thermostat to {sixty|Degree} 
-SetTemp	 set the thermostat to {sixty one|Degree} 
-SetTemp	to change the thermostat to {sixty two|Degree} 
-SetTemp	 change the thermostat to {sixty three|Degree} 
-SetTemp	to adjust the thermostat to {sixty four|Degree} 
-SetTemp	 adjust the thermostat to {sixty five|Degree} 
-SetTemp	to set my thermostat to {sixty six|Degree} 
-SetTemp	 set my thermostat to {sixty seven|Degree} 
-SetTemp	to change my thermostat to {sixty eight|Degree} 
-SetTemp	 change my thermostat to {sixty nine|Degree} 
-SetTemp	to adjust my thermostat to {seventy|Degree} 
-SetTemp	 adjust my thermostat to {seventy one|Degree} 
-SetTemp	to set thermostat to {seventy two|Degree} 
-SetTemp	 set thermostat to {seventy three|Degree} 
-SetTemp	to change thermostat to {seventy four|Degree} 
-SetTemp	 change thermostat to {seventy five|Degree} 
-SetTemp	to adjust thermostat to {seventy six|Degree} 
-SetTemp	 adjust thermostat to {seventy seven|Degree} 
-SetTemp	to set the temperature to {seventy eight|Degree} 
-SetTemp	 set the temperature to {seventy nine|Degree} 
-SetTemp	to change the temperature to {eighty|Degree} 
-SetTemp	 change the temperature to {sixty|Degree} 
-SetTemp	to adjust the temperature to {sixty one|Degree} 
-SetTemp	 adjust the temperature to {sixty two|Degree} 
-SetTemp	to set my temperature to {sixty three|Degree} 
-SetTemp	 set my temperature to {sixty four|Degree} 
-SetTemp	to change my temperature to {sixty five|Degree} 
-SetTemp	 change my temperature to {sixty six|Degree} 
-SetTemp	to adjust my temperature to {sixty seven|Degree} 
-SetTemp	 adjust my temperature to {sixty eight|Degree} 
-SetTemp	to set temperature to {sixty nine|Degree} 
-SetTemp	 set temperature to {seventy|Degree} 
-SetTemp	to change temperature to {seventy one|Degree} 
-SetTemp	 change temperature to {seventy two|Degree} 
-SetTemp	to adjust temperature to {seventy three|Degree} 
-SetTemp	 adjust temperature to {seventy four|Degree} 
+SetTemp	to set the thermostat in the {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set the thermostat in the {Location} to {seventy|Degree} degrees 
+SetTemp	to change the thermostat in the {Location} to {seventy one|Degree} degrees 
+SetTemp	 change the thermostat in the {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust the thermostat in the {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust the thermostat in the {Location} to {seventy four|Degree} degrees 
+SetTemp	to set my thermostat in the {Location} to {seventy five|Degree} degrees 
+SetTemp	 set my thermostat in the {Location} to {seventy six|Degree} degrees 
+SetTemp	to change my thermostat in the {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change my thermostat in the {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust my thermostat in the {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust my thermostat in the {Location} to {eighty|Degree} degrees 
+SetTemp	to set thermostat in the {Location} to {sixty|Degree} degrees 
+SetTemp	 set thermostat in the {Location} to {sixty one|Degree} degrees 
+SetTemp	to change thermostat in the {Location} to {sixty two|Degree} degrees 
+SetTemp	 change thermostat in the {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust thermostat in the {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust thermostat in the {Location} to {sixty five|Degree} degrees 
+SetTemp	to set the temperature in the {Location} to {sixty six|Degree} degrees 
+SetTemp	 set the temperature in the {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change the temperature in the {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change the temperature in the {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust the temperature in the {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust the temperature in the {Location} to {seventy one|Degree} degrees 
+SetTemp	to set my temperature in the {Location} to {seventy two|Degree} degrees 
+SetTemp	 set my temperature in the {Location} to {seventy three|Degree} degrees 
+SetTemp	to change my temperature in the {Location} to {seventy four|Degree} degrees 
+SetTemp	 change my temperature in the {Location} to {seventy five|Degree} degrees 
+SetTemp	to adjust my temperature in the {Location} to {seventy six|Degree} degrees 
+SetTemp	 adjust my temperature in the {Location} to {seventy seven|Degree} degrees 
+SetTemp	to set temperature in the {Location} to {seventy eight|Degree} degrees 
+SetTemp	 set temperature in the {Location} to {seventy nine|Degree} degrees 
+SetTemp	to change temperature in the {Location} to {eighty|Degree} degrees 
+SetTemp	 change temperature in the {Location} to {sixty|Degree} degrees 
+SetTemp	to adjust temperature in the {Location} to {sixty one|Degree} degrees 
+SetTemp	 adjust temperature in the {Location} to {sixty two|Degree} degrees 
+SetTemp	to set the thermostat in my {Location} to {sixty three|Degree} degrees 
+SetTemp	 set the thermostat in my {Location} to {sixty four|Degree} degrees 
+SetTemp	to change the thermostat in my {Location} to {sixty five|Degree} degrees 
+SetTemp	 change the thermostat in my {Location} to {sixty six|Degree} degrees 
+SetTemp	to adjust the thermostat in my {Location} to {sixty seven|Degree} degrees 
+SetTemp	 adjust the thermostat in my {Location} to {sixty eight|Degree} degrees 
+SetTemp	to set my thermostat in my {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set my thermostat in my {Location} to {seventy|Degree} degrees 
+SetTemp	to change my thermostat in my {Location} to {seventy one|Degree} degrees 
+SetTemp	 change my thermostat in my {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust my thermostat in my {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust my thermostat in my {Location} to {seventy four|Degree} degrees 
+SetTemp	to set thermostat in my {Location} to {seventy five|Degree} degrees 
+SetTemp	 set thermostat in my {Location} to {seventy six|Degree} degrees 
+SetTemp	to change thermostat in my {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change thermostat in my {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust thermostat in my {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust thermostat in my {Location} to {eighty|Degree} degrees 
+SetTemp	to set the temperature in my {Location} to {sixty|Degree} degrees 
+SetTemp	 set the temperature in my {Location} to {sixty one|Degree} degrees 
+SetTemp	to change the temperature in my {Location} to {sixty two|Degree} degrees 
+SetTemp	 change the temperature in my {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust the temperature in my {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust the temperature in my {Location} to {sixty five|Degree} degrees 
+SetTemp	to set my temperature in my {Location} to {sixty six|Degree} degrees 
+SetTemp	 set my temperature in my {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change my temperature in my {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change my temperature in my {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust my temperature in my {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust my temperature in my {Location} to {seventy one|Degree} degrees 
+SetTemp	to set temperature in my {Location} to {seventy two|Degree} degrees 
+SetTemp	 set temperature in my {Location} to {seventy three|Degree} degrees 
+SetTemp	to change temperature in my {Location} to {seventy four|Degree} degrees 
+SetTemp	 change temperature in my {Location} to {seventy five|Degree} degrees 
+SetTemp	to adjust temperature in my {Location} to {seventy six|Degree} degrees 
+SetTemp	 adjust temperature in my {Location} to {seventy seven|Degree} degrees 
+SetTemp	to set the thermostat {Location} to {seventy eight|Degree} degrees 
+SetTemp	 set the thermostat {Location} to {seventy nine|Degree} degrees 
+SetTemp	to change the thermostat {Location} to {eighty|Degree} degrees 
+SetTemp	 change the thermostat {Location} to {sixty|Degree} degrees 
+SetTemp	to adjust the thermostat {Location} to {sixty one|Degree} degrees 
+SetTemp	 adjust the thermostat {Location} to {sixty two|Degree} degrees 
+SetTemp	to set my thermostat {Location} to {sixty three|Degree} degrees 
+SetTemp	 set my thermostat {Location} to {sixty four|Degree} degrees 
+SetTemp	to change my thermostat {Location} to {sixty five|Degree} degrees 
+SetTemp	 change my thermostat {Location} to {sixty six|Degree} degrees 
+SetTemp	to adjust my thermostat {Location} to {sixty seven|Degree} degrees 
+SetTemp	 adjust my thermostat {Location} to {sixty eight|Degree} degrees 
+SetTemp	to set thermostat {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set thermostat {Location} to {seventy|Degree} degrees 
+SetTemp	to change thermostat {Location} to {seventy one|Degree} degrees 
+SetTemp	 change thermostat {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust thermostat {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust thermostat {Location} to {seventy four|Degree} degrees 
+SetTemp	to set the temperature {Location} to {seventy five|Degree} degrees 
+SetTemp	 set the temperature {Location} to {seventy six|Degree} degrees 
+SetTemp	to change the temperature {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change the temperature {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust the temperature {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust the temperature {Location} to {eighty|Degree} degrees 
+SetTemp	to set my temperature {Location} to {sixty|Degree} degrees 
+SetTemp	 set my temperature {Location} to {sixty one|Degree} degrees 
+SetTemp	to change my temperature {Location} to {sixty two|Degree} degrees 
+SetTemp	 change my temperature {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust my temperature {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust my temperature {Location} to {sixty five|Degree} degrees 
+SetTemp	to set temperature {Location} to {sixty six|Degree} degrees 
+SetTemp	 set temperature {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change temperature {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change temperature {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust temperature {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust temperature {Location} to {seventy one|Degree} degrees 
+SetTemp	to set the thermostat in the {Location} to {seventy two|Degree} 
+SetTemp	 set the thermostat in the {Location} to {seventy three|Degree} 
+SetTemp	to change the thermostat in the {Location} to {seventy four|Degree} 
+SetTemp	 change the thermostat in the {Location} to {seventy five|Degree} 
+SetTemp	to adjust the thermostat in the {Location} to {seventy six|Degree} 
+SetTemp	 adjust the thermostat in the {Location} to {seventy seven|Degree} 
+SetTemp	to set my thermostat in the {Location} to {seventy eight|Degree} 
+SetTemp	 set my thermostat in the {Location} to {seventy nine|Degree} 
+SetTemp	to change my thermostat in the {Location} to {eighty|Degree} 
+SetTemp	 change my thermostat in the {Location} to {sixty|Degree} 
+SetTemp	to adjust my thermostat in the {Location} to {sixty one|Degree} 
+SetTemp	 adjust my thermostat in the {Location} to {sixty two|Degree} 
+SetTemp	to set thermostat in the {Location} to {sixty three|Degree} 
+SetTemp	 set thermostat in the {Location} to {sixty four|Degree} 
+SetTemp	to change thermostat in the {Location} to {sixty five|Degree} 
+SetTemp	 change thermostat in the {Location} to {sixty six|Degree} 
+SetTemp	to adjust thermostat in the {Location} to {sixty seven|Degree} 
+SetTemp	 adjust thermostat in the {Location} to {sixty eight|Degree} 
+SetTemp	to set the temperature in the {Location} to {sixty nine|Degree} 
+SetTemp	 set the temperature in the {Location} to {seventy|Degree} 
+SetTemp	to change the temperature in the {Location} to {seventy one|Degree} 
+SetTemp	 change the temperature in the {Location} to {seventy two|Degree} 
+SetTemp	to adjust the temperature in the {Location} to {seventy three|Degree} 
+SetTemp	 adjust the temperature in the {Location} to {seventy four|Degree} 
+SetTemp	to set my temperature in the {Location} to {seventy five|Degree} 
+SetTemp	 set my temperature in the {Location} to {seventy six|Degree} 
+SetTemp	to change my temperature in the {Location} to {seventy seven|Degree} 
+SetTemp	 change my temperature in the {Location} to {seventy eight|Degree} 
+SetTemp	to adjust my temperature in the {Location} to {seventy nine|Degree} 
+SetTemp	 adjust my temperature in the {Location} to {eighty|Degree} 
+SetTemp	to set temperature in the {Location} to {sixty|Degree} 
+SetTemp	 set temperature in the {Location} to {sixty one|Degree} 
+SetTemp	to change temperature in the {Location} to {sixty two|Degree} 
+SetTemp	 change temperature in the {Location} to {sixty three|Degree} 
+SetTemp	to adjust temperature in the {Location} to {sixty four|Degree} 
+SetTemp	 adjust temperature in the {Location} to {sixty five|Degree} 
+SetTemp	to set the thermostat in my {Location} to {sixty six|Degree} 
+SetTemp	 set the thermostat in my {Location} to {sixty seven|Degree} 
+SetTemp	to change the thermostat in my {Location} to {sixty eight|Degree} 
+SetTemp	 change the thermostat in my {Location} to {sixty nine|Degree} 
+SetTemp	to adjust the thermostat in my {Location} to {seventy|Degree} 
+SetTemp	 adjust the thermostat in my {Location} to {seventy one|Degree} 
+SetTemp	to set my thermostat in my {Location} to {seventy two|Degree} 
+SetTemp	 set my thermostat in my {Location} to {seventy three|Degree} 
+SetTemp	to change my thermostat in my {Location} to {seventy four|Degree} 
+SetTemp	 change my thermostat in my {Location} to {seventy five|Degree} 
+SetTemp	to adjust my thermostat in my {Location} to {seventy six|Degree} 
+SetTemp	 adjust my thermostat in my {Location} to {seventy seven|Degree} 
+SetTemp	to set thermostat in my {Location} to {seventy eight|Degree} 
+SetTemp	 set thermostat in my {Location} to {seventy nine|Degree} 
+SetTemp	to change thermostat in my {Location} to {eighty|Degree} 
+SetTemp	 change thermostat in my {Location} to {sixty|Degree} 
+SetTemp	to adjust thermostat in my {Location} to {sixty one|Degree} 
+SetTemp	 adjust thermostat in my {Location} to {sixty two|Degree} 
+SetTemp	to set the temperature in my {Location} to {sixty three|Degree} 
+SetTemp	 set the temperature in my {Location} to {sixty four|Degree} 
+SetTemp	to change the temperature in my {Location} to {sixty five|Degree} 
+SetTemp	 change the temperature in my {Location} to {sixty six|Degree} 
+SetTemp	to adjust the temperature in my {Location} to {sixty seven|Degree} 
+SetTemp	 adjust the temperature in my {Location} to {sixty eight|Degree} 
+SetTemp	to set my temperature in my {Location} to {sixty nine|Degree} 
+SetTemp	 set my temperature in my {Location} to {seventy|Degree} 
+SetTemp	to change my temperature in my {Location} to {seventy one|Degree} 
+SetTemp	 change my temperature in my {Location} to {seventy two|Degree} 
+SetTemp	to adjust my temperature in my {Location} to {seventy three|Degree} 
+SetTemp	 adjust my temperature in my {Location} to {seventy four|Degree} 
+SetTemp	to set temperature in my {Location} to {seventy five|Degree} 
+SetTemp	 set temperature in my {Location} to {seventy six|Degree} 
+SetTemp	to change temperature in my {Location} to {seventy seven|Degree} 
+SetTemp	 change temperature in my {Location} to {seventy eight|Degree} 
+SetTemp	to adjust temperature in my {Location} to {seventy nine|Degree} 
+SetTemp	 adjust temperature in my {Location} to {eighty|Degree} 
+SetTemp	to set the thermostat {Location} to {sixty|Degree} 
+SetTemp	 set the thermostat {Location} to {sixty one|Degree} 
+SetTemp	to change the thermostat {Location} to {sixty two|Degree} 
+SetTemp	 change the thermostat {Location} to {sixty three|Degree} 
+SetTemp	to adjust the thermostat {Location} to {sixty four|Degree} 
+SetTemp	 adjust the thermostat {Location} to {sixty five|Degree} 
+SetTemp	to set my thermostat {Location} to {sixty six|Degree} 
+SetTemp	 set my thermostat {Location} to {sixty seven|Degree} 
+SetTemp	to change my thermostat {Location} to {sixty eight|Degree} 
+SetTemp	 change my thermostat {Location} to {sixty nine|Degree} 
+SetTemp	to adjust my thermostat {Location} to {seventy|Degree} 
+SetTemp	 adjust my thermostat {Location} to {seventy one|Degree} 
+SetTemp	to set thermostat {Location} to {seventy two|Degree} 
+SetTemp	 set thermostat {Location} to {seventy three|Degree} 
+SetTemp	to change thermostat {Location} to {seventy four|Degree} 
+SetTemp	 change thermostat {Location} to {seventy five|Degree} 
+SetTemp	to adjust thermostat {Location} to {seventy six|Degree} 
+SetTemp	 adjust thermostat {Location} to {seventy seven|Degree} 
+SetTemp	to set the temperature {Location} to {seventy eight|Degree} 
+SetTemp	 set the temperature {Location} to {seventy nine|Degree} 
+SetTemp	to change the temperature {Location} to {eighty|Degree} 
+SetTemp	 change the temperature {Location} to {sixty|Degree} 
+SetTemp	to adjust the temperature {Location} to {sixty one|Degree} 
+SetTemp	 adjust the temperature {Location} to {sixty two|Degree} 
+SetTemp	to set my temperature {Location} to {sixty three|Degree} 
+SetTemp	 set my temperature {Location} to {sixty four|Degree} 
+SetTemp	to change my temperature {Location} to {sixty five|Degree} 
+SetTemp	 change my temperature {Location} to {sixty six|Degree} 
+SetTemp	to adjust my temperature {Location} to {sixty seven|Degree} 
+SetTemp	 adjust my temperature {Location} to {sixty eight|Degree} 
+SetTemp	to set temperature {Location} to {sixty nine|Degree} 
+SetTemp	 set temperature {Location} to {seventy|Degree} 
+SetTemp	to change temperature {Location} to {seventy one|Degree} 
+SetTemp	 change temperature {Location} to {seventy two|Degree} 
+SetTemp	to adjust temperature {Location} to {seventy three|Degree} 
+SetTemp	 adjust temperature {Location} to {seventy four|Degree} 
 SetMode	to set the {house|ModeType} mode to {off|ModeName}
 SetMode	 set the {house|ModeType} mode to {work|ModeName}
 SetMode	to change the {house|ModeType} mode to {dinner|ModeName}
@@ -934,6 +898,60 @@ SetMode	to change {security|ModeType} mode to {sleep|ModeName}
 SetMode	 change {security|ModeType} mode to {home|ModeName}
 SetMode	to switch {security|ModeType} mode to {away|ModeName}
 SetMode	 switch {security|ModeType} mode to {off|ModeName}
+SetMode	to set the {house|ModeType} to {work|ModeName} mode
+SetMode	 set the {house|ModeType} to {dinner|ModeName} mode
+SetMode	to change the {house|ModeType} to {party|ModeName} mode
+SetMode	 change the {house|ModeType} to {bed|ModeName} mode
+SetMode	to switch the {house|ModeType} to {away|ModeName} mode
+SetMode	 switch the {house|ModeType} to {panic|ModeName} mode
+SetMode	to set my {house|ModeType} to {relax|ModeName} mode
+SetMode	 set my {house|ModeType} to {gaming|ModeName} mode
+SetMode	to change my {house|ModeType} to {theatre|ModeName} mode
+SetMode	 change my {house|ModeType} to {shower|ModeName} mode
+SetMode	to switch my {house|ModeType} to {wake up|ModeName} mode
+SetMode	 switch my {house|ModeType} to {TV|ModeName} mode
+SetMode	to set {house|ModeType} to {off|ModeName} mode
+SetMode	 set {house|ModeType} to {work|ModeName} mode
+SetMode	to change {house|ModeType} to {dinner|ModeName} mode
+SetMode	 change {house|ModeType} to {party|ModeName} mode
+SetMode	to switch {house|ModeType} to {bed|ModeName} mode
+SetMode	 switch {house|ModeType} to {away|ModeName} mode
+SetMode	to set the {lighting|ModeType} to {night light|ModeName} mode
+SetMode	 set the {lighting|ModeType} to {bed time|ModeName} mode
+SetMode	to change the {lighting|ModeType} to {love shack|ModeName} mode
+SetMode	 change the {lighting|ModeType} to {lava|ModeName} mode
+SetMode	to switch the {lighting|ModeType} to {all off|ModeName} mode
+SetMode	 switch the {lighting|ModeType} to {all on|ModeName} mode
+SetMode	to set my {lighting|ModeType} to {focus|ModeName} mode
+SetMode	 set my {lighting|ModeType} to {energize|ModeName} mode
+SetMode	to change my {lighting|ModeType} to {relax|ModeName} mode
+SetMode	 change my {lighting|ModeType} to {party|ModeName} mode
+SetMode	to switch my {lighting|ModeType} to {night light|ModeName} mode
+SetMode	 switch my {lighting|ModeType} to {bed time|ModeName} mode
+SetMode	to set {lighting|ModeType} to {love shack|ModeName} mode
+SetMode	 set {lighting|ModeType} to {lava|ModeName} mode
+SetMode	to change {lighting|ModeType} to {all off|ModeName} mode
+SetMode	 change {lighting|ModeType} to {all on|ModeName} mode
+SetMode	to switch {lighting|ModeType} to {focus|ModeName} mode
+SetMode	 switch {lighting|ModeType} to {energize|ModeName} mode
+SetMode	to set the {security|ModeType} to {off|ModeName} mode
+SetMode	 set the {security|ModeType} to {sleep|ModeName} mode
+SetMode	to change the {security|ModeType} to {home|ModeName} mode
+SetMode	 change the {security|ModeType} to {away|ModeName} mode
+SetMode	to switch the {security|ModeType} to {off|ModeName} mode
+SetMode	 switch the {security|ModeType} to {sleep|ModeName} mode
+SetMode	to set my {security|ModeType} to {home|ModeName} mode
+SetMode	 set my {security|ModeType} to {away|ModeName} mode
+SetMode	to change my {security|ModeType} to {off|ModeName} mode
+SetMode	 change my {security|ModeType} to {sleep|ModeName} mode
+SetMode	to switch my {security|ModeType} to {home|ModeName} mode
+SetMode	 switch my {security|ModeType} to {away|ModeName} mode
+SetMode	to set {security|ModeType} to {off|ModeName} mode
+SetMode	 set {security|ModeType} to {sleep|ModeName} mode
+SetMode	to change {security|ModeType} to {home|ModeName} mode
+SetMode	 change {security|ModeType} to {away|ModeName} mode
+SetMode	to switch {security|ModeType} to {off|ModeName} mode
+SetMode	 switch {security|ModeType} to {sleep|ModeName} mode
 GetState	to get the {Location} {temperature|MetricName}
 GetState	 get the {Location} {humidity|MetricName}
 GetState	to check the {Location} {luminance|MetricName}
