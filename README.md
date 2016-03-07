@@ -42,8 +42,8 @@ Currently you cannot simply install Alexa-HA through the Alexa App store, rather
  * [INSTALL.md]
 
 ### VERSION HISTORY
-0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
-0.1.0 (02/29/2016) - Initial public release!
+* 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
+* 0.1.0 (02/29/2016) - Initial public release!
 
 ### PLANNED ENHANCEMENTS
 - Automatic device discovery
