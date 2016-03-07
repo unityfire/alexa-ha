@@ -95,11 +95,12 @@ outside
 
 NOTE:  If you change the Alexa-HA files, including config.js, you need to restart the service(s) and re-upload the Interaction Model to the [Amazon Developer Portal] before all changes will take effect!
 
-Additional considerations:
-- Lock down your webserver as much as possible, only allow the AWS ASK IP's to access Alexa-HA (which may vary!)
-- Enable production server flags to hide version numbers
-- Setup fail2ban, to proactively block clients by IP which make too many requests to the service in a short period of time
-- Avoid running everything on a single box!  We do not recommend exposing your Home Automation controller directly to the internet!
+# Additional considerations:
+- Avoid running everything on a single box!  We do not recommend exposing your Home Automation controller directly to the Internet!
+- Lock down your webserver as much as possible, only allow the AWS ASK IP's to access Alexa-HA (which may vary)
+- Setup UFW to allow the Alexa-HA server to communicate ONLY with the gateway and the HA controller
+- Enable production server flags to hide version numbers for all services
+- Setup fail2ban, to pro-actively block clients by IP which make too many requests to the service in a short period of time
 
 [//]: # 
 

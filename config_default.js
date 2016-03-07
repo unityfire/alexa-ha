@@ -26,7 +26,6 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // Choose which Home Automation Controller you are using
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
-
 // HA server URL, with credentials - i.e. 'http://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
 config.HA_server = 'http://ohuser:ohpassword@192.168.1.50:8080';
 // TODO HA String Item which stores the ASK requestID
@@ -174,7 +173,7 @@ config.color = {
     'purple': '290,100,100',
     'magenta': '310,100,100',
     'pink': '330,100,100',
-    'black': '80,1,1',
+    'dark': '0,0,0',
     default: '0,0,100'
 };
 
@@ -185,34 +184,50 @@ config.utterances = {
     // Switch devices ON/OFF in a particular room
     'Switch': [
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {in the |} {-|Location}",
-        "{turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
-        "{to |}{turn|switch|flip} {ON|OFF|Action} {-|Location} the {light|lights|motion lighting|fan|stove|music|ItemName}"
+        "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
+        "{to |} {turn|switch|flip} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action}",
+        "{to |} {turn|switch|flip} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action} {in the |} {-|Location}",
+        "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}"
     ],
     // Set HSB color values for lights in a particular room
     'SetColor': [
-        "{to |} {set|change|switch|color} {the |} {-|Location} {light|lights} {to |} {-|Color}",
-        "{to |} {set|change|switch|color} {the |} {light|lights} in the {-|Location} {to |} {-|Color}"
+        "{to |} {set|change|switch} {the|my |} {-|Location} {light|lights|lighting} color {to |} {-|Color}",
+        "{to |} {set|change|switch} {the|my |} {light|lights|lighting} color in the {-|Location} {to |} {-|Color}",
+        "color {the|my |} {light|lights|lighting} in the {-|Location} {to |} {-|Color}",
+        "color {the|my |} {-|Location} {light|lights} {to |} {-|Color}",
+        "make {the|my |} {-|Location} {light|lights} {-|Color}"
     ],
     // Dim lights in a particular room
     'SetLevel': [
-        "{to |} {dim|turn down|turn up|soften|set} {the |} {light|lights|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
-        "{dim|turn down|turn up|soften|set} {the |} {-|Location} {light|lights|ItemName} to {0-100 by 5|Percent} {percent |}",
-        "{dim|turn down|turn up|soften|set} {light|lights|ItemName} {in the|} {-|Location} to {0-100 by 5|Percent} {percent |}"
+        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {light|lights|lighting|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
+        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}"
     ],
     // Set target temperature for house HVAC
     'SetTemp': [
-        "{to |} set {the |} {-|Location} {thermostat|temperature} to {60-80|Degree} {degrees |}"
+        "{to |} {set|change|adjust} {the|my |} {-|Location} {thermostat|temperature} to {60-80|Degree} {degrees |}",
+        "{to |} {set|change|adjust} {the|my |} {thermostat|temperature} {in the|in my |} {-|Location} to {60-80|Degree} {degrees |}"
     ],
     // Set house/lighting/security/etc scenes
     'SetMode': [
-        "{to |} {set|change|switch} {the |} {house|ModeType} mode to {off|work|dinner|party|bed|away|panic|relax|gaming|theatre|shower|wake up|TV|ModeName}",
-        "{to |} {set|change|switch} {the |} {lighting|ModeType} mode to {all off|all on|focus|energize|relax|party|night light|bed time|love shack|lava|ModeName}",
-        "{to |} {set|change|switch} {the |} {security|ModeType} mode to {off|sleep|home|away|ModeName}"
+        "{to |} {set|change|switch} {the|my |} {house|ModeType} mode to {off|work|dinner|party|bed|away|panic|relax|gaming|theatre|shower|wake up|TV|ModeName}",
+        "{to |} {set|change|switch} {the|my |} {lighting|ModeType} mode to {all off|all on|focus|energize|relax|party|night light|bed time|love shack|lava|ModeName}",
+        "{to |} {set|change|switch} {the|my |} {security|ModeType} mode to {off|sleep|home|away|ModeName}",
+        "{to |} {set|change|switch} {the|my |} {house|ModeType} to {off|work|dinner|party|bed|away|panic|relax|gaming|theatre|shower|wake up|TV|ModeName} mode",
+        "{to |} {set|change|switch} {the|my |} {lighting|ModeType} to {all off|all on|focus|energize|relax|party|night light|bed time|love shack|lava|ModeName} mode",
+        "{to |} {set|change|switch} {the|my |} {security|ModeType} to {off|sleep|home|away|ModeName} mode"
     ],
     // Get current item state values
     'GetState': [
-        "{to |} {get|check|whats} {the |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}",
-        "{get|check|whats} {the |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}"
+        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
+        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}",
+        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
+        "whats {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}"
+
+    ],
+    // Get current house/lighting/security/etc scene
+    'GetMode': [
+        "{to |} {get|check} {the|my |} {house|lighting|security|ModeType} mode {set to |}",
+        "whats {the|my |} {house|lighting|security|ModeType} mode {set to |}"
     ],
     // Execute 'raw' voice commands, request/response handled entirely by custom HA server rules
     'VoiceCMD': [
@@ -221,9 +236,9 @@ config.utterances = {
         "{status update|Input}",
         "{for a |}{status update|Input}",
         "{whats the |}{weather like|Input}",
-        "{say a quote|Input}",
-        "{its cold in here|Input}",
-        "{its hot in here|Input}"
+        "{say a |} {quote|Input}",
+        "{its} {cold in here|Input}",
+        "{its} {hot in here|Input}"
     ],
     // Research something arbitrary via Wolfram API call
     'Research': [
