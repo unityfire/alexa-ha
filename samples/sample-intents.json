@@ -1,0 +1,129 @@
+{
+  "intents": [
+    {
+      "intent": "Switch",
+      "slots": [
+        {
+          "name": "Action",
+          "type": "LITERAL"
+        },
+        {
+          "name": "ItemName",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Location",
+          "type": "LOCATION_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "SetColor",
+      "slots": [
+        {
+          "name": "Location",
+          "type": "LOCATION_TYPE"
+        },
+        {
+          "name": "Color",
+          "type": "COLOR_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "SetLevel",
+      "slots": [
+        {
+          "name": "Percent",
+          "type": "NUMBER"
+        },
+        {
+          "name": "ItemName",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Location",
+          "type": "LOCATION_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "SetTemp",
+      "slots": [
+        {
+          "name": "Degree",
+          "type": "NUMBER"
+        },
+        {
+          "name": "Location",
+          "type": "LOCATION_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "SetMode",
+      "slots": [
+        {
+          "name": "ModeType",
+          "type": "LITERAL"
+        },
+        {
+          "name": "ModeName",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "GetState",
+      "slots": [
+        {
+          "name": "MetricName",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Location",
+          "type": "LOCATION_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "GetMode",
+      "slots": [
+        {
+          "name": "ModeType",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "VoiceCMD",
+      "slots": [
+        {
+          "name": "Input",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "Research",
+      "slots": [
+        {
+          "name": "Question",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "StopIntent",
+      "slots": []
+    },
+    {
+      "intent": "CancelIntent",
+      "slots": []
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
