@@ -39,17 +39,30 @@ app.sessionEnded(function(request,response) {
 
 app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
 
-// Pre-execution security checks - before handling ensure request applicationId and userId match configured values
-app.pre = function(request,response,type,id) {
-    if (request.sessionDetails.application.applicationId !== config.applicationId) {
+// Pre-execution security checks - ensure each requests applicationId / userId / password match configured values
+app.pre = function(request,response,type) {
+    var address = request.data.remoteAddress;
+    var password = request.data.password;
+    var timestamp = request.data.request.timestamp;
+    var requestId = request.data.request.requestId;
+    var sessionId = request.sessionId;
+    var userId = request.sessionDetails.userId;
+    var applicationId = request.sessionDetails.application.applicationId;
+    
+    if (applicationId !== config.applicationId) {
+        console.log(address + ' - ' + timestamp + ' - ERROR: Invalid application ID in request:' + applicationId);
         response.fail("Invalid application ID");
-        console.log('Invalid application ID:' + request.sessionDetails.application.applicationId);
     }
-    if (request.sessionDetails.userId !== config.userId) {
+    if (userId !== config.userId) {
+        console.log(address + ' - ' + timestamp + ' - ERROR: Invalid userId in request: ' + userId );
         response.fail("Invalid user ID");
-        console.log('Invalid userId: ' + request.sessionDetails.userId );
     }
-    console.log('AWS ASK ' + type + ' received, sessionID: ' + request.sessionId);
+    if (password !== config.password) {
+        console.log(address + ' - ' + timestamp + ' - ERROR: Invalid password in request: ' + password);
+        response.fail("Invalid password");
+    }
+
+    console.log(address + ' - ' + timestamp + ' - ' + ' AWS ASK ' + type + ' received: ' + requestId + ' / ' + sessionId);
 };
 
 // Post commands
@@ -78,7 +91,7 @@ app.intent('Switch', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('Switch Intent hit!  Slots are:' + action + '/' + itemName + '/' + location);
+    console.log('REQUEST: Switch Intent slots are: ' + action + '/' + itemName + '/' + location);
 
     // Handle undefined ASK slots
     if (itemName && location) {
@@ -98,24 +111,27 @@ app.intent('Switch', {
             }
             // Check if the items current state and action match
             if (state === action) {
-                console.log ('Your ' + location + ' ' + itemName + ' is already ' + action);
+                console.log ('RESPONSE: Your ' + location + ' ' + itemName + ' is already ' + action);
                 response.say('Your ' + location + ' ' + itemName + ' is already ' + action);
                 response.send();
             }
             // Set the new state for the item
             else if (state !== action) {
                 HA.setState(HA_item, action);
+                console.log('RESPONSE: Switching ' + action + ' your ' + location + ' ' + itemName);
                 response.say('Switching ' + action + ' your ' + location + ' ' + itemName);
                 response.card(appName,'I have switched ' + action + ' your ' + location + ' ' + itemName + '.');
                 response.send();
             }
             // Unidentified item
             else {
+                console.log('RESPONSE: I could not switch ' + action + ' your ' + location + ' ' + itemName);
                 response.say('I could not switch ' + action + ' your ' + location + ' ' + itemName);
                 response.send();
             }
         });
     } else {
+        console.log('RESPONSE: I cannot currently switch your ' + location + ' ' + itemName);
         response.say('I cannot currently switch your ' + location + ' ' + itemName);
         response.send();
     }
@@ -132,7 +148,7 @@ app.intent('SetColor', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('SetColor Intent hit!  Slots are:' + color + '/' + location);
+    console.log('REQUEST: SetColor Intent slots are: ' + color + '/' + location);
 
     // Handle undefined ASK slots
     if (location && color) {
@@ -154,24 +170,28 @@ app.intent('SetColor', {
             }
             // Check if the current color and new color match
             if (state === HSBColor) {
+                console.log('RESPONSE: Your ' + location + ' lights color is already ' + color);
                 response.say('Your ' + location + ' lights color is already ' + color);
                 response.send();
             }
             // Set the new state for the item
             else if (state !== HSBColor) {
                 HA.setState(HA_item, HSBColor);
+                console.log('RESPONSE: Setting your ' + location + ' lights color to ' + color);
                 response.say('Setting your ' + location + ' lights color to ' + color);
                 response.card(appName,'I have set your ' + location + ' lights color to ' + color + '.');
                 response.send();
             }
             // Unidentified item
             else {
+                console.log('RESPONSE: I could not set your ' + location + ' lights color to ' + color);
                 response.say('I could not set your ' + location + ' lights color to ' + color);
                 response.send();
             }
         });
     }
     else {
+        console.log('RESPONSE: I cannot currently set your ' + location + ' lights color to ' + color);
         response.say('I cannot currently set your ' + location + ' lights color to ' + color);
         response.send();
     }
@@ -189,13 +209,14 @@ app.intent('SetLevel', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('Dim Intent hit!  Slots are:' + percent + '/' + itemName + '/' + location);
+    console.log('REQUEST: Dim Intent slots are: ' + percent + '/' + itemName + '/' + location);
 
     // Handle undefined ASK slots
     if (itemName && location) {
         var HA_item = helper.getItem(itemName,location);
     }
     else {
+        console.log('RESPONSE: I cannot dim that device');
         response.say('I cannot dim that device');
         response.send();
         return;
@@ -209,24 +230,28 @@ app.intent('SetLevel', {
             }
             // Check if the current dimmer level and new level match
             if (state === percent) {
+                console.log('RESPONSE: Your ' + location + ' lights color are already at ' + percent + ' percent');
                 response.say('Your ' + location + ' lights color are already at ' + percent + ' percent');
                 response.send();
             }
             // Set the new state for the item
             else if (state !== percent) {
                 HA.setState(HA_item, percent);
+                console.log('RESPONSE: Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.say('Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.card(appName,'I have dimmed your ' + location + ' ' + itemName + ' to ' + percent + ' percent.');
                 response.send();
             }
             // Unidentified item
             else {
+                console.log('RESPONSE: I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.say('I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
                 response.send();
             }
         });
     }
     else {
+        console.log('RESPONSE: I cannot currently set your ' + location + ' lights to ' + percent + ' percent');
         response.say('I cannot currently set your ' + location + ' lights to ' + percent + ' percent');
         response.send();
     }
@@ -243,13 +268,14 @@ app.intent('SetTemp', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('SetTemp Intent hit!  Slots are:' + degree + '/' + location);
+    console.log('REQUEST: SetTemp Intent slots are: ' + degree + '/' + location);
 
     // Handle undefined ASK slots
     if (degree && location) {
         var HA_item = helper.getItem('thermostat',location);
     }
     else {
+        console.log('RESPONSE: I cannot set that temperature');
         response.say('I cannot set that temperature');
         response.send();
         return;
@@ -263,24 +289,28 @@ app.intent('SetTemp', {
             }
             // Check if the current target temp and new target temp match
             if (state === degree) {
+                console.log('RESPONSE: Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
                 response.say('Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
                 response.send();
             }
             // Set the new state for the item
             else if (state !== degree) {
                 HA.setState(HA_item, degree);
+                console.log('RESPONSE: Setting your ' + location + ' target temperature to ' + degree + ' degrees');
                 response.say('Setting your ' + location + ' target temperature to ' + degree + ' degrees');
                 response.card(appName, 'I have set your ' + location + ' target temperature to ' + degree + ' degrees.');
                 response.send();
             }
             // Unidentified item
             else {
+                console.log('RESPONSE: I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
                 response.say('I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
                 response.send();
             }
         });
     }
     else {
+        console.log('RESPONSE: I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees');
         response.say('I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees');
         response.send();
     }
@@ -297,13 +327,14 @@ app.intent('SetMode', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('SetMode Intent hit!  Slots are:' + modeType + '/' + modeName);
+    console.log('REQUEST: SetMode Intent slots are: ' + modeType + '/' + modeName);
 
     if (modeType && modeName) {
         var modeId = helper.getMode(modeType, modeName);
         var HA_item = helper.getItem('mode', modeType);
     }
     else {
+        console.log('RESPONSE: I cannot set that mode');
         response.say('I cannot set that mode');
         response.send();
         return;
@@ -311,10 +342,12 @@ app.intent('SetMode', {
 
     if (modeId && HA_item) {
         HA.setState(HA_item, modeId);
+        console.log('RESPONSE: Changing your ' + modeType + ' mode to ' + modeName);
         response.say('Changing your ' + modeType + ' mode to ' + modeName);
         response.card(appName, 'I have changed your ' + modeType + ' mode to ' + modeName + '.');
     }
     else {
+        console.log('RESPONSE: I could currently set your ' + modeType + ' mode to ' + modeName);
         response.say('I could currently set your ' + modeType + ' mode to ' + modeName);
         response.send();
     }
@@ -332,13 +365,14 @@ app.intent('GetState', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('GetState Intent hit!  Slots are:' + metricName + '/' + location);
+    console.log('REQUEST: GetState Intent slots are: ' + metricName + '/' + location);
 
     if (metricName && location) {
         var HA_item = helper.getMetric(metricName,location);
         var HA_unit = helper.getUnit(metricName);
     }
     else {
+        console.log('RESPONSE: I cannot get that devices state');
         response.say('I cannot get that devices state');
         response.send();
         return;
@@ -349,6 +383,7 @@ app.intent('GetState', {
             if (err) {
                 console.log('HA getState failed:  ' + err.message);
             } else if (state) {
+                console.log('RESPONSE: Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit);
                 response.say('Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit);
                 response.card(appName, 'Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit + '.');
                 response.send();
@@ -356,6 +391,7 @@ app.intent('GetState', {
         });
     }
     else {
+        console.log('RESPONSE: I cannot currently get the ' + metricName + ' in the ' + location);
         response.say('I cannot currently get the ' + metricName + ' in the ' + location);
         response.send();
     }
@@ -371,12 +407,13 @@ app.intent('GetMode', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('GetMode Intent hit!  Slots are:' + modeType);
+    console.log('REQUEST: GetMode Intent slots are: ' + modeType);
 
     if (modeType) {
         var HA_item = helper.getItem('mode', modeType);
         
         if (!HA_item) {
+            console.log('RESPONSE: I could not get the ' + modeType + ' mode');
             response.say('I could not get the ' + modeType + ' mode');
             response.send();
             return;
@@ -387,6 +424,7 @@ app.intent('GetMode', {
                 console.log('HA getState failed:  ' + err.message);
             } else if (modeId) {
                 var modeName = helper.getModeName(modeType,modeId);
+                console.log('RESPONSE: Your ' + modeType + ' mode is set to ' + modeName);
                 response.say('Your ' + modeType + ' mode is set to ' + modeName);
                 response.card(appName, 'Your ' + modeType + ' mode is set to ' + modeName + '.');
                 response.send();
@@ -394,6 +432,7 @@ app.intent('GetMode', {
         });
     }
     else {
+        console.log('RESPONSE: I cannot currently get the ' + modeType + ' mode');
         response.say('I cannot currently get the ' + modeType + ' mode');
         response.send();
         return;
@@ -410,16 +449,17 @@ app.intent('VoiceCMD', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('VoiceCMD Intent hit!  Slots are:' + voiceCMD);
+    console.log('REQUEST: VoiceCMD Intent slots are: ' + voiceCMD);
 
     HA.setState(config.HA_item_processed, 'OFF');
     HA.setState(config.HA_item_voicecmd, voiceCMD);
 
     HA.runVoiceCMD(function(err,msg) {
         if (err) {
-            console.log('Cannot reach HA API: ' + err.message);
+            console.log('ERROR: Cannot reach HA API: ' + err.message);
             response.fail('Cannot reach HA API');
         } else if (msg) {
+            console.log('RESPONSE: ' + msg);
             response.say(msg);
             response.card(appName,msg);
             response.send();
@@ -437,16 +477,16 @@ app.intent('Research', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('Research Intent hit!  Question is:' + question);
+    console.log('REQUEST: Research Intent hit! Question is: ' + question);
 
     // Handle request/response/error from Wolfram
     wolfram.askWolfram(question, function (err,msg) {
         if (err) {
-            console.log('Wolfram API call failed for ' + question + ': ' + err.toString());
+            console.log('ERROR: Wolfram API call failed for ' + question + ': ' + err.toString());
             response.say("I could'nt quickly determine an answer to your question");
             response.send();
         } else if (msg) {
-            console.log('Wolfram response:' + msg);
+            console.log('RESPONSE: ' + msg);
             response.say(msg);
             response.card(appName,msg);
             response.send();
@@ -458,20 +498,21 @@ app.intent('Research', {
 app.intent('StopIntent',
     {"utterances":config.utterances.Stop
     },function(request,response) {
-        console.log('Stopping...');
+        console.log('REQUEST:  Stopping...');
         response.say("Stopping").send();
     });
 
 app.intent('CancelIntent',
     {"utterances":config.utterances.Cancel
     },function(request,response) {
-        console.log('Cancelling...');
+        console.log('REQUEST:  Cancelling...');
         response.say("Cancelling").send();
     });
 
 app.intent('HelpIntent',
     {"utterances":config.utterances.Help
     },function(request,response) {
+        console.log('REQUEST:  Help...');
         response.say(config.help.say.toString()).reprompt('What would you like to do?').shouldEndSession(false);
         response.card(appName, config.help.card.toString());
     });

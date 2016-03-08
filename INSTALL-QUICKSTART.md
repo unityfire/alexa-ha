@@ -58,7 +58,7 @@ cp config_default.js config.js
 nano config.js
 ```
 - Set the various AWS ASK related settings as needed - applicationId is available from Amazon Developer Portal
-- userId can be found later in the install process after setting up external endpoint access, and issuing the first Alexa-HA command.  The logs will show the device/skill current userId, which changes every time you install or re-install the Skill (even on the same device!).
+- userId can be found later in the install process after setting up external endpoint access, and issuing the first Alexa-HA command - the logs will show the device/skill current userId, which changes every time you re-install the Skill (even on the same device!)
 - If you want to use Wolfram Alpha with Alexa-HA (i.e. to have it 'research' anything for you via voice, which is optional!), register and enter your API key
 - Open up your various OpenHAB configuration files (i.e. items/sitemaps/rules) for reference in another window; use these to setup the rest of config.js as desired. The most important part of configuring this is that beyond the General Configuration section, the mappings setup in the HA* & config.item/mode/metric sections in Alexa-HA's config.js are correctly pointed to the items/modes/devices in OpenHAB! Alexa-HA uses this to determine which items in your home do what, and where...
 - Save config.js and exit
@@ -96,6 +96,15 @@ AlexaAppServer.start( {
         privateKey:'private-key.pem',
         certificate:'cert.cer',
         preRequest: function(json,req,res) {
+          // Include password value from URL parameter, so Alexa-HA can validate it...
+          json.password = req.param('password').toString();
+
+          // Extract the IP address of the client (handles IPv4 and IPv6)
+          var IPFromRequest = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+          var indexOfColon = IPFromRequest.lastIndexOf(':');
+          var address = IPFromRequest.substring(indexOfColon+1,IPFromRequest.length);
+          json.remoteAddress = address;
+
         },
         postRequest: function(json,req,res) {
         }
@@ -110,7 +119,7 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-p
 ```
 
 #### Start the service in the foreground
-And otherwise, consider using the Node.js PM2 module for daemonizing Alexa-HA...
+And otherwise, consider using the Node.js PM2 module for daemonizing Alexa-HA.  PM2 also handles logging to the file system.
 ```
 node server.js
 ```
