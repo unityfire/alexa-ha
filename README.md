@@ -1,9 +1,9 @@
 # ALEXA HOME AUTOMATION
 An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration with your Home Automation.  Alexa-HA delivers natural voice control and verbal feedback for practically anything in your home, and beyond.  The key feature highlights include: 
 
-- Switch devices/appliances/lights/locks/shutters/etc
-- Set light colors individually, by room or group
-- Control light dimmer levels individually, by room or group
+- Switch any controllable device - appliances/lights/fans/locks/shutters/etc
+- Set light colors individually; by room or group
+- Control light dimmer levels individually; by room or group
 - Set thermostat(s) target temperature
 - Change between various scenes/modes (i.e. home/lighting/security/etc)
 - Get device states (i.e. temperature/humidity/luminance/power consumption, etc)
@@ -11,7 +11,7 @@ An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration w
 - Trigger custom server side rules and return a response which is spoken by the Echo (i.e. say 'watch a movie' automatically sets up your Home Theater by powering on the Projector/AV Receiver/HTPC, lowering the Projector Screen, dimming the lights, etc.)
 - Research virtually anything via voice through [Wolfram Alpha] API
 - Display customized 'cards' in the Alexa App
-- Automatically generates the Skill 'utterances' based on configured devices/rooms
+- Automatically generates the Skill '[utterances]' based on configured devices/rooms, which trains Echo voice model for boosted accuracy
 - Crude support for Text-To-Speech 'announcements' by pairing the Echo with your HA server over Bluetooth
 
 The current version is focused on perfecting Alexa support for [OpenHAB].  Other HA solutions may be added in the future.
@@ -98,6 +98,8 @@ Countless hours have been put into development and improvement of this open sour
    [Amazon Developer Portal]: <https://developer.amazon.com/>
    [INSTALL.md]: <https://github.com/unityfire/alexa-ha/tree/master/INSTALL.md>
    [INSTALL-QUICKSTART.md]: <https://github.com/unityfire/alexa-ha/tree/master/INSTALL-QUICKSTART.md>
+
+   [utterances]: <https://github.com/unityfire/alexa-ha/tree/master/samples/sample-utterances.txt>
    
    [PayPal]: <https://paypal.me/arch1v1st>
    
