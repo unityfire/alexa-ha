@@ -147,6 +147,7 @@ config.metric = {
         'living': 'Multi2_Temp',
         'great': 'HVAC_Temp',
         'house': 'Avg_Temp',
+        'data center': 'HVAC_DataCenter_Temp',
         'outside': 'Weather_Temp',
         'outdoor': 'Weather_Temp',
         default: 'Avg_Temp'
