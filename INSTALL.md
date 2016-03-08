@@ -56,7 +56,7 @@ Complete the INSTALL steps for your HA controller first.  Then continue with the
 - Click 'Add a new Skill'
 - Give your skill a name - simply 'Alexa-HA' will do
 - Set your desired Invocation Name - for example 'OpenHAB' or 'Jarvis' - which you can then use to invoke the custom Skill on your Echo.
-- Set your endpoint - this is a URL to your publicly accessible Alexa-App-Server's skill endpoint. For example:  'https://MY_FQDN/api/alexa/alexa-ha' or 'https://MY_PUBLIC_IP/api/alexa/alexa-ha'.  Lambda ARN's have not been tested yet...
+- Set your endpoint - this is a URL to your publicly accessible Alexa-App-Server's skill endpoint. For example:  'https://MY_FQDN/api/alexa/alexa-ha?password=CONFIG_PASSWORD' or 'https://MY_PUBLIC_IP/api/alexa/alexa-ha?password=CONFIG_PASSWORD'.  Lambda ARN's have not been tested yet...
 - Save and continue to the next step - 'Interaction Model'
 - At this point, once you have configured and started the Alexa-App-Server, you should be able to visit the endpoints URL to get a full 'dump' of the Interaction Model.  These values ('intent schema' and 'utterances') should be copied into the AWS ASK Interaction Model page.
 - Define your 'custom slots'.  These should match what you've within Alexa-HA's config.js file.  For example, a custom slot of 'COLOR_TYPE' with values like:
