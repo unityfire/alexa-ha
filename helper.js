@@ -4,8 +4,8 @@ var config = require('./config');
 // Get itemName from itemType & location
 function getItem(itemType, location) {
     //Handle variances of itemType for config value lookup
-    if (itemType === 'lighting' || itemType === 'light') {
-        itemType = 'lights';
+    if (itemType === 'lighting' || itemType === 'lights') {
+        itemType = 'light';
     }
 
     //Strip dangling ' room' in utterance for config value lookup
