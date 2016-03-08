@@ -23,7 +23,7 @@ Alexa-HA's technology stack is primarily comprised of the following key open sou
 * [alexa-app] - A Node.js module to simplify creation of Alexa (Amazon Echo) apps (Skills) using Node.js
 * [request] - A Node.js module for making HTTP(S) requests
 
-Your HA Controller does the heavy lifting of integrating with various downstream technlologies/protocols, and Echo combined with the Alexa-HA Skill translates your voice commands into HA actions.
+Your HA Controller does the heavy lifting of integrating with various downstream technologies/protocols, and Echo combined with the Alexa-HA Skill translates your voice commands into HA actions.
 
 ### INSTALLATION & DEPLOYMENT
 Alexa-HA leverages the [Alexa Skills Kit] to communicate with your internal HA server.  The Skill can be deployed in numerous ways, including:
