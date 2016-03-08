@@ -98,6 +98,13 @@ AlexaAppServer.start( {
         preRequest: function(json,req,res) {
           // Include password value from URL parameter, so Alexa-HA can validate it...
           json.password = req.param('password').toString();
+
+          // Extract the IP address of the client (handles IPv4 and IPv6)
+          var IPFromRequest = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+          var indexOfColon = IPFromRequest.lastIndexOf(':');
+          var address = IPFromRequest.substring(indexOfColon+1,IPFromRequest.length);
+          json.remoteAddress = address;
+
         },
         postRequest: function(json,req,res) {
         }
