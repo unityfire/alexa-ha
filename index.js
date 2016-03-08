@@ -91,7 +91,7 @@ app.intent('Switch', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: Switch Intent hit!  Slots are: ' + action + '/' + itemName + '/' + location);
+    console.log('REQUEST: Switch Intent slots are: ' + action + '/' + itemName + '/' + location);
 
     // Handle undefined ASK slots
     if (itemName && location) {
@@ -148,7 +148,7 @@ app.intent('SetColor', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: SetColor Intent hit!  Slots are: ' + color + '/' + location);
+    console.log('REQUEST: SetColor Intent slots are: ' + color + '/' + location);
 
     // Handle undefined ASK slots
     if (location && color) {
@@ -209,7 +209,7 @@ app.intent('SetLevel', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: Dim Intent hit!  Slots are: ' + percent + '/' + itemName + '/' + location);
+    console.log('REQUEST: Dim Intent slots are: ' + percent + '/' + itemName + '/' + location);
 
     // Handle undefined ASK slots
     if (itemName && location) {
@@ -268,7 +268,7 @@ app.intent('SetTemp', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: SetTemp Intent hit!  Slots are: ' + degree + '/' + location);
+    console.log('REQUEST: SetTemp Intent slots are: ' + degree + '/' + location);
 
     // Handle undefined ASK slots
     if (degree && location) {
@@ -327,7 +327,7 @@ app.intent('SetMode', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: SetMode Intent hit!  Slots are: ' + modeType + '/' + modeName);
+    console.log('REQUEST: SetMode Intent slots are: ' + modeType + '/' + modeName);
 
     if (modeType && modeName) {
         var modeId = helper.getMode(modeType, modeName);
@@ -365,7 +365,7 @@ app.intent('GetState', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: GetState Intent hit!  Slots are: ' + metricName + '/' + location);
+    console.log('REQUEST: GetState Intent slots are: ' + metricName + '/' + location);
 
     if (metricName && location) {
         var HA_item = helper.getMetric(metricName,location);
@@ -407,7 +407,7 @@ app.intent('GetMode', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: GetMode Intent hit!  Slots are: ' + modeType);
+    console.log('REQUEST: GetMode Intent slots are: ' + modeType);
 
     if (modeType) {
         var HA_item = helper.getItem('mode', modeType);
@@ -449,7 +449,7 @@ app.intent('VoiceCMD', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: VoiceCMD Intent hit!  Slots are: ' + voiceCMD);
+    console.log('REQUEST: VoiceCMD Intent slots are: ' + voiceCMD);
 
     HA.setState(config.HA_item_processed, 'OFF');
     HA.setState(config.HA_item_voicecmd, voiceCMD);
@@ -477,7 +477,7 @@ app.intent('Research', {
 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
-    console.log('REQUEST: Research Intent hit!  Question is:' + question);
+    console.log('REQUEST: Research Intent hit! Question is: ' + question);
 
     // Handle request/response/error from Wolfram
     wolfram.askWolfram(question, function (err,msg) {
