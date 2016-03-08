@@ -39,16 +39,21 @@ app.sessionEnded(function(request,response) {
 
 app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
 
-// Pre-execution security checks - before handling ensure request applicationId and userId match configured values
+// Pre-execution security checks - before handling ensure the request applicationId / userId / password match configured values
 app.pre = function(request,response,type,id) {
     if (request.sessionDetails.application.applicationId !== config.applicationId) {
+        console.log('ERROR: Invalid application ID in request:' + request.sessionDetails.application.applicationId);
         response.fail("Invalid application ID");
-        console.log('Invalid application ID:' + request.sessionDetails.application.applicationId);
     }
     if (request.sessionDetails.userId !== config.userId) {
+        console.log('ERROR: Invalid userId in request: ' + request.sessionDetails.userId );
         response.fail("Invalid user ID");
-        console.log('Invalid userId: ' + request.sessionDetails.userId );
     }
+    if (request.data.password !== config.password) {
+        console.log('ERROR: Invalid password in request: ' + request.data.password);
+        response.fail("Invalid password");
+    }
+
     console.log('AWS ASK ' + type + ' received, sessionID: ' + request.sessionId);
 };
 
