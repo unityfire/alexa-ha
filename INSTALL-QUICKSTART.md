@@ -96,6 +96,8 @@ AlexaAppServer.start( {
         privateKey:'private-key.pem',
         certificate:'cert.cer',
         preRequest: function(json,req,res) {
+          // Include password value from URL parameter, so Alexa-HA can validate it...
+          json.password = req.param('password').toString();
         },
         postRequest: function(json,req,res) {
         }
@@ -110,7 +112,7 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-p
 ```
 
 #### Start the service in the foreground
-And otherwise, consider using the Node.js PM2 module for daemonizing Alexa-HA...
+And otherwise, consider using the Node.js PM2 module for daemonizing Alexa-HA.  PM2 also handles logging to the file system.
 ```
 node server.js
 ```
