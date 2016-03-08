@@ -10,6 +10,8 @@ config.applicationName = 'Alexa-HA';
 config.applicationId = 'amzn1.echo-sdk-ams.app.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 // AWS ASK userID, resembles 'amzn1.echo-sdk-account.[your-unique-value-here]'
 config.userId = 'amzn1.echo-sdk-account.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+// AWS ASK password, randomly generated password to be included in the Skill's endpoint URL (i.e. '?password=XXXXXXXXXXXX')
+config.password = 'XXXXXXXXXXXX';
 
 // Greeting, when saying 'Alexa, open...'
 config.greeting = "OpenHAB, at your service";
@@ -42,7 +44,7 @@ config.HA_item_answer = 'ECHO_Answer';
 
 // Item configuration - itemType / Location / itemName mappings
 config.item = {
-    'lights': {
+    'light': {
         'bedroom': 'Light_Group_Bed',
         'office': 'Light_Group_Office',
         'kitchen': 'Light_Group_Kitchen',
@@ -82,6 +84,21 @@ config.item = {
         'house': 'HVAC_Target_Temp',
         'home': 'HVAC_Target_Temp',
         default: 'HVAC_Target_Temp'
+    },
+    'lock': {
+        'front door': 'Lock_Front_Door',
+        'garage door': 'Lock_Garage_Door',
+        default: 'Lock_All_Doors'
+    },
+    'roller shutter': {
+        'bedroom': 'Shutter_Bed',
+        'office': 'Shutter_Office',
+        'kitchen': 'Shutter_Kitchen',
+        'living': 'Shutter_Living',
+        'great': 'Shutter_Great',
+        'house': 'Shutter_All',
+        'all': 'Shutter_All',
+        default: 'Shutter_All'
     }
 };
 
@@ -130,6 +147,8 @@ config.metric = {
         'living': 'Multi2_Temp',
         'great': 'HVAC_Temp',
         'house': 'Avg_Temp',
+        'outside': 'Weather_Temp',
+        'outdoor': 'Weather_Temp',
         default: 'Avg_Temp'
     },
     'humidity': {
@@ -138,6 +157,8 @@ config.metric = {
         'living': 'Multi2_Humidity',
         'great': 'HVAC_Humidity',
         'house': 'Avg_Humidity',
+        'outside': 'Weather_Humidity',
+        'outdoor': 'Weather_Humidity',
         default: 'Avg_Humidity'
     },
     'luminance': {
@@ -186,8 +207,7 @@ config.utterances = {
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {in the |} {-|Location}",
         "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}",
         "{to |} {turn|switch|flip} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action}",
-        "{to |} {turn|switch|flip} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action} {in the |} {-|Location}",
-        "{to |} {turn|switch|flip} {ON|OFF|Action} {the|my |} {-|Location} {light|lights|motion lighting|fan|stove|music|ItemName}"
+        "{to |} {turn|switch|flip} {the|my |} {light|lights|motion lighting|fan|stove|music|ItemName} {ON|OFF|Action} {in the |} {-|Location}"
     ],
     // Set HSB color values for lights in a particular room
     'SetColor': [
