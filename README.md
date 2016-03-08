@@ -52,9 +52,7 @@ Currently you cannot simply install Alexa-HA through the Alexa App store, rather
 - Possibly publish an official Alexa App and Alexa-HA Web Portal for managing credentials, configuring the item/room mappings, and setting up your HA server access info
 
 ### CONTRIBUTORS
-We need your help!
-
-Want to help with development? Excellent! Fork the project on GitHub and/or submit pull requests...
+Want to help with development? Excellent! Fork the project on GitHub and/or submit Pull Requests...
 
 Don't have an Amazon Echo or your Home Automation setup yet?  It is possible to test, experiment and further develop Skills using [EchoSim] and [OpenHAB] running in demo mode. (which needs tested!)
 
@@ -69,7 +67,7 @@ Countless hours have been put into development and improvement of this open sour
  - Rethink and expand the ASK 'slots' and 'utterances'
 
 ### VERSION HISTORY
-* 0.1.6 (03/08/2016) - Added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
+* 0.1.6 (03/09/2016) - Log audit trails, added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
 * 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
 * 0.1.0 (02/29/2016) - Initial public release!
 
