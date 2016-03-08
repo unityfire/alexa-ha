@@ -1,10 +1,10 @@
 # ALEXA HOME AUTOMATION
 An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration with your Home Automation.  Alexa-HA delivers natural voice control and verbal feedback for practically anything in your home, and beyond.  The key feature highlights include: 
 
-- Switch devices/appliances/lights/etc
+- Switch devices/appliances/lights/locks/shutters/etc
 - Set light colors individually, by room or group
 - Control light dimmer levels individually, by room or group
-- Set thermostat target temperatures
+- Set thermostat(s) target temperature
 - Change between various scenes/modes (i.e. home/lighting/security/etc)
 - Get device states (i.e. temperature/humidity/luminance/power consumption, etc)
 - Get scene modes (i.e. 'check current house mode', could be home/away/relax/gaming/party/sleep, etc)
@@ -41,16 +41,14 @@ Currently you cannot simply install Alexa-HA through the Alexa App store, rather
  * [INSTALL-QUICKSTART.md]
  * [INSTALL.md]
 
-### VERSION HISTORY
-* 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
-* 0.1.0 (02/29/2016) - Initial public release!
 
 ### PLANNED ENHANCEMENTS
-- Automatic device discovery
-- Intelligent reprompting and interactions (i.e. 'which room did you mean?')
+- Intelligent re-prompting and interactions (i.e. 'which room did you mean?')
 - Timer support (i.e. 'turn off my bedroom lights in 30 minutes)
+- New intent for locating family members, using MQTT and OwnTracks (i.e. 'Where is Julie?')
 - [AWS Lambda] support - eliminating the complexities of provisioning servers/services/SSL certificates/etc
 - HA 'switch' to turn the Echo request handling ON/OFF (i.e. when the house is in 'away mode', disable Echo request handling altogether)
+- Automatic device discovery
 - Possibly publish an official Alexa App and Alexa-HA Web Portal for managing credentials, configuring the item/room mappings, and setting up your HA server access info
 
 ### CONTRIBUTORS
@@ -69,6 +67,11 @@ Countless hours have been put into development and improvement of this open sour
  - Write unit tests
  - Improve error handling/logging
  - Rethink and expand the ASK 'slots' and 'utterances'
+
+### VERSION HISTORY
+* 0.1.6 (03/08/2016) - Added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
+* 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
+* 0.1.0 (02/29/2016) - Initial public release!
 
 ### LICENSE
 ----
