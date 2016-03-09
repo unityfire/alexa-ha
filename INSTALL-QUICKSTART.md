@@ -48,11 +48,11 @@ cd ~/node_modules/alexa-app-server/api/
 ```
 
 #### Remove existing demo apps, clone Alexa HA from GIT, and configure
-Be sure to select which branch you want in the command below!  Develop is for the latest and greatest, but use 'master' for the stable release of Alexa-HA!
+Be sure to select which branch you want in the command below!  Use 'develop' for the latest and greatest or 'master' for the stable release of Alexa-HA.
 ```
 rm -rf ~/node_modules/alexa-app-server/api/apps/*
 cd ~/node_modules/alexa-app-server/api/apps/
-git clone -b develop https://github.com/unityfire/alexa-ha.git
+git clone -b master https://github.com/unityfire/alexa-ha.git
 cd alexa-ha
 cp config_default.js config.js
 nano config.js
@@ -65,9 +65,10 @@ nano config.js
 - Create a few new items in your OpenHAB configuration/items/* file to be used by Alexa-HA. These are used only as a fallback for custom/arbitrary voice commands (optional, which can trigger custom rules on the OpenHAB server):
 
 ```
-String ECHO_VoiceCMD "ECHO CMD: [%s]"
+String ECHO_VoiceCMD "ECHO VoiceCMD: [%s]"
 String ECHO_Answer "ECHO Answer: [%s]"
 Switch ECHO_Processed "ECHO Proc [%s]"
+Switch ECHO_Switch "ECHO Switch [%s]"
 ```
 
 #### Setup a self signed SSL cert (optional, if you do not have a trusted SSL cert available!)
@@ -117,9 +118,12 @@ This uses iptables to work around restricted port limitations for non-root level
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 30000
 ```
+Next, make the iptables rules permanent (applied at boot time):
+```
+sudo apt-get install iptables-persistent
+```
 
 #### Start the service in the foreground
-And otherwise, consider using the Node.js PM2 module for daemonizing Alexa-HA.  PM2 also handles logging to the file system.
 ```
 node server.js
 ```
@@ -135,6 +139,44 @@ https://LOCAL_IP/api/alexa-ha
 
 #### Test URL from the outside
 Now that everything should be setup, test it by loading the HTTPS endpoint URL in your browser by IP (``` https://PUBLIC_IP/api/alexa-ha/ ```) and by Fully Qualified Domain Name (``` https://FQDN/api/alexa-ha/ ```).  You should be able to reach the 'Alexa Tester' page!
+
+### Daemonize Alexa-HA with PM2
+Consider using the Node.js PM2 module for daemonizing Alexa-HA. PM2 also handles logging to the file system. To have Alexa-HA automatically start at boot, do the following:
+
+- Stop node if currently running in the foreground (Control-C)
+- Run the following command as a privileged user to install PM2 globally (note you may need to change the username 'alexa' for your environment.  This should be an unprivileged user!)
+```
+sudo npm install pm2 -g
+sudo env PATH=$PATH:/usr/local/bin pm2 startup -u alexa
+```
+- You may need to change the home path to your alexa user by editing the start script:
+```
+sudo nano /etc/init.d/pm2-init.sh
+```
+- Find the PM2_HOME export and set it to use our 'alexa' users directory, like so:
+```
+export PM2_HOME="/home/alexa/.pm2"
+```
+- Start Alexa-HA with PM2:
+```
+sudo su alexa
+cd ~/node_modules/alexa-app-server/api/
+pm2 start server.js
+pm2 status
+```
+- Check the status of the service with:
+```
+pm2 show server
+```
+- The service will gracefully start and stop as needed.  To manually restart it, run (as the 'alexa' user):
+```
+pm2 restart server
+```
+- Reboot the server to ensure everything comes up automatically:
+```
+sudo reboot
+```
+- Confirm the endpoint is still accessible by visiting the URL in your browser:  ``` https://FQDN/api/alexa-ha/ ```
 
 #### Additional considerations
 Look at the 'Additional considerations' in INSTALL.md for additional steps you should carry out for improved security.
