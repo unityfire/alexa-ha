@@ -26,16 +26,16 @@ app.launch(function(request,response) {
     // Store the Launch Intent in session, which later keeps the session going for multiple requests/commands
     response.session ('launched', 'true');
     
+    response.say(config.greeting);
     if (config.chime) {
-        response.say(config.greeting).say(config.chime).reprompt("How can I help?").shouldEndSession(false);
+        response.say(config.chime);
     }
-    else {
-        response.say(config.greeting).reprompt("How can I help?").shouldEndSession(false);
-    }
+    
+    response.shouldEndSession(false, "How can I help?");
 });
 
 app.sessionEnded(function(request,response) {
-    logout( request.userId );
+    response.say('Bye');
 });
 
 app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
