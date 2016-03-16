@@ -78,6 +78,11 @@ function getModeName(modeType,modeId) {
     return false;
 }
 
+function checkLocation(location) {
+  //console.log('result of checkLocation for ' + location + ' is: ' + config.HA_locations.indexOf(location) > -1);
+  return config.HA_locations.indexOf(location) > -1;
+}
+
 // Exports
 module.exports.getItem = getItem;
 module.exports.getMetric = getMetric;
@@ -85,3 +90,4 @@ module.exports.getUnit = getUnit;
 module.exports.getColor = getColor;
 module.exports.getMode = getMode;
 module.exports.getModeName = getModeName;
+module.exports.checkLocation = checkLocation;

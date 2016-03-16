@@ -1,5 +1,3 @@
-//TODO better error handling & logging
-
 /******************** INCLUDES **********************/
 var config = require('./config');
 var helper = require('./helper');
@@ -12,7 +10,7 @@ if (config.HA_name === 'OpenHAB') {
     var HA = require('./lib/openhab');
 }
 else {
-    console.log ('FATAL ERROR: the configured HA_name "' + config.HA_name + '" is not currently supported.');
+    console.log('FATAL ERROR: the configured HA_name "' + config.HA_name + '" is not currently supported.');
     process.exit(1);
 }
 
@@ -25,22 +23,26 @@ var appName = config.applicationName;
 // Define an alexa-app
 var app = new alexa.app(appName);
 app.launch(function(request,response) {
+    // Store the Launch Intent in session, which later keeps the session going for multiple requests/commands
+    response.session ('launched', 'true');
+    
+    response.say(config.greeting);
     if (config.chime) {
-        response.say(config.greeting).say(config.chime).reprompt("How can I help?").shouldEndSession(false);
+        response.say(config.chime);
     }
-    else {
-        response.say(config.greeting).reprompt("How can I help?").shouldEndSession(false);
-    }
+    
+    response.shouldEndSession(false, "How can I help?");
 });
 
 app.sessionEnded(function(request,response) {
-    logout( request.userId );
+    response.say('Bye');
 });
 
 app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
 
 // Pre-execution security checks - ensure each requests applicationId / userId / password match configured values
 app.pre = function(request,response,type) {
+    // Extract values from various levels of the nested request object
     var address = request.data.remoteAddress;
     var password = request.data.password;
     var timestamp = request.data.request.timestamp;
@@ -48,6 +50,9 @@ app.pre = function(request,response,type) {
     var sessionId = request.sessionId;
     var userId = request.sessionDetails.userId;
     var applicationId = request.sessionDetails.application.applicationId;
+    
+    // Log the request
+    console.log(address + ' - ' + timestamp + ' - ' + ' AWS ASK ' + type + ' received: ' + requestId + ' / ' + sessionId);
     
     if (applicationId !== config.applicationId) {
         console.log(address + ' - ' + timestamp + ' - ERROR: Invalid application ID in request:' + applicationId);
@@ -61,8 +66,6 @@ app.pre = function(request,response,type) {
         console.log(address + ' - ' + timestamp + ' - ERROR: Invalid password in request: ' + password);
         response.fail("Invalid password");
     }
-
-    console.log(address + ' - ' + timestamp + ' - ' + ' AWS ASK ' + type + ' received: ' + requestId + ' / ' + sessionId);
 };
 
 // Post commands
@@ -78,7 +81,6 @@ app.pre = function(request,response,type) {
 
 /*************** Define ALEXA ASK Intents *****************************/
 //TODO: move all Intent say/card verbiage to config.js
-//TODO: response.reprompt(String phrase) - ask for details as needed, requires use of sessions
 
 // Switch devices ON/OFF
 app.intent('Switch', {
@@ -88,20 +90,21 @@ app.intent('Switch', {
     var action = request.slot('Action').toUpperCase();
     var itemName = request.slot('ItemName');
     var location = request.slot('Location');
-
+ 
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
     console.log('REQUEST: Switch Intent slots are: ' + action + '/' + itemName + '/' + location);
-
+    
     // Handle undefined ASK slots
     if (itemName && location) {
         var HA_item = helper.getItem(itemName, location);
     }
     else {
-        response.say('I cannot switch that');
-        response.send();
+        replyWith('I cannot switch that', response);
         return;
     }
+    
+    // TODO validate location slot with checkLocation(location)
     
     if (action && itemName && location && HA_item) {
         // Get current state
@@ -111,30 +114,21 @@ app.intent('Switch', {
             }
             // Check if the items current state and action match
             if (state === action) {
-                console.log ('RESPONSE: Your ' + location + ' ' + itemName + ' is already ' + action);
-                response.say('Your ' + location + ' ' + itemName + ' is already ' + action);
-                response.send();
+                replyWith('Your ' + location + ' ' + itemName + ' is already ' + action, response);
             }
             // Set the new state for the item
             else if (state !== action) {
                 HA.setState(HA_item, action);
-                console.log('RESPONSE: Switching ' + action + ' your ' + location + ' ' + itemName);
-                response.say('Switching ' + action + ' your ' + location + ' ' + itemName);
-                response.card(appName,'I have switched ' + action + ' your ' + location + ' ' + itemName + '.');
-                response.send();
+                replyWith('Switching ' + action + ' your ' + location + ' ' + itemName, response);
             }
             // Unidentified item
             else {
-                console.log('RESPONSE: I could not switch ' + action + ' your ' + location + ' ' + itemName);
-                response.say('I could not switch ' + action + ' your ' + location + ' ' + itemName);
-                response.send();
+                replyWith('I could not switch ' + action + ' your ' + location + ' ' + itemName, response);
             }
         });
     } else {
-        console.log('RESPONSE: I cannot currently switch your ' + location + ' ' + itemName);
-        response.say('I cannot currently switch your ' + location + ' ' + itemName);
-        response.send();
-    }
+        replyWith('I cannot currently switch your ' + location + ' ' + itemName, response);
+    } 
     return false;
 });
 
@@ -157,8 +151,7 @@ app.intent('SetColor', {
         var HSBColor = helper.getColor(color);
     }
     else {
-        response.say('I cannot set that color');
-        response.send();
+        replyWith('I cannot set that color', response);
         return;
     }
     
@@ -170,30 +163,21 @@ app.intent('SetColor', {
             }
             // Check if the current color and new color match
             if (state === HSBColor) {
-                console.log('RESPONSE: Your ' + location + ' lights color is already ' + color);
-                response.say('Your ' + location + ' lights color is already ' + color);
-                response.send();
+                replyWith('Your ' + location + ' lights color is already ' + color, response);
             }
             // Set the new state for the item
             else if (state !== HSBColor) {
                 HA.setState(HA_item, HSBColor);
-                console.log('RESPONSE: Setting your ' + location + ' lights color to ' + color);
-                response.say('Setting your ' + location + ' lights color to ' + color);
-                response.card(appName,'I have set your ' + location + ' lights color to ' + color + '.');
-                response.send();
+                replyWith('Setting your ' + location + ' lights color to ' + color, response);
             }
             // Unidentified item
             else {
-                console.log('RESPONSE: I could not set your ' + location + ' lights color to ' + color);
-                response.say('I could not set your ' + location + ' lights color to ' + color);
-                response.send();
+                replyWith('I could not set your ' + location + ' lights color to ' + color, response);
             }
         });
     }
     else {
-        console.log('RESPONSE: I cannot currently set your ' + location + ' lights color to ' + color);
-        response.say('I cannot currently set your ' + location + ' lights color to ' + color);
-        response.send();
+        replyWith('I cannot currently set your ' + location + ' lights color to ' + color, response);
     }
     return false;
 });
@@ -216,9 +200,7 @@ app.intent('SetLevel', {
         var HA_item = helper.getItem(itemName,location);
     }
     else {
-        console.log('RESPONSE: I cannot dim that device');
-        response.say('I cannot dim that device');
-        response.send();
+        replyWith('I cannot dim that device', response);
         return;
     }
     
@@ -230,30 +212,21 @@ app.intent('SetLevel', {
             }
             // Check if the current dimmer level and new level match
             if (state === percent) {
-                console.log('RESPONSE: Your ' + location + ' lights color are already at ' + percent + ' percent');
-                response.say('Your ' + location + ' lights color are already at ' + percent + ' percent');
-                response.send();
+                replyWith('Your ' + location + ' lights color are already at ' + percent + ' percent', response);
             }
             // Set the new state for the item
             else if (state !== percent) {
                 HA.setState(HA_item, percent);
-                console.log('RESPONSE: Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
-                response.say('Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
-                response.card(appName,'I have dimmed your ' + location + ' ' + itemName + ' to ' + percent + ' percent.');
-                response.send();
+                replyWith('Dimming your ' + location + ' ' + itemName + ' to ' + percent + ' percent', response);
             }
             // Unidentified item
             else {
-                console.log('RESPONSE: I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
-                response.say('I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent');
-                response.send();
+                replyWith('I could not dim your ' + location + ' ' + itemName + ' to ' + percent + ' percent', response);
             }
         });
     }
     else {
-        console.log('RESPONSE: I cannot currently set your ' + location + ' lights to ' + percent + ' percent');
-        response.say('I cannot currently set your ' + location + ' lights to ' + percent + ' percent');
-        response.send();
+        replyWith('I cannot currently set your ' + location + ' lights to ' + percent + ' percent', response);
     }
     return false;
 });
@@ -275,9 +248,7 @@ app.intent('SetTemp', {
         var HA_item = helper.getItem('thermostat',location);
     }
     else {
-        console.log('RESPONSE: I cannot set that temperature');
-        response.say('I cannot set that temperature');
-        response.send();
+        replyWith('I cannot set that temperature', response);
         return;
     }
     
@@ -289,30 +260,21 @@ app.intent('SetTemp', {
             }
             // Check if the current target temp and new target temp match
             if (state === degree) {
-                console.log('RESPONSE: Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
-                response.say('Your ' + location + ' target temperature is already set to ' + degree + ' degrees');
-                response.send();
+                replyWith('Your ' + location + ' target temperature is already set to ' + degree + ' degrees', response);
             }
             // Set the new state for the item
             else if (state !== degree) {
                 HA.setState(HA_item, degree);
-                console.log('RESPONSE: Setting your ' + location + ' target temperature to ' + degree + ' degrees');
-                response.say('Setting your ' + location + ' target temperature to ' + degree + ' degrees');
-                response.card(appName, 'I have set your ' + location + ' target temperature to ' + degree + ' degrees.');
-                response.send();
+                replyWith('Setting your ' + location + ' target temperature to ' + degree + ' degrees', response);
             }
             // Unidentified item
             else {
-                console.log('RESPONSE: I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
-                response.say('I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.');
-                response.send();
+                replyWith('I could not set your ' + location + ' to ' + degree + ' degrees.  Try something between 60 and 80 degrees fahrenheit.', response);
             }
         });
     }
     else {
-        console.log('RESPONSE: I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees');
-        response.say('I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees');
-        response.send();
+        replyWith('I cannot currently set your ' + location + ' temperature to ' + degree + ' degrees', response);
     }
     return false;
 });
@@ -334,22 +296,16 @@ app.intent('SetMode', {
         var HA_item = helper.getItem('mode', modeType);
     }
     else {
-        console.log('RESPONSE: I cannot set that mode');
-        response.say('I cannot set that mode');
-        response.send();
+        replyWith('I cannot set that mode', response);
         return;
     }
 
     if (modeId && HA_item) {
         HA.setState(HA_item, modeId);
-        console.log('RESPONSE: Changing your ' + modeType + ' mode to ' + modeName);
-        response.say('Changing your ' + modeType + ' mode to ' + modeName);
-        response.card(appName, 'I have changed your ' + modeType + ' mode to ' + modeName + '.');
+        replyWith('Changing your ' + modeType + ' mode to ' + modeName, response);
     }
     else {
-        console.log('RESPONSE: I could currently set your ' + modeType + ' mode to ' + modeName);
-        response.say('I could currently set your ' + modeType + ' mode to ' + modeName);
-        response.send();
+        replyWith('I could currently set your ' + modeType + ' mode to ' + modeName);
     }
 });
 
@@ -372,9 +328,7 @@ app.intent('GetState', {
         var HA_unit = helper.getUnit(metricName);
     }
     else {
-        console.log('RESPONSE: I cannot get that devices state');
-        response.say('I cannot get that devices state');
-        response.send();
+        replyWith('I cannot get that devices state', response);
         return;
     }
 
@@ -383,17 +337,12 @@ app.intent('GetState', {
             if (err) {
                 console.log('HA getState failed:  ' + err.message);
             } else if (state) {
-                console.log('RESPONSE: Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit);
-                response.say('Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit);
-                response.card(appName, 'Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit + '.');
-                response.send();
+                replyWith('Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit, response);
             }
         });
     }
     else {
-        console.log('RESPONSE: I cannot currently get the ' + metricName + ' in the ' + location);
-        response.say('I cannot currently get the ' + metricName + ' in the ' + location);
-        response.send();
+        replyWith('I cannot currently get the ' + metricName + ' in the ' + location, response);
     }
     return false;
 });
@@ -413,10 +362,7 @@ app.intent('GetMode', {
         var HA_item = helper.getItem('mode', modeType);
         
         if (!HA_item) {
-            console.log('RESPONSE: I could not get the ' + modeType + ' mode');
-            response.say('I could not get the ' + modeType + ' mode');
-            response.send();
-            return;
+            replyWith('I could not get the ' + modeType + ' mode', response);
         }
         
         HA.getState(HA_item, function (err, modeId) {
@@ -424,18 +370,12 @@ app.intent('GetMode', {
                 console.log('HA getState failed:  ' + err.message);
             } else if (modeId) {
                 var modeName = helper.getModeName(modeType,modeId);
-                console.log('RESPONSE: Your ' + modeType + ' mode is set to ' + modeName);
-                response.say('Your ' + modeType + ' mode is set to ' + modeName);
-                response.card(appName, 'Your ' + modeType + ' mode is set to ' + modeName + '.');
-                response.send();
+                replyWith('Your ' + modeType + ' mode is set to ' + modeName, response);
             }
         });
     }
     else {
-        console.log('RESPONSE: I cannot currently get the ' + modeType + ' mode');
-        response.say('I cannot currently get the ' + modeType + ' mode');
-        response.send();
-        return;
+        replyWith('I cannot currently get the ' + modeType + ' mode', response);
     }
     return false;
 });
@@ -456,13 +396,9 @@ app.intent('VoiceCMD', {
 
     HA.runVoiceCMD(function(err,msg) {
         if (err) {
-            console.log('ERROR: Cannot reach HA API: ' + err.message);
-            response.fail('Cannot reach HA API');
+            replyWith('I could not reach your Home Automation controller', response);
         } else if (msg) {
-            console.log('RESPONSE: ' + msg);
-            response.say(msg);
-            response.card(appName,msg);
-            response.send();
+            replyWith(msg, response);
         }
     });
     return false;
@@ -482,14 +418,9 @@ app.intent('Research', {
     // Handle request/response/error from Wolfram
     wolfram.askWolfram(question, function (err,msg) {
         if (err) {
-            console.log('ERROR: Wolfram API call failed for ' + question + ': ' + err.toString());
-            response.say("I could'nt quickly determine an answer to your question");
-            response.send();
+            replyWith('I could not quickly determine an answer to your question', response);
         } else if (msg) {
-            console.log('RESPONSE: ' + msg);
-            response.say(msg);
-            response.card(appName,msg);
-            response.send();
+            response.say(msg, response);
         }
     });
     return false;
@@ -499,14 +430,14 @@ app.intent('StopIntent',
     {"utterances":config.utterances.Stop
     },function(request,response) {
         console.log('REQUEST:  Stopping...');
-        response.say("Stopping").send();
+        response.say("Bye").send();
     });
 
 app.intent('CancelIntent',
     {"utterances":config.utterances.Cancel
     },function(request,response) {
         console.log('REQUEST:  Cancelling...');
-        response.say("Cancelling").send();
+        response.say("Bye").send();
     });
 
 app.intent('HelpIntent',
@@ -535,6 +466,26 @@ app.intent('HelpIntent',
 //    },function(request,response) {
 //        response.say('I heard you say repeat, this has not been implemented yet');
 //    });
+
+// Custom ASK response handler
+function replyWith(speechOutput,response) {
+    // Log the response to console
+    console.log('RESPONSE: ' + speechOutput);
+    
+    // 'Say' the response on the ECHO
+    response.say(speechOutput);
+    
+    // Show a 'Card' in the Alexa App
+    response.card(appName,speechOutput);
+    
+    // If this is a Launch request, do not end session and handle multiple commands
+    if (response.session ('launched') === 'true') { 
+        response.shouldEndSession (false); 
+    }
+    
+    // 'Send' the response to end upstream asynchronous requests
+    response.send();
+}
 
 // TODO - Alexa-HA still needs tested as an AWS Lambda function!
 // Connect the alexa-app to AWS Lambda

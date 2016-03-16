@@ -28,7 +28,7 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // Choose which Home Automation Controller you are using
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
-// HA server URL, with credentials - i.e. 'http://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
+// HA server URL, with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
 config.HA_server = 'http://ohuser:ohpassword@192.168.1.50:8080';
 // TODO HA String Item which stores the ASK requestID
 //config.HA_item_requestId = 'ECHO_RequestId';
@@ -38,9 +38,11 @@ config.HA_item_processed = 'ECHO_Processed';
 config.HA_item_voicecmd = 'ECHO_VoiceCMD';
 // HA String Item which stores the servers response/answer, to be spoken by ECHO
 config.HA_item_answer = 'ECHO_Answer';
+// TODO - HA Switch Item which toggles ECHO request handling ON/OFF
+//config.HA_item_switch = 'ECHO_Switch';
 
-// TODO Utilize Array of available rooms that HA has devices in, used for validations & re-prompts (i.e. 'which room did you mean?')
-//config.HA_locations = ['all','house','living','great','kitchen','bedroom','data center','garage','office','foyer','utility','powder','outside'];
+// Utilize Array of available rooms that HA has devices in, used for validations & re-prompts (i.e. 'which room did you mean?')
+config.HA_locations = ['all','house','living','great','kitchen','bedroom','data center','garage','office','foyer','utility','powder','outside'];
 
 // Item configuration - itemType / Location / itemName mappings
 config.item = {
