@@ -32,7 +32,7 @@ Switch ECHO_Processed "ECHO Proc [%s]"
 - Save & Exit
 - Consider editing Alexa-App-Server 'example/server.js' and changing the service to use a non-standard port number
 - You can now start the Alexa-App-Server and Alexa-HA app in the foreground with 'node server.js' or keep it running in the background with 'pm2 start server.js' ('pm2 status' displays additional useful info)
-- Visit http://INTERNAL_IP:PORT/alexa/Alexa-HA/ - which should show the Alexa Tester page.  This confirms that the service is up and listening.
+- Visit http://INTERNAL_IP:PORT/api/Alexa-HA/ - which should show the Alexa Tester page.  This confirms that the service is up and listening.
 - You now have the option of exposing your internal Node.js/Express service directly to the public, or setting it up behind a webserver such as Apache or Nginx.  In all cases an SSL certificate (trusted, or alternatively a self signed cert can be uploaded via [Amazon Developer Portal]) must be used for HTTPS.  For example, assuming you already have a SSL-enabled Apache webserver, edit Apache's 'sites-available/default-ssl' config file and add the following inside of the VirtualHost configuration (proxied address/ports depend entirely on your network setup!):
 ```
     <Location /api>
@@ -42,7 +42,7 @@ Switch ECHO_Processed "ECHO Proc [%s]"
 ```
 - Setup a port forwarding rule to route external public requests to the new Node.js/Express internal service.  If you have an public static IP address (from your ISP), use it.  If not, consider a dynamic DNS service which will route a static FQDN to your dynamic IP.  In both cases, we recommend selecting a 'high port' of 30000+ to use for the communication from the public to Alexa-HA.  For example, a public static IP:Port of '123.123.123.123:30000' is forwarded (by the firewally/router) to an internal private IP:port of '192.168.1.50:10000'.  
 - Restart all services  (Alexa-App-Server & webserver) for the changes to take effect. 
-- You should now be able to access 'https://MY_FQDN/api/alexa/Alexa-HA' and see the 'Alexa Tester' page from the ouside (which is required for the next steps work)!  If not, you have a service or firewall config issue that needs to be addressed before continuing.
+- You should now be able to access 'https://MY_FQDN/api/Alexa-HA' and see the 'Alexa Tester' page from the ouside (which is required for the next steps work)!  If not, you have a service or firewall config issue that needs to be addressed before continuing.
 
 # Setup Amazon Skills Kit
 
@@ -56,7 +56,7 @@ Complete the INSTALL steps for your HA controller first.  Then continue with the
 - Click 'Add a new Skill'
 - Give your skill a name - simply 'Alexa-HA' will do
 - Set your desired Invocation Name - for example 'OpenHAB' or 'Jarvis' - which you can then use to invoke the custom Skill on your Echo.
-- Set your endpoint - this is a URL to your publicly accessible Alexa-App-Server's skill endpoint. For example:  'https://MY_FQDN/api/alexa/alexa-ha?password=CONFIG_PASSWORD' or 'https://MY_PUBLIC_IP/api/alexa/alexa-ha?password=CONFIG_PASSWORD'.  Lambda ARN's have not been tested yet...
+- Set your endpoint - this is a URL to your publicly accessible Alexa-App-Server's skill endpoint. For example:  'https://MY_FQDN/api/alexa-ha?password=CONFIG_PASSWORD' or 'https://MY_PUBLIC_IP/api/alexa-ha?password=CONFIG_PASSWORD'.  Lambda ARN's have not been tested yet...
 - Save and continue to the next step - 'Interaction Model'
 - At this point, once you have configured and started the Alexa-App-Server, you should be able to visit the endpoints URL to get a full 'dump' of the Interaction Model.  These values ('intent schema' and 'utterances') should be copied into the AWS ASK Interaction Model page.
 - Define your 'custom slots'.  These should match what you've within Alexa-HA's config.js file.  For example, a custom slot of 'COLOR_TYPE' with values like:
