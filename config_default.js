@@ -28,8 +28,19 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // Choose which Home Automation Controller you are using
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
+// HA server username
+config.HA_user = 'USERNAME';
+// HA server password
+config.HA_password = 'PASSWORD';
+// HA server FQDN/IP
+config.HA_host = 'HA_SERVER_IP';
+// HA server port
+config.HA_port = 'PORT';
+// HA server protocol (http/https)
+config.HA_protocol = 'http';
 // HA server URL, with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
-config.HA_server = 'http://ohuser:ohpassword@192.168.1.50:8080';
+config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host
+ + ':' + config.HA_port;
 // TODO HA String Item which stores the ASK requestID
 //config.HA_item_requestId = 'ECHO_RequestId';
 // HA Switch Item which determines if the latest request been processed
