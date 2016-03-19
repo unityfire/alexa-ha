@@ -82,7 +82,7 @@ Remember to upload the contents of your ```~/node_modules/alexa-app-server/api/s
 
 #### Modify server.js to suit your needs
 ```
-cd ~/node_modules/alexa-app-server/api/apps/alexa-ha
+cd ~/node_modules/alexa-app-server/api
 nano server.js
 ```
 Here is mine for example (note the non-standard app_root & ports, and HTTPS is enabled as its required for an AWS ASK):
