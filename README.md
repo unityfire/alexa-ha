@@ -1,5 +1,5 @@
 # ALEXA HOME AUTOMATION
-An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration with your Home Automation.  Alexa-HA delivers natural voice control and verbal feedback for practically anything in your home, and beyond.  The key feature highlights include: 
+Alexa HA provides tight integration between [Amazon Echo] and your Home Automation. This free and open source Skill for has been developed using the [Alexa Skills Kit].  Alexa-HA delivers voice control and verbal feedback for practically anything in your home, and beyond! The key feature highlights include: 
 
 - Switch any controllable device - appliances/lights/fans/locks/shutters/etc
 - Set light colors individually; by room or group
@@ -10,23 +10,23 @@ An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration w
 - Get scene modes (i.e. 'check current house mode', could be home/away/relax/gaming/party/sleep, etc)
 - Trigger custom server side rules and return a response which is spoken by the Echo (i.e. say 'watch a movie' automatically sets up your Home Theater by powering on the Projector/AV Receiver/HTPC, lowering the Projector Screen, dimming the lights, etc.)
 - Research virtually anything via voice through [Wolfram Alpha] API
-- Display customized 'cards' in the Alexa App
+- Display useful 'cards' in the Alexa App
 - Automatically generates the Skill '[utterances]' based on configured devices/rooms, which trains Echo voice model for boosted accuracy
 - Crude support for Text-To-Speech 'announcements' by pairing the Echo with your HA server over Bluetooth
 
 The current version is focused on perfecting support for [OpenHAB]; other HA solutions may be added in the future.
 
 ### TECHNOLOGY STACK
-Alexa-HA's technology stack is primarily comprised of the following key open source projects:
+Alexa HA's technology stack is primarily comprised of the following key open source projects:
 
 * [node.js] - evented I/O for the backend
 * [alexa-app] - A Node.js module to simplify creation of Alexa (Amazon Echo) apps (Skills) using Node.js
 * [request] - A Node.js module for making HTTP(S) requests
 
-Your HA Controller does the heavy lifting of integrating with various downstream technologies/protocols, and Echo combined with the Alexa-HA Skill translates your voice commands into HA actions.
+Your HA Controller does the heavy lifting of integrating with various downstream technologies/protocols, and Amazon Echo combined with the Alexa HA Skill translates your voice commands into HA actions.
 
 ### INSTALLATION & DEPLOYMENT
-Alexa-HA leverages the [Alexa Skills Kit] to communicate with your internal HA server.  The Skill can be deployed in numerous ways, including:
+Alexa HA uses the Alexa Skills Kit to communicate with your internal HA server.  The Skill can be deployed in numerous ways, including:
 
 * Semi-direct (i.e. Echo -> AWS ASK -> NodeJS/Express -> HA)
 * Proxied through a webserver (i.e. Echo -> AWS ASK -> Apache/Nginx -> NodeJS -> HA)
@@ -36,42 +36,17 @@ To get started ASAP, see [INSTALL-QUICKSTART.md] to for setting up the Semi-dire
 
 Note that due to the Amazon Echo/Alexa architecture it is NOT possible to keep everything on your local network - the voice processing must be conducted in the cloud, and you are currently required to setup port forwarding on your firewall to allow AWS access to an internally hosted application.  The AWS ASK service then issues commands to your HA controller through your public facing endpoint.
 
-Currently you cannot simply install Alexa-HA through the Alexa App store, rather its required to setup your own Skill through the [Amazon Developer Portal].  We are exploring publishing this as an official Amazon Echo app.  In some ways self-hosting is advantageous as you can better customize the skill to your homes layout, desired scenes, and controllable devices.  You can also personalize the skill 'Invocation Name'.  To get started with configuring your own Alexa-HA skill, see:
+Currently you cannot simply install Alexa HA through the Alexa App store, rather its currently required to setup your own Skill through the [Amazon Developer Portal].  We are publishing this as an official Alexa App in due time.  In some ways self-hosting is advantageous as you can better customize the skill to your homes layout, desired scenes, and controllable devices.  You can also personalize the skill 'Invocation Name'.  To get started with configuring your own Alexa HA skill, see:
  * [Getting started with Alexa Skills Kit]
  * [INSTALL-QUICKSTART.md]
  * [INSTALL.md]
 
-
-### PLANNED ENHANCEMENTS
-- Intelligent re-prompting and interactions (i.e. 'which room did you mean?')
-- Timer support (i.e. 'turn off my bedroom lights in 30 minutes)
-- New intent for locating family members, using MQTT and OwnTracks (i.e. 'Where is Julie?')
-- [AWS Lambda] support - eliminating the complexities of provisioning servers/services/SSL certificates/etc
-- HA 'switch' to turn the Echo request handling ON/OFF (i.e. when the house is in 'away mode', disable Echo request handling altogether)
-- Automatic device discovery
-- Possibly publish an official Alexa App and Alexa-HA Web Portal for managing credentials, configuring the item/room mappings, and setting up your HA server access info
-- Multi-lingual support (once its officially supported by Amazon Echo)
-
-### CONTRIBUTORS
-Want to help with development? Excellent! Fork the project on GitHub and submit Pull Requests against 'develop', or work with us to create your own 'feature/*' branch.
-
-Don't have an Amazon Echo or your Home Automation setup yet?  It is possible to test, experiment and further develop Skills using [EchoSim] and [OpenHAB] running in demo mode. (which needs tested!)
-
-You can also contribute by thinking up new ways to interact with your home in general through voice commands.  We are very interested in expanding this project to make it as easy and intuitive for anyone to use.  Please create tickets in our github issue tracker for any desired features, and include a description of the use case...
-
-### DONATIONS
-Countless hours have been put into development and improvement of this open source project so far. We need your support!  Any and all donations via [PayPal] are very much appreciated.  Donations will be used to fund further development and add support for additional HA controllers/products.
-
-### TODOS
- - Write unit tests
- - Improve error handling/logging
- - Rethink and expand the ASK 'slots' and 'utterances'
-
 ### VERSION HISTORY
+* 0.1.7 (04/01/2016) - Added support for volume controls, minor bug fixes, documentation fixes & refinements
 * 0.1.6 (03/09/2016) - Log audit trails, added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
 * 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
 * 0.1.0 (02/29/2016) - Initial public release!
-
+* 
 ### LICENSE
 ----
 
