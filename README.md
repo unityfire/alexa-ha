@@ -46,7 +46,7 @@ Currently you cannot simply install Alexa HA through the Alexa App store, rather
 * 0.1.6 (03/09/2016) - Log audit trails, added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
 * 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
 * 0.1.0 (02/29/2016) - Initial public release!
-* 
+
 ### LICENSE
 ----
 
