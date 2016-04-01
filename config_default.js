@@ -1,24 +1,27 @@
-/* This is the default configuration file.  Copy this to 'config.js' and adapt as needed! */
+/* Default Alexa HA configuration file.  Copy this to 'config.js' and adapt as needed! */
 var config = {};
 
 /******************************** GENERAL CONFIGURATION *****************************************/
 // Name of the application/skill, which does not need to match the skills 'Invocation Name',
 // Defines both the Alexa-App-Server endpoint and the skills own name used in cards.
-//   https://developer.amazon.com
 config.applicationName = 'Alexa-HA';
+
 // AWS ASK applicationId, resembles 'amzn1.echo-sdk-ams.app.[your-unique-value-here]'
 config.applicationId = 'amzn1.echo-sdk-ams.app.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+
 // AWS ASK userID, resembles 'amzn1.echo-sdk-account.[your-unique-value-here]'
 config.userId = 'amzn1.echo-sdk-account.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+
 // AWS ASK password, randomly generated password to be included in the Skill's endpoint URL (i.e. '?password=XXXXXXXXXXXX')
 config.password = 'XXXXXXXXXXXX';
 
 // Greeting, when saying 'Alexa, open...'
 config.greeting = "OpenHAB, at your service";
+
 // URL of an MP3 to play when opening the skill (optional; must be MPEG v2 codec / 48kbps bit rate / 16000 sample rate)
 //config.chime = "\ <audio src=\"https://MY_FQDN/files/chime.mp3\" /> ";
 
-// TODO Array of IPs permitted to call the application
+// TODO Array of IPs permitted to call the application endpoint
 //config.allowed_ips = {'AWS':'72.21.217.159', 'Desktop':'192.168.1.5'};
 
 // Wolfram Alpha API key (Optional, used for Research Intent), resembles 'XXXXXX-XXXXXXXXXX' - https://developer.wolframalpha.com/portal/apisignup.html
@@ -28,29 +31,40 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // Choose which Home Automation Controller you are using
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
+
 // HA server username
 config.HA_user = 'USERNAME';
+
 // HA server password
 config.HA_password = 'PASSWORD';
+
 // HA server FQDN/IP
 config.HA_host = 'HA_SERVER_IP';
+
 // HA server port
-config.HA_port = 'PORT';
+config.HA_port = 'HA_SERVER_PORT';
+
 // HA server protocol (http/https)
 config.HA_protocol = 'http';
+
 // HA server URL, with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
 config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host
  + ':' + config.HA_port;
+
+ // TODO - HA Switch Item which toggles ECHO request handling ON/OFF
+ //config.HA_item_switch = 'ECHO_Switch';
+
 // TODO HA String Item which stores the ASK requestID
 //config.HA_item_requestId = 'ECHO_RequestId';
-// HA Switch Item which determines if the latest request been processed
+
+//HA Switch Item which determines if the latest request been processed
 config.HA_item_processed = 'ECHO_Processed';
+
 // HA String Item which stores the voice command
 config.HA_item_voicecmd = 'ECHO_VoiceCMD';
+
 // HA String Item which stores the servers response/answer, to be spoken by ECHO
 config.HA_item_answer = 'ECHO_Answer';
-// TODO - HA Switch Item which toggles ECHO request handling ON/OFF
-//config.HA_item_switch = 'ECHO_Switch';
 
 // Utilize Array of available rooms that HA has devices in, used for validations & re-prompts (i.e. 'which room did you mean?')
 config.HA_locations = ['all','house','living','great','kitchen','bedroom','data center','garage','office','foyer','utility','powder','outside'];
@@ -86,6 +100,11 @@ config.item = {
     'music': {
         'living': 'PC_HTPC_Pandora',
         default: 'PC_Desktop_Pandora'
+    },
+    'volume': {
+        'living room': 'Living_Volume',
+        'office': 'Office_Volume',
+        default: 'Office_Volume'
     },
     'mode': {
         'house': 'Scene_General',
@@ -149,7 +168,7 @@ config.mode = {
         'sleep': '1',
         'home': '2',
         'away': '3'
-    }
+    }    
 };
 
 // Metric names to Item mappings
@@ -234,7 +253,8 @@ config.utterances = {
     // Dim lights in a particular room
     'SetLevel': [
         "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {light|lights|lighting|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
-        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}"
+        "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}",
+        "{to |} {set|turn down|turn up|adjust} {the|my |} {-|Location} {volume|audio|sound|ItemName} to {0-100 by 5|Percent} {percent |}"
     ],
     // Set target temperature for house HVAC
     'SetTemp': [
