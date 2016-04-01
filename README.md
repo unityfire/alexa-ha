@@ -5,7 +5,7 @@ An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration w
 - Set light colors individually; by room or group
 - Control light dimmer levels individually; by room or group
 - Set thermostat(s) target temperature
-- Change between various scenes/modes (i.e. home/lighting/security/etc)
+- Change pre-defined scenes/modes (i.e. home/lighting/security/etc)
 - Get device states (i.e. temperature/humidity/luminance/power consumption, etc)
 - Get scene modes (i.e. 'check current house mode', could be home/away/relax/gaming/party/sleep, etc)
 - Trigger custom server side rules and return a response which is spoken by the Echo (i.e. say 'watch a movie' automatically sets up your Home Theater by powering on the Projector/AV Receiver/HTPC, lowering the Projector Screen, dimming the lights, etc.)
@@ -14,7 +14,7 @@ An [Amazon Echo] application (a.k.a. 'Skill') which provides tight integration w
 - Automatically generates the Skill '[utterances]' based on configured devices/rooms, which trains Echo voice model for boosted accuracy
 - Crude support for Text-To-Speech 'announcements' by pairing the Echo with your HA server over Bluetooth
 
-The current version is focused on perfecting Alexa support for [OpenHAB].  Other HA solutions may be added in the future.
+The current version is focused on perfecting support for [OpenHAB]; other HA solutions may be added in the future.
 
 ### TECHNOLOGY STACK
 Alexa-HA's technology stack is primarily comprised of the following key open source projects:
@@ -50,9 +50,10 @@ Currently you cannot simply install Alexa-HA through the Alexa App store, rather
 - HA 'switch' to turn the Echo request handling ON/OFF (i.e. when the house is in 'away mode', disable Echo request handling altogether)
 - Automatic device discovery
 - Possibly publish an official Alexa App and Alexa-HA Web Portal for managing credentials, configuring the item/room mappings, and setting up your HA server access info
+- Multi-lingual support (once its officially supported by Amazon Echo)
 
 ### CONTRIBUTORS
-Want to help with development? Excellent! Fork the project on GitHub and/or submit Pull Requests...
+Want to help with development? Excellent! Fork the project on GitHub and submit Pull Requests against 'develop', or work with us to create your own 'feature/*' branch.
 
 Don't have an Amazon Echo or your Home Automation setup yet?  It is possible to test, experiment and further develop Skills using [EchoSim] and [OpenHAB] running in demo mode. (which needs tested!)
 
