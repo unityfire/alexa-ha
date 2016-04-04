@@ -338,7 +338,10 @@ config.utterances = {
     ],
     // Stop Intent
     'Stop': [
-        "{to |} stop {that |}"
+        "{to |} stop {that |}",
+        "{to |} quit {that |}",
+        "{to |} exit {that |}",
+        "{to |} never mind {that |}"
     ],
     // Cancel Intent
     'Cancel': [
