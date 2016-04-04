@@ -65,8 +65,8 @@ config.HA_item_voicecmd = 'ECHO_VoiceCMD';
 // HA String Item which stores the servers response/answer, to be spoken by ECHO
 config.HA_item_answer = 'ECHO_Answer';
 
-// Utilize Array of available rooms that HA has devices in, used for validations & re-prompts (i.e. 'which room did you mean?')
-config.HA_locations = ['all','house','living','great','kitchen','bedroom','data center','garage','office','foyer','utility','powder','outside'];
+// Array of available rooms that HA has devices in, used for validations & re-prompts
+config.HA_locations = ['all','house','living','great','kitchen','master bedroom','guest bedroom','data center','garage','office','foyer','utility','inside','indoor','outside','outdoor'];
 
 // Item configuration - itemType / Location / itemName mappings
 config.item = {
