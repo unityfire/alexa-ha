@@ -204,7 +204,28 @@ config.metric = {
     'power consumption': {
         'house': 'HEM1_P2',
         default: 'HEM1_P2'
+    },
+    'visibility': {
+        'outdoor': 'Weather_Visibility',
+        'outside': 'Weather_Visibility',
+        default: 'Weather_Visibility'
+    },
+    'pressure': {
+        'outdoor': 'Weather_Pressure',
+        'outside': 'Weather_Pressure',
+        default: 'Weather_Pressure'
+    },
+    'wind': {
+        'outdoor': 'Weather_Wind',
+        'outside': 'Weather_Wind',
+        default: 'Weather_Wind'
+    },
+    'humidex': {
+        'outdoor': 'Weather_Humidex',
+        'outside': 'Weather_Humidex',
+        default: 'Weather_Humidex'
     }
+   
 };
 
 // Unit to metric mappings
@@ -254,7 +275,7 @@ config.utterances = {
     'SetLevel': [
         "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {light|lights|lighting|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
         "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}",
-        "{to |} {set|turn down|turn up|adjust} {the|my |} {-|Location} {volume|audio|sound|ItemName} to {0-100 by 5|Percent} {percent |}"
+        "{to |} {set|turn down|turn up|adjust} {the|my |} {-|Location} {volume|ItemName} to {0-100 by 5|Percent} {percent |}"
     ],
     // Set target temperature for house HVAC
     'SetTemp': [
