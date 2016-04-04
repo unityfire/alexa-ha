@@ -32,6 +32,9 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
 
+// HA server protocol (http/https)
+config.HA_protocol = 'https';
+
 // HA server username
 config.HA_user = 'USERNAME';
 
@@ -43,9 +46,6 @@ config.HA_host = 'HA_SERVER_IP';
 
 // HA server port
 config.HA_port = 'HA_SERVER_PORT';
-
-// HA server protocol (http/https)
-config.HA_protocol = 'http';
 
 // HA server URL with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:HA_SERVER_PORT' (constructed from above variables)
 config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host + ':' + config.HA_port;
