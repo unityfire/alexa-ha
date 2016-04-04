@@ -47,9 +47,8 @@ config.HA_port = 'HA_SERVER_PORT';
 // HA server protocol (http/https)
 config.HA_protocol = 'http';
 
-// HA server URL, with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
-config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host
- + ':' + config.HA_port;
+// HA server URL with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:HA_SERVER_PORT' (constructed from above variables)
+config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host + ':' + config.HA_port;
 
  // TODO - HA Switch Item which toggles ECHO request handling ON/OFF
  //config.HA_item_switch = 'ECHO_Switch';
@@ -85,6 +84,7 @@ config.item = {
         'office': 'Lights_Motion_Office',
         'kitchen': 'Lights_Motion_Kitchen',
         'living': 'Lights_Motion_Living',
+        'all': 'Lights_Motion_All',
         default: 'Lights_Motion_All'
     },
     'fan': {
@@ -99,6 +99,7 @@ config.item = {
     },
     'music': {
         'living': 'PC_HTPC_Pandora',
+        'office': 'PC_Desktop_Pandora',
         default: 'PC_Desktop_Pandora'
     },
     'volume': {
@@ -178,8 +179,10 @@ config.metric = {
         'kitchen': 'Multi3_Temp',
         'living': 'Multi2_Temp',
         'great': 'HVAC_Temp',
-        'house': 'Avg_Temp',
         'data center': 'HVAC_DataCenter_Temp',
+        'house': 'Avg_Temp',
+        'inside': 'Avg_Temp',
+        'indoor': 'Avg_Temp',
         'outside': 'Weather_Temp',
         'outdoor': 'Weather_Temp',
         default: 'Avg_Temp'
@@ -190,6 +193,8 @@ config.metric = {
         'living': 'Multi2_Humidity',
         'great': 'HVAC_Humidity',
         'house': 'Avg_Humidity',
+        'inside': 'Avg_Humidity',
+        'indoor': 'Avg_Humidity',
         'outside': 'Weather_Humidity',
         'outdoor': 'Weather_Humidity',
         default: 'Avg_Humidity'
@@ -199,6 +204,8 @@ config.metric = {
         'kitchen': 'Multi3_Luminance',
         'living': 'Multi2_Luminance',
         'house': 'Avg_Luminance',
+        'inside': 'Avg_Luminance',
+        'indoor': 'Avg_Luminance',
         default: 'Avg_Luminance'
     },
     'power consumption': {
@@ -293,10 +300,10 @@ config.utterances = {
     ],
     // Get current item state values
     'GetState': [
-        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
-        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}",
-        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
-        "whats {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}"
+        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}",
+        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        "whats {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}"
 
     ],
     // Get current house/lighting/security/etc scene
