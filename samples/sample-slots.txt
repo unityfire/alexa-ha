@@ -26,3 +26,8 @@ office
 foyer
 outside
 utility
+powder
+inside
+indoor
+outside
+outdoor

@@ -1,111 +1,111 @@
-Switch	to turn {ON|Action} the {fan|ItemName} in the {Location}
-Switch	 turn {OFF|Action} the {stove|ItemName} in the {Location}
-Switch	to switch {ON|Action} the {music|ItemName} in the {Location}
-Switch	 switch {OFF|Action} the {light|ItemName} in the {Location}
-Switch	to flip {ON|Action} the {lights|ItemName} in the {Location}
-Switch	 flip {OFF|Action} the {motion lighting|ItemName} in the {Location}
-Switch	to turn {ON|Action} my {fan|ItemName} in the {Location}
-Switch	 turn {OFF|Action} my {stove|ItemName} in the {Location}
-Switch	to switch {ON|Action} my {music|ItemName} in the {Location}
-Switch	 switch {OFF|Action} my {light|ItemName} in the {Location}
-Switch	to flip {ON|Action} my {lights|ItemName} in the {Location}
-Switch	 flip {OFF|Action} my {motion lighting|ItemName} in the {Location}
-Switch	to turn {ON|Action} {fan|ItemName} in the {Location}
-Switch	 turn {OFF|Action} {stove|ItemName} in the {Location}
-Switch	to switch {ON|Action} {music|ItemName} in the {Location}
-Switch	 switch {OFF|Action} {light|ItemName} in the {Location}
-Switch	to flip {ON|Action} {lights|ItemName} in the {Location}
-Switch	 flip {OFF|Action} {motion lighting|ItemName} in the {Location}
-Switch	to turn {ON|Action} the {fan|ItemName} {Location}
-Switch	 turn {OFF|Action} the {stove|ItemName} {Location}
-Switch	to switch {ON|Action} the {music|ItemName} {Location}
-Switch	 switch {OFF|Action} the {light|ItemName} {Location}
-Switch	to flip {ON|Action} the {lights|ItemName} {Location}
-Switch	 flip {OFF|Action} the {motion lighting|ItemName} {Location}
-Switch	to turn {ON|Action} my {fan|ItemName} {Location}
-Switch	 turn {OFF|Action} my {stove|ItemName} {Location}
-Switch	to switch {ON|Action} my {music|ItemName} {Location}
-Switch	 switch {OFF|Action} my {light|ItemName} {Location}
-Switch	to flip {ON|Action} my {lights|ItemName} {Location}
-Switch	 flip {OFF|Action} my {motion lighting|ItemName} {Location}
-Switch	to turn {ON|Action} {fan|ItemName} {Location}
-Switch	 turn {OFF|Action} {stove|ItemName} {Location}
-Switch	to switch {ON|Action} {music|ItemName} {Location}
-Switch	 switch {OFF|Action} {light|ItemName} {Location}
-Switch	to flip {ON|Action} {lights|ItemName} {Location}
-Switch	 flip {OFF|Action} {motion lighting|ItemName} {Location}
-Switch	to turn {ON|Action} the {Location} {fan|ItemName}
-Switch	 turn {OFF|Action} the {Location} {stove|ItemName}
-Switch	to switch {ON|Action} the {Location} {music|ItemName}
-Switch	 switch {OFF|Action} the {Location} {light|ItemName}
-Switch	to flip {ON|Action} the {Location} {lights|ItemName}
-Switch	 flip {OFF|Action} the {Location} {motion lighting|ItemName}
-Switch	to turn {ON|Action} my {Location} {fan|ItemName}
-Switch	 turn {OFF|Action} my {Location} {stove|ItemName}
-Switch	to switch {ON|Action} my {Location} {music|ItemName}
-Switch	 switch {OFF|Action} my {Location} {light|ItemName}
-Switch	to flip {ON|Action} my {Location} {lights|ItemName}
-Switch	 flip {OFF|Action} my {Location} {motion lighting|ItemName}
-Switch	to turn {ON|Action} {Location} {fan|ItemName}
-Switch	 turn {OFF|Action} {Location} {stove|ItemName}
-Switch	to switch {ON|Action} {Location} {music|ItemName}
-Switch	 switch {OFF|Action} {Location} {light|ItemName}
-Switch	to flip {ON|Action} {Location} {lights|ItemName}
-Switch	 flip {OFF|Action} {Location} {motion lighting|ItemName}
-Switch	to turn the {Location} {fan|ItemName} {ON|Action}
-Switch	 turn the {Location} {stove|ItemName} {OFF|Action}
-Switch	to switch the {Location} {music|ItemName} {ON|Action}
-Switch	 switch the {Location} {light|ItemName} {OFF|Action}
-Switch	to flip the {Location} {lights|ItemName} {ON|Action}
-Switch	 flip the {Location} {motion lighting|ItemName} {OFF|Action}
-Switch	to turn my {Location} {fan|ItemName} {ON|Action}
-Switch	 turn my {Location} {stove|ItemName} {OFF|Action}
-Switch	to switch my {Location} {music|ItemName} {ON|Action}
-Switch	 switch my {Location} {light|ItemName} {OFF|Action}
-Switch	to flip my {Location} {lights|ItemName} {ON|Action}
-Switch	 flip my {Location} {motion lighting|ItemName} {OFF|Action}
-Switch	to turn {Location} {fan|ItemName} {ON|Action}
-Switch	 turn {Location} {stove|ItemName} {OFF|Action}
-Switch	to switch {Location} {music|ItemName} {ON|Action}
-Switch	 switch {Location} {light|ItemName} {OFF|Action}
-Switch	to flip {Location} {lights|ItemName} {ON|Action}
-Switch	 flip {Location} {motion lighting|ItemName} {OFF|Action}
-Switch	to turn the {fan|ItemName} {ON|Action} in the {Location}
-Switch	 turn the {stove|ItemName} {OFF|Action} in the {Location}
-Switch	to switch the {music|ItemName} {ON|Action} in the {Location}
-Switch	 switch the {light|ItemName} {OFF|Action} in the {Location}
-Switch	to flip the {lights|ItemName} {ON|Action} in the {Location}
-Switch	 flip the {motion lighting|ItemName} {OFF|Action} in the {Location}
-Switch	to turn my {fan|ItemName} {ON|Action} in the {Location}
-Switch	 turn my {stove|ItemName} {OFF|Action} in the {Location}
-Switch	to switch my {music|ItemName} {ON|Action} in the {Location}
-Switch	 switch my {light|ItemName} {OFF|Action} in the {Location}
-Switch	to flip my {lights|ItemName} {ON|Action} in the {Location}
-Switch	 flip my {motion lighting|ItemName} {OFF|Action} in the {Location}
-Switch	to turn {fan|ItemName} {ON|Action} in the {Location}
-Switch	 turn {stove|ItemName} {OFF|Action} in the {Location}
-Switch	to switch {music|ItemName} {ON|Action} in the {Location}
-Switch	 switch {light|ItemName} {OFF|Action} in the {Location}
-Switch	to flip {lights|ItemName} {ON|Action} in the {Location}
-Switch	 flip {motion lighting|ItemName} {OFF|Action} in the {Location}
-Switch	to turn the {fan|ItemName} {ON|Action} {Location}
-Switch	 turn the {stove|ItemName} {OFF|Action} {Location}
-Switch	to switch the {music|ItemName} {ON|Action} {Location}
-Switch	 switch the {light|ItemName} {OFF|Action} {Location}
-Switch	to flip the {lights|ItemName} {ON|Action} {Location}
-Switch	 flip the {motion lighting|ItemName} {OFF|Action} {Location}
-Switch	to turn my {fan|ItemName} {ON|Action} {Location}
-Switch	 turn my {stove|ItemName} {OFF|Action} {Location}
-Switch	to switch my {music|ItemName} {ON|Action} {Location}
-Switch	 switch my {light|ItemName} {OFF|Action} {Location}
-Switch	to flip my {lights|ItemName} {ON|Action} {Location}
-Switch	 flip my {motion lighting|ItemName} {OFF|Action} {Location}
-Switch	to turn {fan|ItemName} {ON|Action} {Location}
-Switch	 turn {stove|ItemName} {OFF|Action} {Location}
-Switch	to switch {music|ItemName} {ON|Action} {Location}
-Switch	 switch {light|ItemName} {OFF|Action} {Location}
-Switch	to flip {lights|ItemName} {ON|Action} {Location}
-Switch	 flip {motion lighting|ItemName} {OFF|Action} {Location}
+Switch	to turn {ON|Action} the {light|ItemName} in the {Location}
+Switch	 turn {OFF|Action} the {lights|ItemName} in the {Location}
+Switch	to switch {ON|Action} the {motion lighting|ItemName} in the {Location}
+Switch	 switch {OFF|Action} the {fan|ItemName} in the {Location}
+Switch	to flip {ON|Action} the {stove|ItemName} in the {Location}
+Switch	 flip {OFF|Action} the {music|ItemName} in the {Location}
+Switch	to turn {ON|Action} my {light|ItemName} in the {Location}
+Switch	 turn {OFF|Action} my {lights|ItemName} in the {Location}
+Switch	to switch {ON|Action} my {motion lighting|ItemName} in the {Location}
+Switch	 switch {OFF|Action} my {fan|ItemName} in the {Location}
+Switch	to flip {ON|Action} my {stove|ItemName} in the {Location}
+Switch	 flip {OFF|Action} my {music|ItemName} in the {Location}
+Switch	to turn {ON|Action} {light|ItemName} in the {Location}
+Switch	 turn {OFF|Action} {lights|ItemName} in the {Location}
+Switch	to switch {ON|Action} {motion lighting|ItemName} in the {Location}
+Switch	 switch {OFF|Action} {fan|ItemName} in the {Location}
+Switch	to flip {ON|Action} {stove|ItemName} in the {Location}
+Switch	 flip {OFF|Action} {music|ItemName} in the {Location}
+Switch	to turn {ON|Action} the {light|ItemName} {Location}
+Switch	 turn {OFF|Action} the {lights|ItemName} {Location}
+Switch	to switch {ON|Action} the {motion lighting|ItemName} {Location}
+Switch	 switch {OFF|Action} the {fan|ItemName} {Location}
+Switch	to flip {ON|Action} the {stove|ItemName} {Location}
+Switch	 flip {OFF|Action} the {music|ItemName} {Location}
+Switch	to turn {ON|Action} my {light|ItemName} {Location}
+Switch	 turn {OFF|Action} my {lights|ItemName} {Location}
+Switch	to switch {ON|Action} my {motion lighting|ItemName} {Location}
+Switch	 switch {OFF|Action} my {fan|ItemName} {Location}
+Switch	to flip {ON|Action} my {stove|ItemName} {Location}
+Switch	 flip {OFF|Action} my {music|ItemName} {Location}
+Switch	to turn {ON|Action} {light|ItemName} {Location}
+Switch	 turn {OFF|Action} {lights|ItemName} {Location}
+Switch	to switch {ON|Action} {motion lighting|ItemName} {Location}
+Switch	 switch {OFF|Action} {fan|ItemName} {Location}
+Switch	to flip {ON|Action} {stove|ItemName} {Location}
+Switch	 flip {OFF|Action} {music|ItemName} {Location}
+Switch	to turn {ON|Action} the {Location} {light|ItemName}
+Switch	 turn {OFF|Action} the {Location} {lights|ItemName}
+Switch	to switch {ON|Action} the {Location} {motion lighting|ItemName}
+Switch	 switch {OFF|Action} the {Location} {fan|ItemName}
+Switch	to flip {ON|Action} the {Location} {stove|ItemName}
+Switch	 flip {OFF|Action} the {Location} {music|ItemName}
+Switch	to turn {ON|Action} my {Location} {light|ItemName}
+Switch	 turn {OFF|Action} my {Location} {lights|ItemName}
+Switch	to switch {ON|Action} my {Location} {motion lighting|ItemName}
+Switch	 switch {OFF|Action} my {Location} {fan|ItemName}
+Switch	to flip {ON|Action} my {Location} {stove|ItemName}
+Switch	 flip {OFF|Action} my {Location} {music|ItemName}
+Switch	to turn {ON|Action} {Location} {light|ItemName}
+Switch	 turn {OFF|Action} {Location} {lights|ItemName}
+Switch	to switch {ON|Action} {Location} {motion lighting|ItemName}
+Switch	 switch {OFF|Action} {Location} {fan|ItemName}
+Switch	to flip {ON|Action} {Location} {stove|ItemName}
+Switch	 flip {OFF|Action} {Location} {music|ItemName}
+Switch	to turn the {Location} {light|ItemName} {ON|Action}
+Switch	 turn the {Location} {lights|ItemName} {OFF|Action}
+Switch	to switch the {Location} {motion lighting|ItemName} {ON|Action}
+Switch	 switch the {Location} {fan|ItemName} {OFF|Action}
+Switch	to flip the {Location} {stove|ItemName} {ON|Action}
+Switch	 flip the {Location} {music|ItemName} {OFF|Action}
+Switch	to turn my {Location} {light|ItemName} {ON|Action}
+Switch	 turn my {Location} {lights|ItemName} {OFF|Action}
+Switch	to switch my {Location} {motion lighting|ItemName} {ON|Action}
+Switch	 switch my {Location} {fan|ItemName} {OFF|Action}
+Switch	to flip my {Location} {stove|ItemName} {ON|Action}
+Switch	 flip my {Location} {music|ItemName} {OFF|Action}
+Switch	to turn {Location} {light|ItemName} {ON|Action}
+Switch	 turn {Location} {lights|ItemName} {OFF|Action}
+Switch	to switch {Location} {motion lighting|ItemName} {ON|Action}
+Switch	 switch {Location} {fan|ItemName} {OFF|Action}
+Switch	to flip {Location} {stove|ItemName} {ON|Action}
+Switch	 flip {Location} {music|ItemName} {OFF|Action}
+Switch	to turn the {light|ItemName} {ON|Action} in the {Location}
+Switch	 turn the {lights|ItemName} {OFF|Action} in the {Location}
+Switch	to switch the {motion lighting|ItemName} {ON|Action} in the {Location}
+Switch	 switch the {fan|ItemName} {OFF|Action} in the {Location}
+Switch	to flip the {stove|ItemName} {ON|Action} in the {Location}
+Switch	 flip the {music|ItemName} {OFF|Action} in the {Location}
+Switch	to turn my {light|ItemName} {ON|Action} in the {Location}
+Switch	 turn my {lights|ItemName} {OFF|Action} in the {Location}
+Switch	to switch my {motion lighting|ItemName} {ON|Action} in the {Location}
+Switch	 switch my {fan|ItemName} {OFF|Action} in the {Location}
+Switch	to flip my {stove|ItemName} {ON|Action} in the {Location}
+Switch	 flip my {music|ItemName} {OFF|Action} in the {Location}
+Switch	to turn {light|ItemName} {ON|Action} in the {Location}
+Switch	 turn {lights|ItemName} {OFF|Action} in the {Location}
+Switch	to switch {motion lighting|ItemName} {ON|Action} in the {Location}
+Switch	 switch {fan|ItemName} {OFF|Action} in the {Location}
+Switch	to flip {stove|ItemName} {ON|Action} in the {Location}
+Switch	 flip {music|ItemName} {OFF|Action} in the {Location}
+Switch	to turn the {light|ItemName} {ON|Action} {Location}
+Switch	 turn the {lights|ItemName} {OFF|Action} {Location}
+Switch	to switch the {motion lighting|ItemName} {ON|Action} {Location}
+Switch	 switch the {fan|ItemName} {OFF|Action} {Location}
+Switch	to flip the {stove|ItemName} {ON|Action} {Location}
+Switch	 flip the {music|ItemName} {OFF|Action} {Location}
+Switch	to turn my {light|ItemName} {ON|Action} {Location}
+Switch	 turn my {lights|ItemName} {OFF|Action} {Location}
+Switch	to switch my {motion lighting|ItemName} {ON|Action} {Location}
+Switch	 switch my {fan|ItemName} {OFF|Action} {Location}
+Switch	to flip my {stove|ItemName} {ON|Action} {Location}
+Switch	 flip my {music|ItemName} {OFF|Action} {Location}
+Switch	to turn {light|ItemName} {ON|Action} {Location}
+Switch	 turn {lights|ItemName} {OFF|Action} {Location}
+Switch	to switch {motion lighting|ItemName} {ON|Action} {Location}
+Switch	 switch {fan|ItemName} {OFF|Action} {Location}
+Switch	to flip {stove|ItemName} {ON|Action} {Location}
+Switch	 flip {music|ItemName} {OFF|Action} {Location}
 SetColor	to set the {Location} light color to {Color}
 SetColor	 set the {Location} light color to {Color}
 SetColor	to change the {Location} light color to {Color}
@@ -358,628 +358,682 @@ SetColor	make {Location} light {Color}
 SetColor	make the {Location} lights {Color}
 SetColor	make my {Location} lights {Color}
 SetColor	make {Location} lights {Color}
-SetLevel	to dim the {light|ItemName} in the {Location} to {sixty|Percent} percent 
-SetLevel	 dim the {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
-SetLevel	to turn down the {lighting|ItemName} in the {Location} to {seventy|Percent} percent 
-SetLevel	 turn down the {light|ItemName} in the {Location} to {seventy five|Percent} percent 
-SetLevel	to turn up the {lights|ItemName} in the {Location} to {eighty|Percent} percent 
-SetLevel	 turn up the {lighting|ItemName} in the {Location} to {eighty five|Percent} percent 
-SetLevel	to soften the {light|ItemName} in the {Location} to {ninety|Percent} percent 
-SetLevel	 soften the {lights|ItemName} in the {Location} to {ninety five|Percent} percent 
-SetLevel	to adjust the {lighting|ItemName} in the {Location} to {one hundred|Percent} percent 
-SetLevel	 adjust the {light|ItemName} in the {Location} to {zero|Percent} percent 
-SetLevel	to dim my {lights|ItemName} in the {Location} to {five|Percent} percent 
-SetLevel	 dim my {lighting|ItemName} in the {Location} to {ten|Percent} percent 
-SetLevel	to turn down my {light|ItemName} in the {Location} to {fifteen|Percent} percent 
-SetLevel	 turn down my {lights|ItemName} in the {Location} to {twenty|Percent} percent 
-SetLevel	to turn up my {lighting|ItemName} in the {Location} to {twenty five|Percent} percent 
-SetLevel	 turn up my {light|ItemName} in the {Location} to {thirty|Percent} percent 
-SetLevel	to soften my {lights|ItemName} in the {Location} to {thirty five|Percent} percent 
-SetLevel	 soften my {lighting|ItemName} in the {Location} to {forty|Percent} percent 
-SetLevel	to adjust my {light|ItemName} in the {Location} to {forty five|Percent} percent 
-SetLevel	 adjust my {lights|ItemName} in the {Location} to {fifty|Percent} percent 
-SetLevel	to dim {lighting|ItemName} in the {Location} to {fifty five|Percent} percent 
-SetLevel	 dim {light|ItemName} in the {Location} to {sixty|Percent} percent 
-SetLevel	to turn down {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
-SetLevel	 turn down {lighting|ItemName} in the {Location} to {seventy|Percent} percent 
-SetLevel	to turn up {light|ItemName} in the {Location} to {seventy five|Percent} percent 
-SetLevel	 turn up {lights|ItemName} in the {Location} to {eighty|Percent} percent 
-SetLevel	to soften {lighting|ItemName} in the {Location} to {eighty five|Percent} percent 
-SetLevel	 soften {light|ItemName} in the {Location} to {ninety|Percent} percent 
-SetLevel	to adjust {lights|ItemName} in the {Location} to {ninety five|Percent} percent 
-SetLevel	 adjust {lighting|ItemName} in the {Location} to {one hundred|Percent} percent 
-SetLevel	to dim the {light|ItemName} {Location} to {zero|Percent} percent 
-SetLevel	 dim the {lights|ItemName} {Location} to {five|Percent} percent 
-SetLevel	to turn down the {lighting|ItemName} {Location} to {ten|Percent} percent 
-SetLevel	 turn down the {light|ItemName} {Location} to {fifteen|Percent} percent 
-SetLevel	to turn up the {lights|ItemName} {Location} to {twenty|Percent} percent 
-SetLevel	 turn up the {lighting|ItemName} {Location} to {twenty five|Percent} percent 
-SetLevel	to soften the {light|ItemName} {Location} to {thirty|Percent} percent 
-SetLevel	 soften the {lights|ItemName} {Location} to {thirty five|Percent} percent 
-SetLevel	to adjust the {lighting|ItemName} {Location} to {forty|Percent} percent 
-SetLevel	 adjust the {light|ItemName} {Location} to {forty five|Percent} percent 
-SetLevel	to dim my {lights|ItemName} {Location} to {fifty|Percent} percent 
-SetLevel	 dim my {lighting|ItemName} {Location} to {fifty five|Percent} percent 
-SetLevel	to turn down my {light|ItemName} {Location} to {sixty|Percent} percent 
-SetLevel	 turn down my {lights|ItemName} {Location} to {sixty five|Percent} percent 
-SetLevel	to turn up my {lighting|ItemName} {Location} to {seventy|Percent} percent 
-SetLevel	 turn up my {light|ItemName} {Location} to {seventy five|Percent} percent 
-SetLevel	to soften my {lights|ItemName} {Location} to {eighty|Percent} percent 
-SetLevel	 soften my {lighting|ItemName} {Location} to {eighty five|Percent} percent 
-SetLevel	to adjust my {light|ItemName} {Location} to {ninety|Percent} percent 
-SetLevel	 adjust my {lights|ItemName} {Location} to {ninety five|Percent} percent 
-SetLevel	to dim {lighting|ItemName} {Location} to {one hundred|Percent} percent 
-SetLevel	 dim {light|ItemName} {Location} to {zero|Percent} percent 
-SetLevel	to turn down {lights|ItemName} {Location} to {five|Percent} percent 
-SetLevel	 turn down {lighting|ItemName} {Location} to {ten|Percent} percent 
-SetLevel	to turn up {light|ItemName} {Location} to {fifteen|Percent} percent 
-SetLevel	 turn up {lights|ItemName} {Location} to {twenty|Percent} percent 
-SetLevel	to soften {lighting|ItemName} {Location} to {twenty five|Percent} percent 
-SetLevel	 soften {light|ItemName} {Location} to {thirty|Percent} percent 
-SetLevel	to adjust {lights|ItemName} {Location} to {thirty five|Percent} percent 
-SetLevel	 adjust {lighting|ItemName} {Location} to {forty|Percent} percent 
-SetLevel	to dim the {light|ItemName} in the {Location} to {forty five|Percent} 
-SetLevel	 dim the {lights|ItemName} in the {Location} to {fifty|Percent} 
-SetLevel	to turn down the {lighting|ItemName} in the {Location} to {fifty five|Percent} 
-SetLevel	 turn down the {light|ItemName} in the {Location} to {sixty|Percent} 
-SetLevel	to turn up the {lights|ItemName} in the {Location} to {sixty five|Percent} 
-SetLevel	 turn up the {lighting|ItemName} in the {Location} to {seventy|Percent} 
-SetLevel	to soften the {light|ItemName} in the {Location} to {seventy five|Percent} 
-SetLevel	 soften the {lights|ItemName} in the {Location} to {eighty|Percent} 
-SetLevel	to adjust the {lighting|ItemName} in the {Location} to {eighty five|Percent} 
-SetLevel	 adjust the {light|ItemName} in the {Location} to {ninety|Percent} 
-SetLevel	to dim my {lights|ItemName} in the {Location} to {ninety five|Percent} 
-SetLevel	 dim my {lighting|ItemName} in the {Location} to {one hundred|Percent} 
-SetLevel	to turn down my {light|ItemName} in the {Location} to {zero|Percent} 
-SetLevel	 turn down my {lights|ItemName} in the {Location} to {five|Percent} 
-SetLevel	to turn up my {lighting|ItemName} in the {Location} to {ten|Percent} 
-SetLevel	 turn up my {light|ItemName} in the {Location} to {fifteen|Percent} 
-SetLevel	to soften my {lights|ItemName} in the {Location} to {twenty|Percent} 
-SetLevel	 soften my {lighting|ItemName} in the {Location} to {twenty five|Percent} 
-SetLevel	to adjust my {light|ItemName} in the {Location} to {thirty|Percent} 
-SetLevel	 adjust my {lights|ItemName} in the {Location} to {thirty five|Percent} 
-SetLevel	to dim {lighting|ItemName} in the {Location} to {forty|Percent} 
-SetLevel	 dim {light|ItemName} in the {Location} to {forty five|Percent} 
-SetLevel	to turn down {lights|ItemName} in the {Location} to {fifty|Percent} 
-SetLevel	 turn down {lighting|ItemName} in the {Location} to {fifty five|Percent} 
-SetLevel	to turn up {light|ItemName} in the {Location} to {sixty|Percent} 
-SetLevel	 turn up {lights|ItemName} in the {Location} to {sixty five|Percent} 
-SetLevel	to soften {lighting|ItemName} in the {Location} to {seventy|Percent} 
-SetLevel	 soften {light|ItemName} in the {Location} to {seventy five|Percent} 
-SetLevel	to adjust {lights|ItemName} in the {Location} to {eighty|Percent} 
-SetLevel	 adjust {lighting|ItemName} in the {Location} to {eighty five|Percent} 
-SetLevel	to dim the {light|ItemName} {Location} to {ninety|Percent} 
-SetLevel	 dim the {lights|ItemName} {Location} to {ninety five|Percent} 
-SetLevel	to turn down the {lighting|ItemName} {Location} to {one hundred|Percent} 
-SetLevel	 turn down the {light|ItemName} {Location} to {zero|Percent} 
-SetLevel	to turn up the {lights|ItemName} {Location} to {five|Percent} 
-SetLevel	 turn up the {lighting|ItemName} {Location} to {ten|Percent} 
-SetLevel	to soften the {light|ItemName} {Location} to {fifteen|Percent} 
-SetLevel	 soften the {lights|ItemName} {Location} to {twenty|Percent} 
-SetLevel	to adjust the {lighting|ItemName} {Location} to {twenty five|Percent} 
-SetLevel	 adjust the {light|ItemName} {Location} to {thirty|Percent} 
-SetLevel	to dim my {lights|ItemName} {Location} to {thirty five|Percent} 
-SetLevel	 dim my {lighting|ItemName} {Location} to {forty|Percent} 
-SetLevel	to turn down my {light|ItemName} {Location} to {forty five|Percent} 
-SetLevel	 turn down my {lights|ItemName} {Location} to {fifty|Percent} 
-SetLevel	to turn up my {lighting|ItemName} {Location} to {fifty five|Percent} 
-SetLevel	 turn up my {light|ItemName} {Location} to {sixty|Percent} 
-SetLevel	to soften my {lights|ItemName} {Location} to {sixty five|Percent} 
-SetLevel	 soften my {lighting|ItemName} {Location} to {seventy|Percent} 
-SetLevel	to adjust my {light|ItemName} {Location} to {seventy five|Percent} 
-SetLevel	 adjust my {lights|ItemName} {Location} to {eighty|Percent} 
-SetLevel	to dim {lighting|ItemName} {Location} to {eighty five|Percent} 
-SetLevel	 dim {light|ItemName} {Location} to {ninety|Percent} 
-SetLevel	to turn down {lights|ItemName} {Location} to {ninety five|Percent} 
-SetLevel	 turn down {lighting|ItemName} {Location} to {one hundred|Percent} 
-SetLevel	to turn up {light|ItemName} {Location} to {zero|Percent} 
-SetLevel	 turn up {lights|ItemName} {Location} to {five|Percent} 
-SetLevel	to soften {lighting|ItemName} {Location} to {ten|Percent} 
-SetLevel	 soften {light|ItemName} {Location} to {fifteen|Percent} 
-SetLevel	to adjust {lights|ItemName} {Location} to {twenty|Percent} 
-SetLevel	 adjust {lighting|ItemName} {Location} to {twenty five|Percent} 
-SetLevel	to dim the {Location} {light|ItemName} to {thirty|Percent} percent 
-SetLevel	 dim the {Location} {lights|ItemName} to {thirty five|Percent} percent 
-SetLevel	to turn down the {Location} {lighting|ItemName} to {forty|Percent} percent 
-SetLevel	 turn down the {Location} {light|ItemName} to {forty five|Percent} percent 
-SetLevel	to turn up the {Location} {lights|ItemName} to {fifty|Percent} percent 
-SetLevel	 turn up the {Location} {lighting|ItemName} to {fifty five|Percent} percent 
-SetLevel	to soften the {Location} {light|ItemName} to {sixty|Percent} percent 
-SetLevel	 soften the {Location} {lights|ItemName} to {sixty five|Percent} percent 
-SetLevel	to adjust the {Location} {lighting|ItemName} to {seventy|Percent} percent 
-SetLevel	 adjust the {Location} {light|ItemName} to {seventy five|Percent} percent 
-SetLevel	to dim my {Location} {lights|ItemName} to {eighty|Percent} percent 
-SetLevel	 dim my {Location} {lighting|ItemName} to {eighty five|Percent} percent 
-SetLevel	to turn down my {Location} {light|ItemName} to {ninety|Percent} percent 
-SetLevel	 turn down my {Location} {lights|ItemName} to {ninety five|Percent} percent 
-SetLevel	to turn up my {Location} {lighting|ItemName} to {one hundred|Percent} percent 
-SetLevel	 turn up my {Location} {light|ItemName} to {zero|Percent} percent 
-SetLevel	to soften my {Location} {lights|ItemName} to {five|Percent} percent 
-SetLevel	 soften my {Location} {lighting|ItemName} to {ten|Percent} percent 
-SetLevel	to adjust my {Location} {light|ItemName} to {fifteen|Percent} percent 
-SetLevel	 adjust my {Location} {lights|ItemName} to {twenty|Percent} percent 
-SetLevel	to dim {Location} {lighting|ItemName} to {twenty five|Percent} percent 
-SetLevel	 dim {Location} {light|ItemName} to {thirty|Percent} percent 
-SetLevel	to turn down {Location} {lights|ItemName} to {thirty five|Percent} percent 
-SetLevel	 turn down {Location} {lighting|ItemName} to {forty|Percent} percent 
-SetLevel	to turn up {Location} {light|ItemName} to {forty five|Percent} percent 
-SetLevel	 turn up {Location} {lights|ItemName} to {fifty|Percent} percent 
-SetLevel	to soften {Location} {lighting|ItemName} to {fifty five|Percent} percent 
-SetLevel	 soften {Location} {light|ItemName} to {sixty|Percent} percent 
-SetLevel	to adjust {Location} {lights|ItemName} to {sixty five|Percent} percent 
-SetLevel	 adjust {Location} {lighting|ItemName} to {seventy|Percent} percent 
-SetLevel	to dim the {Location} {light|ItemName} to {seventy five|Percent} 
-SetLevel	 dim the {Location} {lights|ItemName} to {eighty|Percent} 
-SetLevel	to turn down the {Location} {lighting|ItemName} to {eighty five|Percent} 
-SetLevel	 turn down the {Location} {light|ItemName} to {ninety|Percent} 
-SetLevel	to turn up the {Location} {lights|ItemName} to {ninety five|Percent} 
-SetLevel	 turn up the {Location} {lighting|ItemName} to {one hundred|Percent} 
-SetLevel	to soften the {Location} {light|ItemName} to {zero|Percent} 
-SetLevel	 soften the {Location} {lights|ItemName} to {five|Percent} 
-SetLevel	to adjust the {Location} {lighting|ItemName} to {ten|Percent} 
-SetLevel	 adjust the {Location} {light|ItemName} to {fifteen|Percent} 
-SetLevel	to dim my {Location} {lights|ItemName} to {twenty|Percent} 
-SetLevel	 dim my {Location} {lighting|ItemName} to {twenty five|Percent} 
-SetLevel	to turn down my {Location} {light|ItemName} to {thirty|Percent} 
-SetLevel	 turn down my {Location} {lights|ItemName} to {thirty five|Percent} 
-SetLevel	to turn up my {Location} {lighting|ItemName} to {forty|Percent} 
-SetLevel	 turn up my {Location} {light|ItemName} to {forty five|Percent} 
-SetLevel	to soften my {Location} {lights|ItemName} to {fifty|Percent} 
-SetLevel	 soften my {Location} {lighting|ItemName} to {fifty five|Percent} 
-SetLevel	to adjust my {Location} {light|ItemName} to {sixty|Percent} 
-SetLevel	 adjust my {Location} {lights|ItemName} to {sixty five|Percent} 
-SetLevel	to dim {Location} {lighting|ItemName} to {seventy|Percent} 
-SetLevel	 dim {Location} {light|ItemName} to {seventy five|Percent} 
-SetLevel	to turn down {Location} {lights|ItemName} to {eighty|Percent} 
-SetLevel	 turn down {Location} {lighting|ItemName} to {eighty five|Percent} 
-SetLevel	to turn up {Location} {light|ItemName} to {ninety|Percent} 
-SetLevel	 turn up {Location} {lights|ItemName} to {ninety five|Percent} 
-SetLevel	to soften {Location} {lighting|ItemName} to {one hundred|Percent} 
-SetLevel	 soften {Location} {light|ItemName} to {zero|Percent} 
-SetLevel	to adjust {Location} {lights|ItemName} to {five|Percent} 
-SetLevel	 adjust {Location} {lighting|ItemName} to {ten|Percent} 
-SetTemp	to set the {Location} thermostat to {seventy five|Degree} degrees 
-SetTemp	 set the {Location} thermostat to {seventy six|Degree} degrees 
-SetTemp	to change the {Location} thermostat to {seventy seven|Degree} degrees 
-SetTemp	 change the {Location} thermostat to {seventy eight|Degree} degrees 
-SetTemp	to adjust the {Location} thermostat to {seventy nine|Degree} degrees 
-SetTemp	 adjust the {Location} thermostat to {eighty|Degree} degrees 
-SetTemp	to set my {Location} thermostat to {sixty|Degree} degrees 
-SetTemp	 set my {Location} thermostat to {sixty one|Degree} degrees 
-SetTemp	to change my {Location} thermostat to {sixty two|Degree} degrees 
-SetTemp	 change my {Location} thermostat to {sixty three|Degree} degrees 
-SetTemp	to adjust my {Location} thermostat to {sixty four|Degree} degrees 
-SetTemp	 adjust my {Location} thermostat to {sixty five|Degree} degrees 
-SetTemp	to set {Location} thermostat to {sixty six|Degree} degrees 
-SetTemp	 set {Location} thermostat to {sixty seven|Degree} degrees 
-SetTemp	to change {Location} thermostat to {sixty eight|Degree} degrees 
-SetTemp	 change {Location} thermostat to {sixty nine|Degree} degrees 
-SetTemp	to adjust {Location} thermostat to {seventy|Degree} degrees 
-SetTemp	 adjust {Location} thermostat to {seventy one|Degree} degrees 
-SetTemp	to set the {Location} temperature to {seventy two|Degree} degrees 
-SetTemp	 set the {Location} temperature to {seventy three|Degree} degrees 
-SetTemp	to change the {Location} temperature to {seventy four|Degree} degrees 
-SetTemp	 change the {Location} temperature to {seventy five|Degree} degrees 
-SetTemp	to adjust the {Location} temperature to {seventy six|Degree} degrees 
-SetTemp	 adjust the {Location} temperature to {seventy seven|Degree} degrees 
-SetTemp	to set my {Location} temperature to {seventy eight|Degree} degrees 
-SetTemp	 set my {Location} temperature to {seventy nine|Degree} degrees 
-SetTemp	to change my {Location} temperature to {eighty|Degree} degrees 
-SetTemp	 change my {Location} temperature to {sixty|Degree} degrees 
-SetTemp	to adjust my {Location} temperature to {sixty one|Degree} degrees 
-SetTemp	 adjust my {Location} temperature to {sixty two|Degree} degrees 
-SetTemp	to set {Location} temperature to {sixty three|Degree} degrees 
-SetTemp	 set {Location} temperature to {sixty four|Degree} degrees 
-SetTemp	to change {Location} temperature to {sixty five|Degree} degrees 
-SetTemp	 change {Location} temperature to {sixty six|Degree} degrees 
-SetTemp	to adjust {Location} temperature to {sixty seven|Degree} degrees 
-SetTemp	 adjust {Location} temperature to {sixty eight|Degree} degrees 
-SetTemp	to set the {Location} thermostat to {sixty nine|Degree} 
-SetTemp	 set the {Location} thermostat to {seventy|Degree} 
-SetTemp	to change the {Location} thermostat to {seventy one|Degree} 
-SetTemp	 change the {Location} thermostat to {seventy two|Degree} 
-SetTemp	to adjust the {Location} thermostat to {seventy three|Degree} 
-SetTemp	 adjust the {Location} thermostat to {seventy four|Degree} 
-SetTemp	to set my {Location} thermostat to {seventy five|Degree} 
-SetTemp	 set my {Location} thermostat to {seventy six|Degree} 
-SetTemp	to change my {Location} thermostat to {seventy seven|Degree} 
-SetTemp	 change my {Location} thermostat to {seventy eight|Degree} 
-SetTemp	to adjust my {Location} thermostat to {seventy nine|Degree} 
-SetTemp	 adjust my {Location} thermostat to {eighty|Degree} 
-SetTemp	to set {Location} thermostat to {sixty|Degree} 
-SetTemp	 set {Location} thermostat to {sixty one|Degree} 
-SetTemp	to change {Location} thermostat to {sixty two|Degree} 
-SetTemp	 change {Location} thermostat to {sixty three|Degree} 
-SetTemp	to adjust {Location} thermostat to {sixty four|Degree} 
-SetTemp	 adjust {Location} thermostat to {sixty five|Degree} 
-SetTemp	to set the {Location} temperature to {sixty six|Degree} 
-SetTemp	 set the {Location} temperature to {sixty seven|Degree} 
-SetTemp	to change the {Location} temperature to {sixty eight|Degree} 
-SetTemp	 change the {Location} temperature to {sixty nine|Degree} 
-SetTemp	to adjust the {Location} temperature to {seventy|Degree} 
-SetTemp	 adjust the {Location} temperature to {seventy one|Degree} 
-SetTemp	to set my {Location} temperature to {seventy two|Degree} 
-SetTemp	 set my {Location} temperature to {seventy three|Degree} 
-SetTemp	to change my {Location} temperature to {seventy four|Degree} 
-SetTemp	 change my {Location} temperature to {seventy five|Degree} 
-SetTemp	to adjust my {Location} temperature to {seventy six|Degree} 
-SetTemp	 adjust my {Location} temperature to {seventy seven|Degree} 
-SetTemp	to set {Location} temperature to {seventy eight|Degree} 
-SetTemp	 set {Location} temperature to {seventy nine|Degree} 
-SetTemp	to change {Location} temperature to {eighty|Degree} 
-SetTemp	 change {Location} temperature to {sixty|Degree} 
-SetTemp	to adjust {Location} temperature to {sixty one|Degree} 
-SetTemp	 adjust {Location} temperature to {sixty two|Degree} 
-SetTemp	to set the thermostat in the {Location} to {sixty three|Degree} degrees 
-SetTemp	 set the thermostat in the {Location} to {sixty four|Degree} degrees 
-SetTemp	to change the thermostat in the {Location} to {sixty five|Degree} degrees 
-SetTemp	 change the thermostat in the {Location} to {sixty six|Degree} degrees 
-SetTemp	to adjust the thermostat in the {Location} to {sixty seven|Degree} degrees 
-SetTemp	 adjust the thermostat in the {Location} to {sixty eight|Degree} degrees 
-SetTemp	to set my thermostat in the {Location} to {sixty nine|Degree} degrees 
-SetTemp	 set my thermostat in the {Location} to {seventy|Degree} degrees 
-SetTemp	to change my thermostat in the {Location} to {seventy one|Degree} degrees 
-SetTemp	 change my thermostat in the {Location} to {seventy two|Degree} degrees 
-SetTemp	to adjust my thermostat in the {Location} to {seventy three|Degree} degrees 
-SetTemp	 adjust my thermostat in the {Location} to {seventy four|Degree} degrees 
-SetTemp	to set thermostat in the {Location} to {seventy five|Degree} degrees 
-SetTemp	 set thermostat in the {Location} to {seventy six|Degree} degrees 
-SetTemp	to change thermostat in the {Location} to {seventy seven|Degree} degrees 
-SetTemp	 change thermostat in the {Location} to {seventy eight|Degree} degrees 
-SetTemp	to adjust thermostat in the {Location} to {seventy nine|Degree} degrees 
-SetTemp	 adjust thermostat in the {Location} to {eighty|Degree} degrees 
-SetTemp	to set the temperature in the {Location} to {sixty|Degree} degrees 
-SetTemp	 set the temperature in the {Location} to {sixty one|Degree} degrees 
-SetTemp	to change the temperature in the {Location} to {sixty two|Degree} degrees 
-SetTemp	 change the temperature in the {Location} to {sixty three|Degree} degrees 
-SetTemp	to adjust the temperature in the {Location} to {sixty four|Degree} degrees 
-SetTemp	 adjust the temperature in the {Location} to {sixty five|Degree} degrees 
-SetTemp	to set my temperature in the {Location} to {sixty six|Degree} degrees 
-SetTemp	 set my temperature in the {Location} to {sixty seven|Degree} degrees 
-SetTemp	to change my temperature in the {Location} to {sixty eight|Degree} degrees 
-SetTemp	 change my temperature in the {Location} to {sixty nine|Degree} degrees 
-SetTemp	to adjust my temperature in the {Location} to {seventy|Degree} degrees 
-SetTemp	 adjust my temperature in the {Location} to {seventy one|Degree} degrees 
-SetTemp	to set temperature in the {Location} to {seventy two|Degree} degrees 
-SetTemp	 set temperature in the {Location} to {seventy three|Degree} degrees 
-SetTemp	to change temperature in the {Location} to {seventy four|Degree} degrees 
-SetTemp	 change temperature in the {Location} to {seventy five|Degree} degrees 
-SetTemp	to adjust temperature in the {Location} to {seventy six|Degree} degrees 
-SetTemp	 adjust temperature in the {Location} to {seventy seven|Degree} degrees 
-SetTemp	to set the thermostat in my {Location} to {seventy eight|Degree} degrees 
-SetTemp	 set the thermostat in my {Location} to {seventy nine|Degree} degrees 
-SetTemp	to change the thermostat in my {Location} to {eighty|Degree} degrees 
-SetTemp	 change the thermostat in my {Location} to {sixty|Degree} degrees 
-SetTemp	to adjust the thermostat in my {Location} to {sixty one|Degree} degrees 
-SetTemp	 adjust the thermostat in my {Location} to {sixty two|Degree} degrees 
-SetTemp	to set my thermostat in my {Location} to {sixty three|Degree} degrees 
-SetTemp	 set my thermostat in my {Location} to {sixty four|Degree} degrees 
-SetTemp	to change my thermostat in my {Location} to {sixty five|Degree} degrees 
-SetTemp	 change my thermostat in my {Location} to {sixty six|Degree} degrees 
-SetTemp	to adjust my thermostat in my {Location} to {sixty seven|Degree} degrees 
-SetTemp	 adjust my thermostat in my {Location} to {sixty eight|Degree} degrees 
-SetTemp	to set thermostat in my {Location} to {sixty nine|Degree} degrees 
-SetTemp	 set thermostat in my {Location} to {seventy|Degree} degrees 
-SetTemp	to change thermostat in my {Location} to {seventy one|Degree} degrees 
-SetTemp	 change thermostat in my {Location} to {seventy two|Degree} degrees 
-SetTemp	to adjust thermostat in my {Location} to {seventy three|Degree} degrees 
-SetTemp	 adjust thermostat in my {Location} to {seventy four|Degree} degrees 
-SetTemp	to set the temperature in my {Location} to {seventy five|Degree} degrees 
-SetTemp	 set the temperature in my {Location} to {seventy six|Degree} degrees 
-SetTemp	to change the temperature in my {Location} to {seventy seven|Degree} degrees 
-SetTemp	 change the temperature in my {Location} to {seventy eight|Degree} degrees 
-SetTemp	to adjust the temperature in my {Location} to {seventy nine|Degree} degrees 
-SetTemp	 adjust the temperature in my {Location} to {eighty|Degree} degrees 
-SetTemp	to set my temperature in my {Location} to {sixty|Degree} degrees 
-SetTemp	 set my temperature in my {Location} to {sixty one|Degree} degrees 
-SetTemp	to change my temperature in my {Location} to {sixty two|Degree} degrees 
-SetTemp	 change my temperature in my {Location} to {sixty three|Degree} degrees 
-SetTemp	to adjust my temperature in my {Location} to {sixty four|Degree} degrees 
-SetTemp	 adjust my temperature in my {Location} to {sixty five|Degree} degrees 
-SetTemp	to set temperature in my {Location} to {sixty six|Degree} degrees 
-SetTemp	 set temperature in my {Location} to {sixty seven|Degree} degrees 
-SetTemp	to change temperature in my {Location} to {sixty eight|Degree} degrees 
-SetTemp	 change temperature in my {Location} to {sixty nine|Degree} degrees 
-SetTemp	to adjust temperature in my {Location} to {seventy|Degree} degrees 
-SetTemp	 adjust temperature in my {Location} to {seventy one|Degree} degrees 
-SetTemp	to set the thermostat {Location} to {seventy two|Degree} degrees 
-SetTemp	 set the thermostat {Location} to {seventy three|Degree} degrees 
-SetTemp	to change the thermostat {Location} to {seventy four|Degree} degrees 
-SetTemp	 change the thermostat {Location} to {seventy five|Degree} degrees 
-SetTemp	to adjust the thermostat {Location} to {seventy six|Degree} degrees 
-SetTemp	 adjust the thermostat {Location} to {seventy seven|Degree} degrees 
-SetTemp	to set my thermostat {Location} to {seventy eight|Degree} degrees 
-SetTemp	 set my thermostat {Location} to {seventy nine|Degree} degrees 
-SetTemp	to change my thermostat {Location} to {eighty|Degree} degrees 
-SetTemp	 change my thermostat {Location} to {sixty|Degree} degrees 
-SetTemp	to adjust my thermostat {Location} to {sixty one|Degree} degrees 
-SetTemp	 adjust my thermostat {Location} to {sixty two|Degree} degrees 
-SetTemp	to set thermostat {Location} to {sixty three|Degree} degrees 
-SetTemp	 set thermostat {Location} to {sixty four|Degree} degrees 
-SetTemp	to change thermostat {Location} to {sixty five|Degree} degrees 
-SetTemp	 change thermostat {Location} to {sixty six|Degree} degrees 
-SetTemp	to adjust thermostat {Location} to {sixty seven|Degree} degrees 
-SetTemp	 adjust thermostat {Location} to {sixty eight|Degree} degrees 
-SetTemp	to set the temperature {Location} to {sixty nine|Degree} degrees 
-SetTemp	 set the temperature {Location} to {seventy|Degree} degrees 
-SetTemp	to change the temperature {Location} to {seventy one|Degree} degrees 
-SetTemp	 change the temperature {Location} to {seventy two|Degree} degrees 
-SetTemp	to adjust the temperature {Location} to {seventy three|Degree} degrees 
-SetTemp	 adjust the temperature {Location} to {seventy four|Degree} degrees 
-SetTemp	to set my temperature {Location} to {seventy five|Degree} degrees 
-SetTemp	 set my temperature {Location} to {seventy six|Degree} degrees 
-SetTemp	to change my temperature {Location} to {seventy seven|Degree} degrees 
-SetTemp	 change my temperature {Location} to {seventy eight|Degree} degrees 
-SetTemp	to adjust my temperature {Location} to {seventy nine|Degree} degrees 
-SetTemp	 adjust my temperature {Location} to {eighty|Degree} degrees 
-SetTemp	to set temperature {Location} to {sixty|Degree} degrees 
-SetTemp	 set temperature {Location} to {sixty one|Degree} degrees 
-SetTemp	to change temperature {Location} to {sixty two|Degree} degrees 
-SetTemp	 change temperature {Location} to {sixty three|Degree} degrees 
-SetTemp	to adjust temperature {Location} to {sixty four|Degree} degrees 
-SetTemp	 adjust temperature {Location} to {sixty five|Degree} degrees 
-SetTemp	to set the thermostat in the {Location} to {sixty six|Degree} 
-SetTemp	 set the thermostat in the {Location} to {sixty seven|Degree} 
-SetTemp	to change the thermostat in the {Location} to {sixty eight|Degree} 
-SetTemp	 change the thermostat in the {Location} to {sixty nine|Degree} 
-SetTemp	to adjust the thermostat in the {Location} to {seventy|Degree} 
-SetTemp	 adjust the thermostat in the {Location} to {seventy one|Degree} 
-SetTemp	to set my thermostat in the {Location} to {seventy two|Degree} 
-SetTemp	 set my thermostat in the {Location} to {seventy three|Degree} 
-SetTemp	to change my thermostat in the {Location} to {seventy four|Degree} 
-SetTemp	 change my thermostat in the {Location} to {seventy five|Degree} 
-SetTemp	to adjust my thermostat in the {Location} to {seventy six|Degree} 
-SetTemp	 adjust my thermostat in the {Location} to {seventy seven|Degree} 
-SetTemp	to set thermostat in the {Location} to {seventy eight|Degree} 
-SetTemp	 set thermostat in the {Location} to {seventy nine|Degree} 
-SetTemp	to change thermostat in the {Location} to {eighty|Degree} 
-SetTemp	 change thermostat in the {Location} to {sixty|Degree} 
-SetTemp	to adjust thermostat in the {Location} to {sixty one|Degree} 
-SetTemp	 adjust thermostat in the {Location} to {sixty two|Degree} 
-SetTemp	to set the temperature in the {Location} to {sixty three|Degree} 
-SetTemp	 set the temperature in the {Location} to {sixty four|Degree} 
-SetTemp	to change the temperature in the {Location} to {sixty five|Degree} 
-SetTemp	 change the temperature in the {Location} to {sixty six|Degree} 
-SetTemp	to adjust the temperature in the {Location} to {sixty seven|Degree} 
-SetTemp	 adjust the temperature in the {Location} to {sixty eight|Degree} 
-SetTemp	to set my temperature in the {Location} to {sixty nine|Degree} 
-SetTemp	 set my temperature in the {Location} to {seventy|Degree} 
-SetTemp	to change my temperature in the {Location} to {seventy one|Degree} 
-SetTemp	 change my temperature in the {Location} to {seventy two|Degree} 
-SetTemp	to adjust my temperature in the {Location} to {seventy three|Degree} 
-SetTemp	 adjust my temperature in the {Location} to {seventy four|Degree} 
-SetTemp	to set temperature in the {Location} to {seventy five|Degree} 
-SetTemp	 set temperature in the {Location} to {seventy six|Degree} 
-SetTemp	to change temperature in the {Location} to {seventy seven|Degree} 
-SetTemp	 change temperature in the {Location} to {seventy eight|Degree} 
-SetTemp	to adjust temperature in the {Location} to {seventy nine|Degree} 
-SetTemp	 adjust temperature in the {Location} to {eighty|Degree} 
-SetTemp	to set the thermostat in my {Location} to {sixty|Degree} 
-SetTemp	 set the thermostat in my {Location} to {sixty one|Degree} 
-SetTemp	to change the thermostat in my {Location} to {sixty two|Degree} 
-SetTemp	 change the thermostat in my {Location} to {sixty three|Degree} 
-SetTemp	to adjust the thermostat in my {Location} to {sixty four|Degree} 
-SetTemp	 adjust the thermostat in my {Location} to {sixty five|Degree} 
-SetTemp	to set my thermostat in my {Location} to {sixty six|Degree} 
-SetTemp	 set my thermostat in my {Location} to {sixty seven|Degree} 
-SetTemp	to change my thermostat in my {Location} to {sixty eight|Degree} 
-SetTemp	 change my thermostat in my {Location} to {sixty nine|Degree} 
-SetTemp	to adjust my thermostat in my {Location} to {seventy|Degree} 
-SetTemp	 adjust my thermostat in my {Location} to {seventy one|Degree} 
-SetTemp	to set thermostat in my {Location} to {seventy two|Degree} 
-SetTemp	 set thermostat in my {Location} to {seventy three|Degree} 
-SetTemp	to change thermostat in my {Location} to {seventy four|Degree} 
-SetTemp	 change thermostat in my {Location} to {seventy five|Degree} 
-SetTemp	to adjust thermostat in my {Location} to {seventy six|Degree} 
-SetTemp	 adjust thermostat in my {Location} to {seventy seven|Degree} 
-SetTemp	to set the temperature in my {Location} to {seventy eight|Degree} 
-SetTemp	 set the temperature in my {Location} to {seventy nine|Degree} 
-SetTemp	to change the temperature in my {Location} to {eighty|Degree} 
-SetTemp	 change the temperature in my {Location} to {sixty|Degree} 
-SetTemp	to adjust the temperature in my {Location} to {sixty one|Degree} 
-SetTemp	 adjust the temperature in my {Location} to {sixty two|Degree} 
-SetTemp	to set my temperature in my {Location} to {sixty three|Degree} 
-SetTemp	 set my temperature in my {Location} to {sixty four|Degree} 
-SetTemp	to change my temperature in my {Location} to {sixty five|Degree} 
-SetTemp	 change my temperature in my {Location} to {sixty six|Degree} 
-SetTemp	to adjust my temperature in my {Location} to {sixty seven|Degree} 
-SetTemp	 adjust my temperature in my {Location} to {sixty eight|Degree} 
-SetTemp	to set temperature in my {Location} to {sixty nine|Degree} 
-SetTemp	 set temperature in my {Location} to {seventy|Degree} 
-SetTemp	to change temperature in my {Location} to {seventy one|Degree} 
-SetTemp	 change temperature in my {Location} to {seventy two|Degree} 
-SetTemp	to adjust temperature in my {Location} to {seventy three|Degree} 
-SetTemp	 adjust temperature in my {Location} to {seventy four|Degree} 
-SetTemp	to set the thermostat {Location} to {seventy five|Degree} 
-SetTemp	 set the thermostat {Location} to {seventy six|Degree} 
-SetTemp	to change the thermostat {Location} to {seventy seven|Degree} 
-SetTemp	 change the thermostat {Location} to {seventy eight|Degree} 
-SetTemp	to adjust the thermostat {Location} to {seventy nine|Degree} 
-SetTemp	 adjust the thermostat {Location} to {eighty|Degree} 
-SetTemp	to set my thermostat {Location} to {sixty|Degree} 
-SetTemp	 set my thermostat {Location} to {sixty one|Degree} 
-SetTemp	to change my thermostat {Location} to {sixty two|Degree} 
-SetTemp	 change my thermostat {Location} to {sixty three|Degree} 
-SetTemp	to adjust my thermostat {Location} to {sixty four|Degree} 
-SetTemp	 adjust my thermostat {Location} to {sixty five|Degree} 
-SetTemp	to set thermostat {Location} to {sixty six|Degree} 
-SetTemp	 set thermostat {Location} to {sixty seven|Degree} 
-SetTemp	to change thermostat {Location} to {sixty eight|Degree} 
-SetTemp	 change thermostat {Location} to {sixty nine|Degree} 
-SetTemp	to adjust thermostat {Location} to {seventy|Degree} 
-SetTemp	 adjust thermostat {Location} to {seventy one|Degree} 
-SetTemp	to set the temperature {Location} to {seventy two|Degree} 
-SetTemp	 set the temperature {Location} to {seventy three|Degree} 
-SetTemp	to change the temperature {Location} to {seventy four|Degree} 
-SetTemp	 change the temperature {Location} to {seventy five|Degree} 
-SetTemp	to adjust the temperature {Location} to {seventy six|Degree} 
-SetTemp	 adjust the temperature {Location} to {seventy seven|Degree} 
-SetTemp	to set my temperature {Location} to {seventy eight|Degree} 
-SetTemp	 set my temperature {Location} to {seventy nine|Degree} 
-SetTemp	to change my temperature {Location} to {eighty|Degree} 
-SetTemp	 change my temperature {Location} to {sixty|Degree} 
-SetTemp	to adjust my temperature {Location} to {sixty one|Degree} 
-SetTemp	 adjust my temperature {Location} to {sixty two|Degree} 
-SetTemp	to set temperature {Location} to {sixty three|Degree} 
-SetTemp	 set temperature {Location} to {sixty four|Degree} 
-SetTemp	to change temperature {Location} to {sixty five|Degree} 
-SetTemp	 change temperature {Location} to {sixty six|Degree} 
-SetTemp	to adjust temperature {Location} to {sixty seven|Degree} 
-SetTemp	 adjust temperature {Location} to {sixty eight|Degree} 
-SetMode	to set the {house|ModeType} mode to {dinner|ModeName}
-SetMode	 set the {house|ModeType} mode to {party|ModeName}
-SetMode	to change the {house|ModeType} mode to {bed|ModeName}
-SetMode	 change the {house|ModeType} mode to {away|ModeName}
-SetMode	to switch the {house|ModeType} mode to {panic|ModeName}
-SetMode	 switch the {house|ModeType} mode to {relax|ModeName}
-SetMode	to set my {house|ModeType} mode to {gaming|ModeName}
-SetMode	 set my {house|ModeType} mode to {theatre|ModeName}
-SetMode	to change my {house|ModeType} mode to {shower|ModeName}
-SetMode	 change my {house|ModeType} mode to {wake up|ModeName}
-SetMode	to switch my {house|ModeType} mode to {TV|ModeName}
-SetMode	 switch my {house|ModeType} mode to {off|ModeName}
-SetMode	to set {house|ModeType} mode to {work|ModeName}
-SetMode	 set {house|ModeType} mode to {dinner|ModeName}
-SetMode	to change {house|ModeType} mode to {party|ModeName}
-SetMode	 change {house|ModeType} mode to {bed|ModeName}
-SetMode	to switch {house|ModeType} mode to {away|ModeName}
-SetMode	 switch {house|ModeType} mode to {panic|ModeName}
-SetMode	to set the {lighting|ModeType} mode to {bed time|ModeName}
-SetMode	 set the {lighting|ModeType} mode to {love shack|ModeName}
-SetMode	to change the {lighting|ModeType} mode to {lava|ModeName}
-SetMode	 change the {lighting|ModeType} mode to {all off|ModeName}
-SetMode	to switch the {lighting|ModeType} mode to {all on|ModeName}
-SetMode	 switch the {lighting|ModeType} mode to {focus|ModeName}
-SetMode	to set my {lighting|ModeType} mode to {energize|ModeName}
-SetMode	 set my {lighting|ModeType} mode to {relax|ModeName}
-SetMode	to change my {lighting|ModeType} mode to {party|ModeName}
-SetMode	 change my {lighting|ModeType} mode to {night light|ModeName}
-SetMode	to switch my {lighting|ModeType} mode to {bed time|ModeName}
-SetMode	 switch my {lighting|ModeType} mode to {love shack|ModeName}
-SetMode	to set {lighting|ModeType} mode to {lava|ModeName}
-SetMode	 set {lighting|ModeType} mode to {all off|ModeName}
-SetMode	to change {lighting|ModeType} mode to {all on|ModeName}
-SetMode	 change {lighting|ModeType} mode to {focus|ModeName}
-SetMode	to switch {lighting|ModeType} mode to {energize|ModeName}
-SetMode	 switch {lighting|ModeType} mode to {relax|ModeName}
-SetMode	to set the {security|ModeType} mode to {sleep|ModeName}
-SetMode	 set the {security|ModeType} mode to {home|ModeName}
-SetMode	to change the {security|ModeType} mode to {away|ModeName}
-SetMode	 change the {security|ModeType} mode to {off|ModeName}
-SetMode	to switch the {security|ModeType} mode to {sleep|ModeName}
-SetMode	 switch the {security|ModeType} mode to {home|ModeName}
-SetMode	to set my {security|ModeType} mode to {away|ModeName}
-SetMode	 set my {security|ModeType} mode to {off|ModeName}
-SetMode	to change my {security|ModeType} mode to {sleep|ModeName}
-SetMode	 change my {security|ModeType} mode to {home|ModeName}
-SetMode	to switch my {security|ModeType} mode to {away|ModeName}
-SetMode	 switch my {security|ModeType} mode to {off|ModeName}
-SetMode	to set {security|ModeType} mode to {sleep|ModeName}
-SetMode	 set {security|ModeType} mode to {home|ModeName}
-SetMode	to change {security|ModeType} mode to {away|ModeName}
-SetMode	 change {security|ModeType} mode to {off|ModeName}
-SetMode	to switch {security|ModeType} mode to {sleep|ModeName}
-SetMode	 switch {security|ModeType} mode to {home|ModeName}
-SetMode	to set the {house|ModeType} to {party|ModeName} mode
-SetMode	 set the {house|ModeType} to {bed|ModeName} mode
-SetMode	to change the {house|ModeType} to {away|ModeName} mode
-SetMode	 change the {house|ModeType} to {panic|ModeName} mode
-SetMode	to switch the {house|ModeType} to {relax|ModeName} mode
-SetMode	 switch the {house|ModeType} to {gaming|ModeName} mode
-SetMode	to set my {house|ModeType} to {theatre|ModeName} mode
-SetMode	 set my {house|ModeType} to {shower|ModeName} mode
-SetMode	to change my {house|ModeType} to {wake up|ModeName} mode
-SetMode	 change my {house|ModeType} to {TV|ModeName} mode
-SetMode	to switch my {house|ModeType} to {off|ModeName} mode
-SetMode	 switch my {house|ModeType} to {work|ModeName} mode
-SetMode	to set {house|ModeType} to {dinner|ModeName} mode
-SetMode	 set {house|ModeType} to {party|ModeName} mode
-SetMode	to change {house|ModeType} to {bed|ModeName} mode
-SetMode	 change {house|ModeType} to {away|ModeName} mode
-SetMode	to switch {house|ModeType} to {panic|ModeName} mode
-SetMode	 switch {house|ModeType} to {relax|ModeName} mode
-SetMode	to set the {lighting|ModeType} to {love shack|ModeName} mode
-SetMode	 set the {lighting|ModeType} to {lava|ModeName} mode
-SetMode	to change the {lighting|ModeType} to {all off|ModeName} mode
-SetMode	 change the {lighting|ModeType} to {all on|ModeName} mode
-SetMode	to switch the {lighting|ModeType} to {focus|ModeName} mode
-SetMode	 switch the {lighting|ModeType} to {energize|ModeName} mode
-SetMode	to set my {lighting|ModeType} to {relax|ModeName} mode
-SetMode	 set my {lighting|ModeType} to {party|ModeName} mode
-SetMode	to change my {lighting|ModeType} to {night light|ModeName} mode
-SetMode	 change my {lighting|ModeType} to {bed time|ModeName} mode
-SetMode	to switch my {lighting|ModeType} to {love shack|ModeName} mode
-SetMode	 switch my {lighting|ModeType} to {lava|ModeName} mode
-SetMode	to set {lighting|ModeType} to {all off|ModeName} mode
-SetMode	 set {lighting|ModeType} to {all on|ModeName} mode
-SetMode	to change {lighting|ModeType} to {focus|ModeName} mode
-SetMode	 change {lighting|ModeType} to {energize|ModeName} mode
-SetMode	to switch {lighting|ModeType} to {relax|ModeName} mode
-SetMode	 switch {lighting|ModeType} to {party|ModeName} mode
-SetMode	to set the {security|ModeType} to {home|ModeName} mode
-SetMode	 set the {security|ModeType} to {away|ModeName} mode
-SetMode	to change the {security|ModeType} to {off|ModeName} mode
-SetMode	 change the {security|ModeType} to {sleep|ModeName} mode
-SetMode	to switch the {security|ModeType} to {home|ModeName} mode
-SetMode	 switch the {security|ModeType} to {away|ModeName} mode
-SetMode	to set my {security|ModeType} to {off|ModeName} mode
-SetMode	 set my {security|ModeType} to {sleep|ModeName} mode
-SetMode	to change my {security|ModeType} to {home|ModeName} mode
-SetMode	 change my {security|ModeType} to {away|ModeName} mode
-SetMode	to switch my {security|ModeType} to {off|ModeName} mode
-SetMode	 switch my {security|ModeType} to {sleep|ModeName} mode
-SetMode	to set {security|ModeType} to {home|ModeName} mode
-SetMode	 set {security|ModeType} to {away|ModeName} mode
-SetMode	to change {security|ModeType} to {off|ModeName} mode
-SetMode	 change {security|ModeType} to {sleep|ModeName} mode
-SetMode	to switch {security|ModeType} to {home|ModeName} mode
-SetMode	 switch {security|ModeType} to {away|ModeName} mode
-GetState	to get the {Location} {luminance|MetricName}
-GetState	 get the {Location} {power consumption|MetricName}
-GetState	to check the {Location} {temperature|MetricName}
-GetState	 check the {Location} {humidity|MetricName}
-GetState	to get my {Location} {luminance|MetricName}
-GetState	 get my {Location} {power consumption|MetricName}
-GetState	to check my {Location} {temperature|MetricName}
-GetState	 check my {Location} {humidity|MetricName}
-GetState	to get {Location} {luminance|MetricName}
-GetState	 get {Location} {power consumption|MetricName}
-GetState	to check {Location} {temperature|MetricName}
-GetState	 check {Location} {humidity|MetricName}
-GetState	to get the {luminance|MetricName} in the {Location}
-GetState	 get the {power consumption|MetricName} in the {Location}
-GetState	to check the {temperature|MetricName} in the {Location}
-GetState	 check the {humidity|MetricName} in the {Location}
-GetState	to get my {luminance|MetricName} in the {Location}
-GetState	 get my {power consumption|MetricName} in the {Location}
-GetState	to check my {temperature|MetricName} in the {Location}
-GetState	 check my {humidity|MetricName} in the {Location}
-GetState	to get {luminance|MetricName} in the {Location}
-GetState	 get {power consumption|MetricName} in the {Location}
-GetState	to check {temperature|MetricName} in the {Location}
-GetState	 check {humidity|MetricName} in the {Location}
-GetState	to get the {luminance|MetricName} {Location}
-GetState	 get the {power consumption|MetricName} {Location}
-GetState	to check the {temperature|MetricName} {Location}
-GetState	 check the {humidity|MetricName} {Location}
-GetState	to get my {luminance|MetricName} {Location}
-GetState	 get my {power consumption|MetricName} {Location}
-GetState	to check my {temperature|MetricName} {Location}
-GetState	 check my {humidity|MetricName} {Location}
-GetState	to get {luminance|MetricName} {Location}
-GetState	 get {power consumption|MetricName} {Location}
-GetState	to check {temperature|MetricName} {Location}
-GetState	 check {humidity|MetricName} {Location}
+SetLevel	to dim the {light|ItemName} in the {Location} to {zero|Percent} percent 
+SetLevel	 dim the {lights|ItemName} in the {Location} to {five|Percent} percent 
+SetLevel	to turn down the {lighting|ItemName} in the {Location} to {ten|Percent} percent 
+SetLevel	 turn down the {light|ItemName} in the {Location} to {fifteen|Percent} percent 
+SetLevel	to turn up the {lights|ItemName} in the {Location} to {twenty|Percent} percent 
+SetLevel	 turn up the {lighting|ItemName} in the {Location} to {twenty five|Percent} percent 
+SetLevel	to soften the {light|ItemName} in the {Location} to {thirty|Percent} percent 
+SetLevel	 soften the {lights|ItemName} in the {Location} to {thirty five|Percent} percent 
+SetLevel	to adjust the {lighting|ItemName} in the {Location} to {forty|Percent} percent 
+SetLevel	 adjust the {light|ItemName} in the {Location} to {forty five|Percent} percent 
+SetLevel	to dim my {lights|ItemName} in the {Location} to {fifty|Percent} percent 
+SetLevel	 dim my {lighting|ItemName} in the {Location} to {fifty five|Percent} percent 
+SetLevel	to turn down my {light|ItemName} in the {Location} to {sixty|Percent} percent 
+SetLevel	 turn down my {lights|ItemName} in the {Location} to {sixty five|Percent} percent 
+SetLevel	to turn up my {lighting|ItemName} in the {Location} to {seventy|Percent} percent 
+SetLevel	 turn up my {light|ItemName} in the {Location} to {seventy five|Percent} percent 
+SetLevel	to soften my {lights|ItemName} in the {Location} to {eighty|Percent} percent 
+SetLevel	 soften my {lighting|ItemName} in the {Location} to {eighty five|Percent} percent 
+SetLevel	to adjust my {light|ItemName} in the {Location} to {ninety|Percent} percent 
+SetLevel	 adjust my {lights|ItemName} in the {Location} to {ninety five|Percent} percent 
+SetLevel	to dim {lighting|ItemName} in the {Location} to {one hundred|Percent} percent 
+SetLevel	 dim {light|ItemName} in the {Location} to {zero|Percent} percent 
+SetLevel	to turn down {lights|ItemName} in the {Location} to {five|Percent} percent 
+SetLevel	 turn down {lighting|ItemName} in the {Location} to {ten|Percent} percent 
+SetLevel	to turn up {light|ItemName} in the {Location} to {fifteen|Percent} percent 
+SetLevel	 turn up {lights|ItemName} in the {Location} to {twenty|Percent} percent 
+SetLevel	to soften {lighting|ItemName} in the {Location} to {twenty five|Percent} percent 
+SetLevel	 soften {light|ItemName} in the {Location} to {thirty|Percent} percent 
+SetLevel	to adjust {lights|ItemName} in the {Location} to {thirty five|Percent} percent 
+SetLevel	 adjust {lighting|ItemName} in the {Location} to {forty|Percent} percent 
+SetLevel	to dim the {light|ItemName} {Location} to {forty five|Percent} percent 
+SetLevel	 dim the {lights|ItemName} {Location} to {fifty|Percent} percent 
+SetLevel	to turn down the {lighting|ItemName} {Location} to {fifty five|Percent} percent 
+SetLevel	 turn down the {light|ItemName} {Location} to {sixty|Percent} percent 
+SetLevel	to turn up the {lights|ItemName} {Location} to {sixty five|Percent} percent 
+SetLevel	 turn up the {lighting|ItemName} {Location} to {seventy|Percent} percent 
+SetLevel	to soften the {light|ItemName} {Location} to {seventy five|Percent} percent 
+SetLevel	 soften the {lights|ItemName} {Location} to {eighty|Percent} percent 
+SetLevel	to adjust the {lighting|ItemName} {Location} to {eighty five|Percent} percent 
+SetLevel	 adjust the {light|ItemName} {Location} to {ninety|Percent} percent 
+SetLevel	to dim my {lights|ItemName} {Location} to {ninety five|Percent} percent 
+SetLevel	 dim my {lighting|ItemName} {Location} to {one hundred|Percent} percent 
+SetLevel	to turn down my {light|ItemName} {Location} to {zero|Percent} percent 
+SetLevel	 turn down my {lights|ItemName} {Location} to {five|Percent} percent 
+SetLevel	to turn up my {lighting|ItemName} {Location} to {ten|Percent} percent 
+SetLevel	 turn up my {light|ItemName} {Location} to {fifteen|Percent} percent 
+SetLevel	to soften my {lights|ItemName} {Location} to {twenty|Percent} percent 
+SetLevel	 soften my {lighting|ItemName} {Location} to {twenty five|Percent} percent 
+SetLevel	to adjust my {light|ItemName} {Location} to {thirty|Percent} percent 
+SetLevel	 adjust my {lights|ItemName} {Location} to {thirty five|Percent} percent 
+SetLevel	to dim {lighting|ItemName} {Location} to {forty|Percent} percent 
+SetLevel	 dim {light|ItemName} {Location} to {forty five|Percent} percent 
+SetLevel	to turn down {lights|ItemName} {Location} to {fifty|Percent} percent 
+SetLevel	 turn down {lighting|ItemName} {Location} to {fifty five|Percent} percent 
+SetLevel	to turn up {light|ItemName} {Location} to {sixty|Percent} percent 
+SetLevel	 turn up {lights|ItemName} {Location} to {sixty five|Percent} percent 
+SetLevel	to soften {lighting|ItemName} {Location} to {seventy|Percent} percent 
+SetLevel	 soften {light|ItemName} {Location} to {seventy five|Percent} percent 
+SetLevel	to adjust {lights|ItemName} {Location} to {eighty|Percent} percent 
+SetLevel	 adjust {lighting|ItemName} {Location} to {eighty five|Percent} percent 
+SetLevel	to dim the {light|ItemName} in the {Location} to {ninety|Percent} 
+SetLevel	 dim the {lights|ItemName} in the {Location} to {ninety five|Percent} 
+SetLevel	to turn down the {lighting|ItemName} in the {Location} to {one hundred|Percent} 
+SetLevel	 turn down the {light|ItemName} in the {Location} to {zero|Percent} 
+SetLevel	to turn up the {lights|ItemName} in the {Location} to {five|Percent} 
+SetLevel	 turn up the {lighting|ItemName} in the {Location} to {ten|Percent} 
+SetLevel	to soften the {light|ItemName} in the {Location} to {fifteen|Percent} 
+SetLevel	 soften the {lights|ItemName} in the {Location} to {twenty|Percent} 
+SetLevel	to adjust the {lighting|ItemName} in the {Location} to {twenty five|Percent} 
+SetLevel	 adjust the {light|ItemName} in the {Location} to {thirty|Percent} 
+SetLevel	to dim my {lights|ItemName} in the {Location} to {thirty five|Percent} 
+SetLevel	 dim my {lighting|ItemName} in the {Location} to {forty|Percent} 
+SetLevel	to turn down my {light|ItemName} in the {Location} to {forty five|Percent} 
+SetLevel	 turn down my {lights|ItemName} in the {Location} to {fifty|Percent} 
+SetLevel	to turn up my {lighting|ItemName} in the {Location} to {fifty five|Percent} 
+SetLevel	 turn up my {light|ItemName} in the {Location} to {sixty|Percent} 
+SetLevel	to soften my {lights|ItemName} in the {Location} to {sixty five|Percent} 
+SetLevel	 soften my {lighting|ItemName} in the {Location} to {seventy|Percent} 
+SetLevel	to adjust my {light|ItemName} in the {Location} to {seventy five|Percent} 
+SetLevel	 adjust my {lights|ItemName} in the {Location} to {eighty|Percent} 
+SetLevel	to dim {lighting|ItemName} in the {Location} to {eighty five|Percent} 
+SetLevel	 dim {light|ItemName} in the {Location} to {ninety|Percent} 
+SetLevel	to turn down {lights|ItemName} in the {Location} to {ninety five|Percent} 
+SetLevel	 turn down {lighting|ItemName} in the {Location} to {one hundred|Percent} 
+SetLevel	to turn up {light|ItemName} in the {Location} to {zero|Percent} 
+SetLevel	 turn up {lights|ItemName} in the {Location} to {five|Percent} 
+SetLevel	to soften {lighting|ItemName} in the {Location} to {ten|Percent} 
+SetLevel	 soften {light|ItemName} in the {Location} to {fifteen|Percent} 
+SetLevel	to adjust {lights|ItemName} in the {Location} to {twenty|Percent} 
+SetLevel	 adjust {lighting|ItemName} in the {Location} to {twenty five|Percent} 
+SetLevel	to dim the {light|ItemName} {Location} to {thirty|Percent} 
+SetLevel	 dim the {lights|ItemName} {Location} to {thirty five|Percent} 
+SetLevel	to turn down the {lighting|ItemName} {Location} to {forty|Percent} 
+SetLevel	 turn down the {light|ItemName} {Location} to {forty five|Percent} 
+SetLevel	to turn up the {lights|ItemName} {Location} to {fifty|Percent} 
+SetLevel	 turn up the {lighting|ItemName} {Location} to {fifty five|Percent} 
+SetLevel	to soften the {light|ItemName} {Location} to {sixty|Percent} 
+SetLevel	 soften the {lights|ItemName} {Location} to {sixty five|Percent} 
+SetLevel	to adjust the {lighting|ItemName} {Location} to {seventy|Percent} 
+SetLevel	 adjust the {light|ItemName} {Location} to {seventy five|Percent} 
+SetLevel	to dim my {lights|ItemName} {Location} to {eighty|Percent} 
+SetLevel	 dim my {lighting|ItemName} {Location} to {eighty five|Percent} 
+SetLevel	to turn down my {light|ItemName} {Location} to {ninety|Percent} 
+SetLevel	 turn down my {lights|ItemName} {Location} to {ninety five|Percent} 
+SetLevel	to turn up my {lighting|ItemName} {Location} to {one hundred|Percent} 
+SetLevel	 turn up my {light|ItemName} {Location} to {zero|Percent} 
+SetLevel	to soften my {lights|ItemName} {Location} to {five|Percent} 
+SetLevel	 soften my {lighting|ItemName} {Location} to {ten|Percent} 
+SetLevel	to adjust my {light|ItemName} {Location} to {fifteen|Percent} 
+SetLevel	 adjust my {lights|ItemName} {Location} to {twenty|Percent} 
+SetLevel	to dim {lighting|ItemName} {Location} to {twenty five|Percent} 
+SetLevel	 dim {light|ItemName} {Location} to {thirty|Percent} 
+SetLevel	to turn down {lights|ItemName} {Location} to {thirty five|Percent} 
+SetLevel	 turn down {lighting|ItemName} {Location} to {forty|Percent} 
+SetLevel	to turn up {light|ItemName} {Location} to {forty five|Percent} 
+SetLevel	 turn up {lights|ItemName} {Location} to {fifty|Percent} 
+SetLevel	to soften {lighting|ItemName} {Location} to {fifty five|Percent} 
+SetLevel	 soften {light|ItemName} {Location} to {sixty|Percent} 
+SetLevel	to adjust {lights|ItemName} {Location} to {sixty five|Percent} 
+SetLevel	 adjust {lighting|ItemName} {Location} to {seventy|Percent} 
+SetLevel	to dim the {Location} {light|ItemName} to {seventy five|Percent} percent 
+SetLevel	 dim the {Location} {lights|ItemName} to {eighty|Percent} percent 
+SetLevel	to turn down the {Location} {lighting|ItemName} to {eighty five|Percent} percent 
+SetLevel	 turn down the {Location} {light|ItemName} to {ninety|Percent} percent 
+SetLevel	to turn up the {Location} {lights|ItemName} to {ninety five|Percent} percent 
+SetLevel	 turn up the {Location} {lighting|ItemName} to {one hundred|Percent} percent 
+SetLevel	to soften the {Location} {light|ItemName} to {zero|Percent} percent 
+SetLevel	 soften the {Location} {lights|ItemName} to {five|Percent} percent 
+SetLevel	to adjust the {Location} {lighting|ItemName} to {ten|Percent} percent 
+SetLevel	 adjust the {Location} {light|ItemName} to {fifteen|Percent} percent 
+SetLevel	to dim my {Location} {lights|ItemName} to {twenty|Percent} percent 
+SetLevel	 dim my {Location} {lighting|ItemName} to {twenty five|Percent} percent 
+SetLevel	to turn down my {Location} {light|ItemName} to {thirty|Percent} percent 
+SetLevel	 turn down my {Location} {lights|ItemName} to {thirty five|Percent} percent 
+SetLevel	to turn up my {Location} {lighting|ItemName} to {forty|Percent} percent 
+SetLevel	 turn up my {Location} {light|ItemName} to {forty five|Percent} percent 
+SetLevel	to soften my {Location} {lights|ItemName} to {fifty|Percent} percent 
+SetLevel	 soften my {Location} {lighting|ItemName} to {fifty five|Percent} percent 
+SetLevel	to adjust my {Location} {light|ItemName} to {sixty|Percent} percent 
+SetLevel	 adjust my {Location} {lights|ItemName} to {sixty five|Percent} percent 
+SetLevel	to dim {Location} {lighting|ItemName} to {seventy|Percent} percent 
+SetLevel	 dim {Location} {light|ItemName} to {seventy five|Percent} percent 
+SetLevel	to turn down {Location} {lights|ItemName} to {eighty|Percent} percent 
+SetLevel	 turn down {Location} {lighting|ItemName} to {eighty five|Percent} percent 
+SetLevel	to turn up {Location} {light|ItemName} to {ninety|Percent} percent 
+SetLevel	 turn up {Location} {lights|ItemName} to {ninety five|Percent} percent 
+SetLevel	to soften {Location} {lighting|ItemName} to {one hundred|Percent} percent 
+SetLevel	 soften {Location} {light|ItemName} to {zero|Percent} percent 
+SetLevel	to adjust {Location} {lights|ItemName} to {five|Percent} percent 
+SetLevel	 adjust {Location} {lighting|ItemName} to {ten|Percent} percent 
+SetLevel	to dim the {Location} {light|ItemName} to {fifteen|Percent} 
+SetLevel	 dim the {Location} {lights|ItemName} to {twenty|Percent} 
+SetLevel	to turn down the {Location} {lighting|ItemName} to {twenty five|Percent} 
+SetLevel	 turn down the {Location} {light|ItemName} to {thirty|Percent} 
+SetLevel	to turn up the {Location} {lights|ItemName} to {thirty five|Percent} 
+SetLevel	 turn up the {Location} {lighting|ItemName} to {forty|Percent} 
+SetLevel	to soften the {Location} {light|ItemName} to {forty five|Percent} 
+SetLevel	 soften the {Location} {lights|ItemName} to {fifty|Percent} 
+SetLevel	to adjust the {Location} {lighting|ItemName} to {fifty five|Percent} 
+SetLevel	 adjust the {Location} {light|ItemName} to {sixty|Percent} 
+SetLevel	to dim my {Location} {lights|ItemName} to {sixty five|Percent} 
+SetLevel	 dim my {Location} {lighting|ItemName} to {seventy|Percent} 
+SetLevel	to turn down my {Location} {light|ItemName} to {seventy five|Percent} 
+SetLevel	 turn down my {Location} {lights|ItemName} to {eighty|Percent} 
+SetLevel	to turn up my {Location} {lighting|ItemName} to {eighty five|Percent} 
+SetLevel	 turn up my {Location} {light|ItemName} to {ninety|Percent} 
+SetLevel	to soften my {Location} {lights|ItemName} to {ninety five|Percent} 
+SetLevel	 soften my {Location} {lighting|ItemName} to {one hundred|Percent} 
+SetLevel	to adjust my {Location} {light|ItemName} to {zero|Percent} 
+SetLevel	 adjust my {Location} {lights|ItemName} to {five|Percent} 
+SetLevel	to dim {Location} {lighting|ItemName} to {ten|Percent} 
+SetLevel	 dim {Location} {light|ItemName} to {fifteen|Percent} 
+SetLevel	to turn down {Location} {lights|ItemName} to {twenty|Percent} 
+SetLevel	 turn down {Location} {lighting|ItemName} to {twenty five|Percent} 
+SetLevel	to turn up {Location} {light|ItemName} to {thirty|Percent} 
+SetLevel	 turn up {Location} {lights|ItemName} to {thirty five|Percent} 
+SetLevel	to soften {Location} {lighting|ItemName} to {forty|Percent} 
+SetLevel	 soften {Location} {light|ItemName} to {forty five|Percent} 
+SetLevel	to adjust {Location} {lights|ItemName} to {fifty|Percent} 
+SetLevel	 adjust {Location} {lighting|ItemName} to {fifty five|Percent} 
+SetLevel	to set the {Location} {volume|ItemName} to {sixty|Percent} percent 
+SetLevel	 set the {Location} {volume|ItemName} to {sixty five|Percent} percent 
+SetLevel	to turn down the {Location} {volume|ItemName} to {seventy|Percent} percent 
+SetLevel	 turn down the {Location} {volume|ItemName} to {seventy five|Percent} percent 
+SetLevel	to turn up the {Location} {volume|ItemName} to {eighty|Percent} percent 
+SetLevel	 turn up the {Location} {volume|ItemName} to {eighty five|Percent} percent 
+SetLevel	to adjust the {Location} {volume|ItemName} to {ninety|Percent} percent 
+SetLevel	 adjust the {Location} {volume|ItemName} to {ninety five|Percent} percent 
+SetLevel	to set my {Location} {volume|ItemName} to {one hundred|Percent} percent 
+SetLevel	 set my {Location} {volume|ItemName} to {zero|Percent} percent 
+SetLevel	to turn down my {Location} {volume|ItemName} to {five|Percent} percent 
+SetLevel	 turn down my {Location} {volume|ItemName} to {ten|Percent} percent 
+SetLevel	to turn up my {Location} {volume|ItemName} to {fifteen|Percent} percent 
+SetLevel	 turn up my {Location} {volume|ItemName} to {twenty|Percent} percent 
+SetLevel	to adjust my {Location} {volume|ItemName} to {twenty five|Percent} percent 
+SetLevel	 adjust my {Location} {volume|ItemName} to {thirty|Percent} percent 
+SetLevel	to set {Location} {volume|ItemName} to {thirty five|Percent} percent 
+SetLevel	 set {Location} {volume|ItemName} to {forty|Percent} percent 
+SetLevel	to turn down {Location} {volume|ItemName} to {forty five|Percent} percent 
+SetLevel	 turn down {Location} {volume|ItemName} to {fifty|Percent} percent 
+SetLevel	to turn up {Location} {volume|ItemName} to {fifty five|Percent} percent 
+SetLevel	 turn up {Location} {volume|ItemName} to {sixty|Percent} percent 
+SetLevel	to adjust {Location} {volume|ItemName} to {sixty five|Percent} percent 
+SetLevel	 adjust {Location} {volume|ItemName} to {seventy|Percent} percent 
+SetLevel	to set the {Location} {volume|ItemName} to {seventy five|Percent} 
+SetLevel	 set the {Location} {volume|ItemName} to {eighty|Percent} 
+SetLevel	to turn down the {Location} {volume|ItemName} to {eighty five|Percent} 
+SetLevel	 turn down the {Location} {volume|ItemName} to {ninety|Percent} 
+SetLevel	to turn up the {Location} {volume|ItemName} to {ninety five|Percent} 
+SetLevel	 turn up the {Location} {volume|ItemName} to {one hundred|Percent} 
+SetLevel	to adjust the {Location} {volume|ItemName} to {zero|Percent} 
+SetLevel	 adjust the {Location} {volume|ItemName} to {five|Percent} 
+SetLevel	to set my {Location} {volume|ItemName} to {ten|Percent} 
+SetLevel	 set my {Location} {volume|ItemName} to {fifteen|Percent} 
+SetLevel	to turn down my {Location} {volume|ItemName} to {twenty|Percent} 
+SetLevel	 turn down my {Location} {volume|ItemName} to {twenty five|Percent} 
+SetLevel	to turn up my {Location} {volume|ItemName} to {thirty|Percent} 
+SetLevel	 turn up my {Location} {volume|ItemName} to {thirty five|Percent} 
+SetLevel	to adjust my {Location} {volume|ItemName} to {forty|Percent} 
+SetLevel	 adjust my {Location} {volume|ItemName} to {forty five|Percent} 
+SetLevel	to set {Location} {volume|ItemName} to {fifty|Percent} 
+SetLevel	 set {Location} {volume|ItemName} to {fifty five|Percent} 
+SetLevel	to turn down {Location} {volume|ItemName} to {sixty|Percent} 
+SetLevel	 turn down {Location} {volume|ItemName} to {sixty five|Percent} 
+SetLevel	to turn up {Location} {volume|ItemName} to {seventy|Percent} 
+SetLevel	 turn up {Location} {volume|ItemName} to {seventy five|Percent} 
+SetLevel	to adjust {Location} {volume|ItemName} to {eighty|Percent} 
+SetLevel	 adjust {Location} {volume|ItemName} to {eighty five|Percent} 
+SetTemp	to set the {Location} thermostat to {sixty|Degree} degrees 
+SetTemp	 set the {Location} thermostat to {sixty one|Degree} degrees 
+SetTemp	to change the {Location} thermostat to {sixty two|Degree} degrees 
+SetTemp	 change the {Location} thermostat to {sixty three|Degree} degrees 
+SetTemp	to adjust the {Location} thermostat to {sixty four|Degree} degrees 
+SetTemp	 adjust the {Location} thermostat to {sixty five|Degree} degrees 
+SetTemp	to set my {Location} thermostat to {sixty six|Degree} degrees 
+SetTemp	 set my {Location} thermostat to {sixty seven|Degree} degrees 
+SetTemp	to change my {Location} thermostat to {sixty eight|Degree} degrees 
+SetTemp	 change my {Location} thermostat to {sixty nine|Degree} degrees 
+SetTemp	to adjust my {Location} thermostat to {seventy|Degree} degrees 
+SetTemp	 adjust my {Location} thermostat to {seventy one|Degree} degrees 
+SetTemp	to set {Location} thermostat to {seventy two|Degree} degrees 
+SetTemp	 set {Location} thermostat to {seventy three|Degree} degrees 
+SetTemp	to change {Location} thermostat to {seventy four|Degree} degrees 
+SetTemp	 change {Location} thermostat to {seventy five|Degree} degrees 
+SetTemp	to adjust {Location} thermostat to {seventy six|Degree} degrees 
+SetTemp	 adjust {Location} thermostat to {seventy seven|Degree} degrees 
+SetTemp	to set the {Location} temperature to {seventy eight|Degree} degrees 
+SetTemp	 set the {Location} temperature to {seventy nine|Degree} degrees 
+SetTemp	to change the {Location} temperature to {eighty|Degree} degrees 
+SetTemp	 change the {Location} temperature to {sixty|Degree} degrees 
+SetTemp	to adjust the {Location} temperature to {sixty one|Degree} degrees 
+SetTemp	 adjust the {Location} temperature to {sixty two|Degree} degrees 
+SetTemp	to set my {Location} temperature to {sixty three|Degree} degrees 
+SetTemp	 set my {Location} temperature to {sixty four|Degree} degrees 
+SetTemp	to change my {Location} temperature to {sixty five|Degree} degrees 
+SetTemp	 change my {Location} temperature to {sixty six|Degree} degrees 
+SetTemp	to adjust my {Location} temperature to {sixty seven|Degree} degrees 
+SetTemp	 adjust my {Location} temperature to {sixty eight|Degree} degrees 
+SetTemp	to set {Location} temperature to {sixty nine|Degree} degrees 
+SetTemp	 set {Location} temperature to {seventy|Degree} degrees 
+SetTemp	to change {Location} temperature to {seventy one|Degree} degrees 
+SetTemp	 change {Location} temperature to {seventy two|Degree} degrees 
+SetTemp	to adjust {Location} temperature to {seventy three|Degree} degrees 
+SetTemp	 adjust {Location} temperature to {seventy four|Degree} degrees 
+SetTemp	to set the {Location} thermostat to {seventy five|Degree} 
+SetTemp	 set the {Location} thermostat to {seventy six|Degree} 
+SetTemp	to change the {Location} thermostat to {seventy seven|Degree} 
+SetTemp	 change the {Location} thermostat to {seventy eight|Degree} 
+SetTemp	to adjust the {Location} thermostat to {seventy nine|Degree} 
+SetTemp	 adjust the {Location} thermostat to {eighty|Degree} 
+SetTemp	to set my {Location} thermostat to {sixty|Degree} 
+SetTemp	 set my {Location} thermostat to {sixty one|Degree} 
+SetTemp	to change my {Location} thermostat to {sixty two|Degree} 
+SetTemp	 change my {Location} thermostat to {sixty three|Degree} 
+SetTemp	to adjust my {Location} thermostat to {sixty four|Degree} 
+SetTemp	 adjust my {Location} thermostat to {sixty five|Degree} 
+SetTemp	to set {Location} thermostat to {sixty six|Degree} 
+SetTemp	 set {Location} thermostat to {sixty seven|Degree} 
+SetTemp	to change {Location} thermostat to {sixty eight|Degree} 
+SetTemp	 change {Location} thermostat to {sixty nine|Degree} 
+SetTemp	to adjust {Location} thermostat to {seventy|Degree} 
+SetTemp	 adjust {Location} thermostat to {seventy one|Degree} 
+SetTemp	to set the {Location} temperature to {seventy two|Degree} 
+SetTemp	 set the {Location} temperature to {seventy three|Degree} 
+SetTemp	to change the {Location} temperature to {seventy four|Degree} 
+SetTemp	 change the {Location} temperature to {seventy five|Degree} 
+SetTemp	to adjust the {Location} temperature to {seventy six|Degree} 
+SetTemp	 adjust the {Location} temperature to {seventy seven|Degree} 
+SetTemp	to set my {Location} temperature to {seventy eight|Degree} 
+SetTemp	 set my {Location} temperature to {seventy nine|Degree} 
+SetTemp	to change my {Location} temperature to {eighty|Degree} 
+SetTemp	 change my {Location} temperature to {sixty|Degree} 
+SetTemp	to adjust my {Location} temperature to {sixty one|Degree} 
+SetTemp	 adjust my {Location} temperature to {sixty two|Degree} 
+SetTemp	to set {Location} temperature to {sixty three|Degree} 
+SetTemp	 set {Location} temperature to {sixty four|Degree} 
+SetTemp	to change {Location} temperature to {sixty five|Degree} 
+SetTemp	 change {Location} temperature to {sixty six|Degree} 
+SetTemp	to adjust {Location} temperature to {sixty seven|Degree} 
+SetTemp	 adjust {Location} temperature to {sixty eight|Degree} 
+SetTemp	to set the thermostat in the {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set the thermostat in the {Location} to {seventy|Degree} degrees 
+SetTemp	to change the thermostat in the {Location} to {seventy one|Degree} degrees 
+SetTemp	 change the thermostat in the {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust the thermostat in the {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust the thermostat in the {Location} to {seventy four|Degree} degrees 
+SetTemp	to set my thermostat in the {Location} to {seventy five|Degree} degrees 
+SetTemp	 set my thermostat in the {Location} to {seventy six|Degree} degrees 
+SetTemp	to change my thermostat in the {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change my thermostat in the {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust my thermostat in the {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust my thermostat in the {Location} to {eighty|Degree} degrees 
+SetTemp	to set thermostat in the {Location} to {sixty|Degree} degrees 
+SetTemp	 set thermostat in the {Location} to {sixty one|Degree} degrees 
+SetTemp	to change thermostat in the {Location} to {sixty two|Degree} degrees 
+SetTemp	 change thermostat in the {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust thermostat in the {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust thermostat in the {Location} to {sixty five|Degree} degrees 
+SetTemp	to set the temperature in the {Location} to {sixty six|Degree} degrees 
+SetTemp	 set the temperature in the {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change the temperature in the {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change the temperature in the {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust the temperature in the {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust the temperature in the {Location} to {seventy one|Degree} degrees 
+SetTemp	to set my temperature in the {Location} to {seventy two|Degree} degrees 
+SetTemp	 set my temperature in the {Location} to {seventy three|Degree} degrees 
+SetTemp	to change my temperature in the {Location} to {seventy four|Degree} degrees 
+SetTemp	 change my temperature in the {Location} to {seventy five|Degree} degrees 
+SetTemp	to adjust my temperature in the {Location} to {seventy six|Degree} degrees 
+SetTemp	 adjust my temperature in the {Location} to {seventy seven|Degree} degrees 
+SetTemp	to set temperature in the {Location} to {seventy eight|Degree} degrees 
+SetTemp	 set temperature in the {Location} to {seventy nine|Degree} degrees 
+SetTemp	to change temperature in the {Location} to {eighty|Degree} degrees 
+SetTemp	 change temperature in the {Location} to {sixty|Degree} degrees 
+SetTemp	to adjust temperature in the {Location} to {sixty one|Degree} degrees 
+SetTemp	 adjust temperature in the {Location} to {sixty two|Degree} degrees 
+SetTemp	to set the thermostat in my {Location} to {sixty three|Degree} degrees 
+SetTemp	 set the thermostat in my {Location} to {sixty four|Degree} degrees 
+SetTemp	to change the thermostat in my {Location} to {sixty five|Degree} degrees 
+SetTemp	 change the thermostat in my {Location} to {sixty six|Degree} degrees 
+SetTemp	to adjust the thermostat in my {Location} to {sixty seven|Degree} degrees 
+SetTemp	 adjust the thermostat in my {Location} to {sixty eight|Degree} degrees 
+SetTemp	to set my thermostat in my {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set my thermostat in my {Location} to {seventy|Degree} degrees 
+SetTemp	to change my thermostat in my {Location} to {seventy one|Degree} degrees 
+SetTemp	 change my thermostat in my {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust my thermostat in my {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust my thermostat in my {Location} to {seventy four|Degree} degrees 
+SetTemp	to set thermostat in my {Location} to {seventy five|Degree} degrees 
+SetTemp	 set thermostat in my {Location} to {seventy six|Degree} degrees 
+SetTemp	to change thermostat in my {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change thermostat in my {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust thermostat in my {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust thermostat in my {Location} to {eighty|Degree} degrees 
+SetTemp	to set the temperature in my {Location} to {sixty|Degree} degrees 
+SetTemp	 set the temperature in my {Location} to {sixty one|Degree} degrees 
+SetTemp	to change the temperature in my {Location} to {sixty two|Degree} degrees 
+SetTemp	 change the temperature in my {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust the temperature in my {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust the temperature in my {Location} to {sixty five|Degree} degrees 
+SetTemp	to set my temperature in my {Location} to {sixty six|Degree} degrees 
+SetTemp	 set my temperature in my {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change my temperature in my {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change my temperature in my {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust my temperature in my {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust my temperature in my {Location} to {seventy one|Degree} degrees 
+SetTemp	to set temperature in my {Location} to {seventy two|Degree} degrees 
+SetTemp	 set temperature in my {Location} to {seventy three|Degree} degrees 
+SetTemp	to change temperature in my {Location} to {seventy four|Degree} degrees 
+SetTemp	 change temperature in my {Location} to {seventy five|Degree} degrees 
+SetTemp	to adjust temperature in my {Location} to {seventy six|Degree} degrees 
+SetTemp	 adjust temperature in my {Location} to {seventy seven|Degree} degrees 
+SetTemp	to set the thermostat {Location} to {seventy eight|Degree} degrees 
+SetTemp	 set the thermostat {Location} to {seventy nine|Degree} degrees 
+SetTemp	to change the thermostat {Location} to {eighty|Degree} degrees 
+SetTemp	 change the thermostat {Location} to {sixty|Degree} degrees 
+SetTemp	to adjust the thermostat {Location} to {sixty one|Degree} degrees 
+SetTemp	 adjust the thermostat {Location} to {sixty two|Degree} degrees 
+SetTemp	to set my thermostat {Location} to {sixty three|Degree} degrees 
+SetTemp	 set my thermostat {Location} to {sixty four|Degree} degrees 
+SetTemp	to change my thermostat {Location} to {sixty five|Degree} degrees 
+SetTemp	 change my thermostat {Location} to {sixty six|Degree} degrees 
+SetTemp	to adjust my thermostat {Location} to {sixty seven|Degree} degrees 
+SetTemp	 adjust my thermostat {Location} to {sixty eight|Degree} degrees 
+SetTemp	to set thermostat {Location} to {sixty nine|Degree} degrees 
+SetTemp	 set thermostat {Location} to {seventy|Degree} degrees 
+SetTemp	to change thermostat {Location} to {seventy one|Degree} degrees 
+SetTemp	 change thermostat {Location} to {seventy two|Degree} degrees 
+SetTemp	to adjust thermostat {Location} to {seventy three|Degree} degrees 
+SetTemp	 adjust thermostat {Location} to {seventy four|Degree} degrees 
+SetTemp	to set the temperature {Location} to {seventy five|Degree} degrees 
+SetTemp	 set the temperature {Location} to {seventy six|Degree} degrees 
+SetTemp	to change the temperature {Location} to {seventy seven|Degree} degrees 
+SetTemp	 change the temperature {Location} to {seventy eight|Degree} degrees 
+SetTemp	to adjust the temperature {Location} to {seventy nine|Degree} degrees 
+SetTemp	 adjust the temperature {Location} to {eighty|Degree} degrees 
+SetTemp	to set my temperature {Location} to {sixty|Degree} degrees 
+SetTemp	 set my temperature {Location} to {sixty one|Degree} degrees 
+SetTemp	to change my temperature {Location} to {sixty two|Degree} degrees 
+SetTemp	 change my temperature {Location} to {sixty three|Degree} degrees 
+SetTemp	to adjust my temperature {Location} to {sixty four|Degree} degrees 
+SetTemp	 adjust my temperature {Location} to {sixty five|Degree} degrees 
+SetTemp	to set temperature {Location} to {sixty six|Degree} degrees 
+SetTemp	 set temperature {Location} to {sixty seven|Degree} degrees 
+SetTemp	to change temperature {Location} to {sixty eight|Degree} degrees 
+SetTemp	 change temperature {Location} to {sixty nine|Degree} degrees 
+SetTemp	to adjust temperature {Location} to {seventy|Degree} degrees 
+SetTemp	 adjust temperature {Location} to {seventy one|Degree} degrees 
+SetTemp	to set the thermostat in the {Location} to {seventy two|Degree} 
+SetTemp	 set the thermostat in the {Location} to {seventy three|Degree} 
+SetTemp	to change the thermostat in the {Location} to {seventy four|Degree} 
+SetTemp	 change the thermostat in the {Location} to {seventy five|Degree} 
+SetTemp	to adjust the thermostat in the {Location} to {seventy six|Degree} 
+SetTemp	 adjust the thermostat in the {Location} to {seventy seven|Degree} 
+SetTemp	to set my thermostat in the {Location} to {seventy eight|Degree} 
+SetTemp	 set my thermostat in the {Location} to {seventy nine|Degree} 
+SetTemp	to change my thermostat in the {Location} to {eighty|Degree} 
+SetTemp	 change my thermostat in the {Location} to {sixty|Degree} 
+SetTemp	to adjust my thermostat in the {Location} to {sixty one|Degree} 
+SetTemp	 adjust my thermostat in the {Location} to {sixty two|Degree} 
+SetTemp	to set thermostat in the {Location} to {sixty three|Degree} 
+SetTemp	 set thermostat in the {Location} to {sixty four|Degree} 
+SetTemp	to change thermostat in the {Location} to {sixty five|Degree} 
+SetTemp	 change thermostat in the {Location} to {sixty six|Degree} 
+SetTemp	to adjust thermostat in the {Location} to {sixty seven|Degree} 
+SetTemp	 adjust thermostat in the {Location} to {sixty eight|Degree} 
+SetTemp	to set the temperature in the {Location} to {sixty nine|Degree} 
+SetTemp	 set the temperature in the {Location} to {seventy|Degree} 
+SetTemp	to change the temperature in the {Location} to {seventy one|Degree} 
+SetTemp	 change the temperature in the {Location} to {seventy two|Degree} 
+SetTemp	to adjust the temperature in the {Location} to {seventy three|Degree} 
+SetTemp	 adjust the temperature in the {Location} to {seventy four|Degree} 
+SetTemp	to set my temperature in the {Location} to {seventy five|Degree} 
+SetTemp	 set my temperature in the {Location} to {seventy six|Degree} 
+SetTemp	to change my temperature in the {Location} to {seventy seven|Degree} 
+SetTemp	 change my temperature in the {Location} to {seventy eight|Degree} 
+SetTemp	to adjust my temperature in the {Location} to {seventy nine|Degree} 
+SetTemp	 adjust my temperature in the {Location} to {eighty|Degree} 
+SetTemp	to set temperature in the {Location} to {sixty|Degree} 
+SetTemp	 set temperature in the {Location} to {sixty one|Degree} 
+SetTemp	to change temperature in the {Location} to {sixty two|Degree} 
+SetTemp	 change temperature in the {Location} to {sixty three|Degree} 
+SetTemp	to adjust temperature in the {Location} to {sixty four|Degree} 
+SetTemp	 adjust temperature in the {Location} to {sixty five|Degree} 
+SetTemp	to set the thermostat in my {Location} to {sixty six|Degree} 
+SetTemp	 set the thermostat in my {Location} to {sixty seven|Degree} 
+SetTemp	to change the thermostat in my {Location} to {sixty eight|Degree} 
+SetTemp	 change the thermostat in my {Location} to {sixty nine|Degree} 
+SetTemp	to adjust the thermostat in my {Location} to {seventy|Degree} 
+SetTemp	 adjust the thermostat in my {Location} to {seventy one|Degree} 
+SetTemp	to set my thermostat in my {Location} to {seventy two|Degree} 
+SetTemp	 set my thermostat in my {Location} to {seventy three|Degree} 
+SetTemp	to change my thermostat in my {Location} to {seventy four|Degree} 
+SetTemp	 change my thermostat in my {Location} to {seventy five|Degree} 
+SetTemp	to adjust my thermostat in my {Location} to {seventy six|Degree} 
+SetTemp	 adjust my thermostat in my {Location} to {seventy seven|Degree} 
+SetTemp	to set thermostat in my {Location} to {seventy eight|Degree} 
+SetTemp	 set thermostat in my {Location} to {seventy nine|Degree} 
+SetTemp	to change thermostat in my {Location} to {eighty|Degree} 
+SetTemp	 change thermostat in my {Location} to {sixty|Degree} 
+SetTemp	to adjust thermostat in my {Location} to {sixty one|Degree} 
+SetTemp	 adjust thermostat in my {Location} to {sixty two|Degree} 
+SetTemp	to set the temperature in my {Location} to {sixty three|Degree} 
+SetTemp	 set the temperature in my {Location} to {sixty four|Degree} 
+SetTemp	to change the temperature in my {Location} to {sixty five|Degree} 
+SetTemp	 change the temperature in my {Location} to {sixty six|Degree} 
+SetTemp	to adjust the temperature in my {Location} to {sixty seven|Degree} 
+SetTemp	 adjust the temperature in my {Location} to {sixty eight|Degree} 
+SetTemp	to set my temperature in my {Location} to {sixty nine|Degree} 
+SetTemp	 set my temperature in my {Location} to {seventy|Degree} 
+SetTemp	to change my temperature in my {Location} to {seventy one|Degree} 
+SetTemp	 change my temperature in my {Location} to {seventy two|Degree} 
+SetTemp	to adjust my temperature in my {Location} to {seventy three|Degree} 
+SetTemp	 adjust my temperature in my {Location} to {seventy four|Degree} 
+SetTemp	to set temperature in my {Location} to {seventy five|Degree} 
+SetTemp	 set temperature in my {Location} to {seventy six|Degree} 
+SetTemp	to change temperature in my {Location} to {seventy seven|Degree} 
+SetTemp	 change temperature in my {Location} to {seventy eight|Degree} 
+SetTemp	to adjust temperature in my {Location} to {seventy nine|Degree} 
+SetTemp	 adjust temperature in my {Location} to {eighty|Degree} 
+SetTemp	to set the thermostat {Location} to {sixty|Degree} 
+SetTemp	 set the thermostat {Location} to {sixty one|Degree} 
+SetTemp	to change the thermostat {Location} to {sixty two|Degree} 
+SetTemp	 change the thermostat {Location} to {sixty three|Degree} 
+SetTemp	to adjust the thermostat {Location} to {sixty four|Degree} 
+SetTemp	 adjust the thermostat {Location} to {sixty five|Degree} 
+SetTemp	to set my thermostat {Location} to {sixty six|Degree} 
+SetTemp	 set my thermostat {Location} to {sixty seven|Degree} 
+SetTemp	to change my thermostat {Location} to {sixty eight|Degree} 
+SetTemp	 change my thermostat {Location} to {sixty nine|Degree} 
+SetTemp	to adjust my thermostat {Location} to {seventy|Degree} 
+SetTemp	 adjust my thermostat {Location} to {seventy one|Degree} 
+SetTemp	to set thermostat {Location} to {seventy two|Degree} 
+SetTemp	 set thermostat {Location} to {seventy three|Degree} 
+SetTemp	to change thermostat {Location} to {seventy four|Degree} 
+SetTemp	 change thermostat {Location} to {seventy five|Degree} 
+SetTemp	to adjust thermostat {Location} to {seventy six|Degree} 
+SetTemp	 adjust thermostat {Location} to {seventy seven|Degree} 
+SetTemp	to set the temperature {Location} to {seventy eight|Degree} 
+SetTemp	 set the temperature {Location} to {seventy nine|Degree} 
+SetTemp	to change the temperature {Location} to {eighty|Degree} 
+SetTemp	 change the temperature {Location} to {sixty|Degree} 
+SetTemp	to adjust the temperature {Location} to {sixty one|Degree} 
+SetTemp	 adjust the temperature {Location} to {sixty two|Degree} 
+SetTemp	to set my temperature {Location} to {sixty three|Degree} 
+SetTemp	 set my temperature {Location} to {sixty four|Degree} 
+SetTemp	to change my temperature {Location} to {sixty five|Degree} 
+SetTemp	 change my temperature {Location} to {sixty six|Degree} 
+SetTemp	to adjust my temperature {Location} to {sixty seven|Degree} 
+SetTemp	 adjust my temperature {Location} to {sixty eight|Degree} 
+SetTemp	to set temperature {Location} to {sixty nine|Degree} 
+SetTemp	 set temperature {Location} to {seventy|Degree} 
+SetTemp	to change temperature {Location} to {seventy one|Degree} 
+SetTemp	 change temperature {Location} to {seventy two|Degree} 
+SetTemp	to adjust temperature {Location} to {seventy three|Degree} 
+SetTemp	 adjust temperature {Location} to {seventy four|Degree} 
+SetMode	to set the {house|ModeType} mode to {off|ModeName}
+SetMode	 set the {house|ModeType} mode to {work|ModeName}
+SetMode	to change the {house|ModeType} mode to {dinner|ModeName}
+SetMode	 change the {house|ModeType} mode to {party|ModeName}
+SetMode	to switch the {house|ModeType} mode to {bed|ModeName}
+SetMode	 switch the {house|ModeType} mode to {away|ModeName}
+SetMode	to set my {house|ModeType} mode to {panic|ModeName}
+SetMode	 set my {house|ModeType} mode to {relax|ModeName}
+SetMode	to change my {house|ModeType} mode to {gaming|ModeName}
+SetMode	 change my {house|ModeType} mode to {theatre|ModeName}
+SetMode	to switch my {house|ModeType} mode to {shower|ModeName}
+SetMode	 switch my {house|ModeType} mode to {wake up|ModeName}
+SetMode	to set {house|ModeType} mode to {TV|ModeName}
+SetMode	 set {house|ModeType} mode to {off|ModeName}
+SetMode	to change {house|ModeType} mode to {work|ModeName}
+SetMode	 change {house|ModeType} mode to {dinner|ModeName}
+SetMode	to switch {house|ModeType} mode to {party|ModeName}
+SetMode	 switch {house|ModeType} mode to {bed|ModeName}
+SetMode	to set the {lighting|ModeType} mode to {party|ModeName}
+SetMode	 set the {lighting|ModeType} mode to {night light|ModeName}
+SetMode	to change the {lighting|ModeType} mode to {bed time|ModeName}
+SetMode	 change the {lighting|ModeType} mode to {love shack|ModeName}
+SetMode	to switch the {lighting|ModeType} mode to {lava|ModeName}
+SetMode	 switch the {lighting|ModeType} mode to {all off|ModeName}
+SetMode	to set my {lighting|ModeType} mode to {all on|ModeName}
+SetMode	 set my {lighting|ModeType} mode to {focus|ModeName}
+SetMode	to change my {lighting|ModeType} mode to {energize|ModeName}
+SetMode	 change my {lighting|ModeType} mode to {relax|ModeName}
+SetMode	to switch my {lighting|ModeType} mode to {party|ModeName}
+SetMode	 switch my {lighting|ModeType} mode to {night light|ModeName}
+SetMode	to set {lighting|ModeType} mode to {bed time|ModeName}
+SetMode	 set {lighting|ModeType} mode to {love shack|ModeName}
+SetMode	to change {lighting|ModeType} mode to {lava|ModeName}
+SetMode	 change {lighting|ModeType} mode to {all off|ModeName}
+SetMode	to switch {lighting|ModeType} mode to {all on|ModeName}
+SetMode	 switch {lighting|ModeType} mode to {focus|ModeName}
+SetMode	to set the {security|ModeType} mode to {away|ModeName}
+SetMode	 set the {security|ModeType} mode to {off|ModeName}
+SetMode	to change the {security|ModeType} mode to {sleep|ModeName}
+SetMode	 change the {security|ModeType} mode to {home|ModeName}
+SetMode	to switch the {security|ModeType} mode to {away|ModeName}
+SetMode	 switch the {security|ModeType} mode to {off|ModeName}
+SetMode	to set my {security|ModeType} mode to {sleep|ModeName}
+SetMode	 set my {security|ModeType} mode to {home|ModeName}
+SetMode	to change my {security|ModeType} mode to {away|ModeName}
+SetMode	 change my {security|ModeType} mode to {off|ModeName}
+SetMode	to switch my {security|ModeType} mode to {sleep|ModeName}
+SetMode	 switch my {security|ModeType} mode to {home|ModeName}
+SetMode	to set {security|ModeType} mode to {away|ModeName}
+SetMode	 set {security|ModeType} mode to {off|ModeName}
+SetMode	to change {security|ModeType} mode to {sleep|ModeName}
+SetMode	 change {security|ModeType} mode to {home|ModeName}
+SetMode	to switch {security|ModeType} mode to {away|ModeName}
+SetMode	 switch {security|ModeType} mode to {off|ModeName}
+SetMode	to set the {house|ModeType} to {work|ModeName} mode
+SetMode	 set the {house|ModeType} to {dinner|ModeName} mode
+SetMode	to change the {house|ModeType} to {party|ModeName} mode
+SetMode	 change the {house|ModeType} to {bed|ModeName} mode
+SetMode	to switch the {house|ModeType} to {away|ModeName} mode
+SetMode	 switch the {house|ModeType} to {panic|ModeName} mode
+SetMode	to set my {house|ModeType} to {relax|ModeName} mode
+SetMode	 set my {house|ModeType} to {gaming|ModeName} mode
+SetMode	to change my {house|ModeType} to {theatre|ModeName} mode
+SetMode	 change my {house|ModeType} to {shower|ModeName} mode
+SetMode	to switch my {house|ModeType} to {wake up|ModeName} mode
+SetMode	 switch my {house|ModeType} to {TV|ModeName} mode
+SetMode	to set {house|ModeType} to {off|ModeName} mode
+SetMode	 set {house|ModeType} to {work|ModeName} mode
+SetMode	to change {house|ModeType} to {dinner|ModeName} mode
+SetMode	 change {house|ModeType} to {party|ModeName} mode
+SetMode	to switch {house|ModeType} to {bed|ModeName} mode
+SetMode	 switch {house|ModeType} to {away|ModeName} mode
+SetMode	to set the {lighting|ModeType} to {night light|ModeName} mode
+SetMode	 set the {lighting|ModeType} to {bed time|ModeName} mode
+SetMode	to change the {lighting|ModeType} to {love shack|ModeName} mode
+SetMode	 change the {lighting|ModeType} to {lava|ModeName} mode
+SetMode	to switch the {lighting|ModeType} to {all off|ModeName} mode
+SetMode	 switch the {lighting|ModeType} to {all on|ModeName} mode
+SetMode	to set my {lighting|ModeType} to {focus|ModeName} mode
+SetMode	 set my {lighting|ModeType} to {energize|ModeName} mode
+SetMode	to change my {lighting|ModeType} to {relax|ModeName} mode
+SetMode	 change my {lighting|ModeType} to {party|ModeName} mode
+SetMode	to switch my {lighting|ModeType} to {night light|ModeName} mode
+SetMode	 switch my {lighting|ModeType} to {bed time|ModeName} mode
+SetMode	to set {lighting|ModeType} to {love shack|ModeName} mode
+SetMode	 set {lighting|ModeType} to {lava|ModeName} mode
+SetMode	to change {lighting|ModeType} to {all off|ModeName} mode
+SetMode	 change {lighting|ModeType} to {all on|ModeName} mode
+SetMode	to switch {lighting|ModeType} to {focus|ModeName} mode
+SetMode	 switch {lighting|ModeType} to {energize|ModeName} mode
+SetMode	to set the {security|ModeType} to {off|ModeName} mode
+SetMode	 set the {security|ModeType} to {sleep|ModeName} mode
+SetMode	to change the {security|ModeType} to {home|ModeName} mode
+SetMode	 change the {security|ModeType} to {away|ModeName} mode
+SetMode	to switch the {security|ModeType} to {off|ModeName} mode
+SetMode	 switch the {security|ModeType} to {sleep|ModeName} mode
+SetMode	to set my {security|ModeType} to {home|ModeName} mode
+SetMode	 set my {security|ModeType} to {away|ModeName} mode
+SetMode	to change my {security|ModeType} to {off|ModeName} mode
+SetMode	 change my {security|ModeType} to {sleep|ModeName} mode
+SetMode	to switch my {security|ModeType} to {home|ModeName} mode
+SetMode	 switch my {security|ModeType} to {away|ModeName} mode
+SetMode	to set {security|ModeType} to {off|ModeName} mode
+SetMode	 set {security|ModeType} to {sleep|ModeName} mode
+SetMode	to change {security|ModeType} to {home|ModeName} mode
+SetMode	 change {security|ModeType} to {away|ModeName} mode
+SetMode	to switch {security|ModeType} to {off|ModeName} mode
+SetMode	 switch {security|ModeType} to {sleep|ModeName} mode
+GetState	to get the {Location} {temperature|MetricName}
+GetState	 get the {Location} {humidity|MetricName}
+GetState	to check the {Location} {luminance|MetricName}
+GetState	 check the {Location} {power consumption|MetricName}
+GetState	to get my {Location} {visibility|MetricName}
+GetState	 get my {Location} {pressure|MetricName}
+GetState	to check my {Location} {wind|MetricName}
+GetState	 check my {Location} {humidex|MetricName}
+GetState	to get {Location} {temperature|MetricName}
+GetState	 get {Location} {humidity|MetricName}
+GetState	to check {Location} {luminance|MetricName}
+GetState	 check {Location} {power consumption|MetricName}
+GetState	to get the {visibility|MetricName} in the {Location}
+GetState	 get the {pressure|MetricName} in the {Location}
+GetState	to check the {wind|MetricName} in the {Location}
+GetState	 check the {humidex|MetricName} in the {Location}
+GetState	to get my {temperature|MetricName} in the {Location}
+GetState	 get my {humidity|MetricName} in the {Location}
+GetState	to check my {luminance|MetricName} in the {Location}
+GetState	 check my {power consumption|MetricName} in the {Location}
+GetState	to get {visibility|MetricName} in the {Location}
+GetState	 get {pressure|MetricName} in the {Location}
+GetState	to check {wind|MetricName} in the {Location}
+GetState	 check {humidex|MetricName} in the {Location}
+GetState	to get the {temperature|MetricName} {Location}
+GetState	 get the {humidity|MetricName} {Location}
+GetState	to check the {luminance|MetricName} {Location}
+GetState	 check the {power consumption|MetricName} {Location}
+GetState	to get my {visibility|MetricName} {Location}
+GetState	 get my {pressure|MetricName} {Location}
+GetState	to check my {wind|MetricName} {Location}
+GetState	 check my {humidex|MetricName} {Location}
+GetState	to get {temperature|MetricName} {Location}
+GetState	 get {humidity|MetricName} {Location}
+GetState	to check {luminance|MetricName} {Location}
+GetState	 check {power consumption|MetricName} {Location}
+GetState	whats the {Location} {visibility|MetricName}
+GetState	whats my {Location} {pressure|MetricName}
+GetState	whats {Location} {wind|MetricName}
+GetState	whats the {Location} {humidex|MetricName}
+GetState	whats my {Location} {temperature|MetricName}
+GetState	whats {Location} {humidity|MetricName}
 GetState	whats the {Location} {luminance|MetricName}
 GetState	whats my {Location} {power consumption|MetricName}
-GetState	whats {Location} {temperature|MetricName}
-GetState	whats the {Location} {humidity|MetricName}
+GetState	whats the {visibility|MetricName} in the {Location}
+GetState	whats my {pressure|MetricName} in the {Location}
+GetState	whats {wind|MetricName} in the {Location}
+GetState	whats the {humidex|MetricName} {Location}
+GetState	whats my {temperature|MetricName} {Location}
+GetState	whats {humidity|MetricName} {Location}
 GetState	whats the {luminance|MetricName} in the {Location}
 GetState	whats my {power consumption|MetricName} in the {Location}
-GetState	whats {temperature|MetricName} in the {Location}
-GetState	whats the {humidity|MetricName} {Location}
-GetState	whats my {luminance|MetricName} {Location}
-GetState	whats {power consumption|MetricName} {Location}
 GetMode	to get the {lighting|ModeType} mode set to 
 GetMode	 get the {security|ModeType} mode set to 
 GetMode	to check the {house|ModeType} mode set to 
