@@ -1,12 +1,12 @@
 # ALEXA HOME AUTOMATION
-Alexa HA provides tight integration between [Amazon Echo] and your Home Automation. This free and open source Skill for has been developed using the [Alexa Skills Kit].  Alexa-HA delivers voice control and verbal feedback for practically anything in your home, and beyond! The key feature highlights include: 
+Alexa HA provides tight integration between [Amazon Echo] and your Home Automation. This free and open source Skill for has been developed using the [Alexa Skills Kit].  Amazon Echo combined with the Alexa-HA Skill and a supported Home Automation solution delivers voice control and verbal feedback for practically anything in your home and beyond! The key feature highlights include: 
 
 - Switch any controllable device - appliances/lights/fans/locks/shutters/etc
 - Set light colors individually; by room or group
 - Control light dimmer levels individually; by room or group
 - Set thermostat(s) target temperature
-- Change pre-defined scenes/modes (i.e. home/lighting/security/etc)
 - Get device states (i.e. temperature/humidity/luminance/power consumption, etc)
+- Set scenes/modes (i.e. home/lighting/security/etc)
 - Get scene modes (i.e. 'check current house mode', could be home/away/relax/gaming/party/sleep, etc)
 - Trigger custom server side rules and return a response which is spoken by the Echo (i.e. say 'watch a movie' automatically sets up your Home Theater by powering on the Projector/AV Receiver/HTPC, lowering the Projector Screen, dimming the lights, etc.)
 - Research virtually anything via voice through [Wolfram Alpha] API
@@ -36,7 +36,7 @@ To get started ASAP, see [INSTALL-QUICKSTART.md] to for setting up the Semi-dire
 
 Note that due to the Amazon Echo/Alexa architecture it is NOT possible to keep everything on your local network - the voice processing must be conducted in the cloud, and you are currently required to setup port forwarding on your firewall to allow AWS access to an internally hosted application.  The AWS ASK service then issues commands to your HA controller through your public facing endpoint.
 
-Currently you cannot simply install Alexa HA through the Alexa App store, rather its currently required to setup your own Skill through the [Amazon Developer Portal].  We are publishing this as an official Alexa App in due time.  In some ways self-hosting is advantageous as you can better customize the skill to your homes layout, desired scenes, and controllable devices.  You can also personalize the skill 'Invocation Name'.  To get started with configuring your own Alexa HA skill, see:
+Currently you cannot simply install Alexa HA through the Alexa App's Skills page, rather its currently required to setup your own Skill through the [Amazon Developer Portal].  We are publishing this as an official Alexa App in due time.  In some ways self-hosting is advantageous as you can better customize the skill to your homes layout, desired scenes and controllable devices.  You can also personalize the skill 'Invocation Name'.  To get started with configuring your own Alexa HA skill, see:
  * [Getting started with Alexa Skills Kit]
  * [INSTALL-QUICKSTART.md]
  * [INSTALL.md]
