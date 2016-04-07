@@ -41,7 +41,7 @@ app.sessionEnded(function(request,response) {
 app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
 
 // Pre-execution security checks - ensure each requests applicationId / userId / password match configured values
-app.pre = function(request,response,type) {
+app.pre = function(request,response,type) {    
     // Extract values from various levels of the nested request object
     var address = request.data.remoteAddress;
     var password = request.data.password;
@@ -420,7 +420,7 @@ app.intent('Research', {
         if (err) {
             replyWith('I could not quickly determine an answer to your question', response);
         } else if (msg) {
-            response.say(msg, response);
+            replyWith(msg, response);
         }
     });
     return false;
