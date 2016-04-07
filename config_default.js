@@ -32,6 +32,9 @@ config.wolframAppId ='XXXXXX-XXXXXXXXXX';
 // TODO Only 'OpenHAB' is supported at this time.  SmartThings, INSTEON, Vera, etc support is planned.
 config.HA_name = 'OpenHAB';
 
+// HA server protocol (http/https)
+config.HA_protocol = 'https';
+
 // HA server username
 config.HA_user = 'USERNAME';
 
@@ -44,12 +47,8 @@ config.HA_host = 'HA_SERVER_IP';
 // HA server port
 config.HA_port = 'HA_SERVER_PORT';
 
-// HA server protocol (http/https)
-config.HA_protocol = 'http';
-
-// HA server URL, with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:PORT'
-config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host
- + ':' + config.HA_port;
+// HA server URL with credentials - i.e. 'http(s)://USERNAME:PASSWORD@HA_SERVER_IP:HA_SERVER_PORT' (constructed from above variables)
+config.HA_server = config.HA_protocol + '://' + config.HA_user + ':' + config.HA_password + '@' + config.HA_host + ':' + config.HA_port;
 
  // TODO - HA Switch Item which toggles ECHO request handling ON/OFF
  //config.HA_item_switch = 'ECHO_Switch';
@@ -66,8 +65,8 @@ config.HA_item_voicecmd = 'ECHO_VoiceCMD';
 // HA String Item which stores the servers response/answer, to be spoken by ECHO
 config.HA_item_answer = 'ECHO_Answer';
 
-// Utilize Array of available rooms that HA has devices in, used for validations & re-prompts (i.e. 'which room did you mean?')
-config.HA_locations = ['all','house','living','great','kitchen','bedroom','data center','garage','office','foyer','utility','powder','outside'];
+// Array of available rooms that HA has devices in, used for validations & re-prompts
+config.HA_locations = ['all','house','living','great','kitchen','master bedroom','guest bedroom','data center','garage','office','foyer','utility','inside','indoor','outside','outdoor'];
 
 // Item configuration - itemType / Location / itemName mappings
 config.item = {
@@ -85,6 +84,7 @@ config.item = {
         'office': 'Lights_Motion_Office',
         'kitchen': 'Lights_Motion_Kitchen',
         'living': 'Lights_Motion_Living',
+        'all': 'Lights_Motion_All',
         default: 'Lights_Motion_All'
     },
     'fan': {
@@ -99,6 +99,7 @@ config.item = {
     },
     'music': {
         'living': 'PC_HTPC_Pandora',
+        'office': 'PC_Desktop_Pandora',
         default: 'PC_Desktop_Pandora'
     },
     'volume': {
@@ -178,8 +179,10 @@ config.metric = {
         'kitchen': 'Multi3_Temp',
         'living': 'Multi2_Temp',
         'great': 'HVAC_Temp',
-        'house': 'Avg_Temp',
         'data center': 'HVAC_DataCenter_Temp',
+        'house': 'Avg_Temp',
+        'inside': 'Avg_Temp',
+        'indoor': 'Avg_Temp',
         'outside': 'Weather_Temp',
         'outdoor': 'Weather_Temp',
         default: 'Avg_Temp'
@@ -190,6 +193,8 @@ config.metric = {
         'living': 'Multi2_Humidity',
         'great': 'HVAC_Humidity',
         'house': 'Avg_Humidity',
+        'inside': 'Avg_Humidity',
+        'indoor': 'Avg_Humidity',
         'outside': 'Weather_Humidity',
         'outdoor': 'Weather_Humidity',
         default: 'Avg_Humidity'
@@ -199,12 +204,35 @@ config.metric = {
         'kitchen': 'Multi3_Luminance',
         'living': 'Multi2_Luminance',
         'house': 'Avg_Luminance',
+        'inside': 'Avg_Luminance',
+        'indoor': 'Avg_Luminance',
         default: 'Avg_Luminance'
     },
     'power consumption': {
         'house': 'HEM1_P2',
         default: 'HEM1_P2'
+    },
+    'visibility': {
+        'outdoor': 'Weather_Visibility',
+        'outside': 'Weather_Visibility',
+        default: 'Weather_Visibility'
+    },
+    'pressure': {
+        'outdoor': 'Weather_Pressure',
+        'outside': 'Weather_Pressure',
+        default: 'Weather_Pressure'
+    },
+    'wind': {
+        'outdoor': 'Weather_Wind',
+        'outside': 'Weather_Wind',
+        default: 'Weather_Wind'
+    },
+    'humidex': {
+        'outdoor': 'Weather_Humidex',
+        'outside': 'Weather_Humidex',
+        default: 'Weather_Humidex'
     }
+   
 };
 
 // Unit to metric mappings
@@ -254,7 +282,7 @@ config.utterances = {
     'SetLevel': [
         "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {light|lights|lighting|ItemName} {in the |} {-|Location} to {0-100 by 5|Percent} {percent |}",
         "{to |} {dim|turn down|turn up|soften|adjust} {the|my |} {-|Location} {light|lights|lighting|ItemName} to {0-100 by 5|Percent} {percent |}",
-        "{to |} {set|turn down|turn up|adjust} {the|my |} {-|Location} {volume|audio|sound|ItemName} to {0-100 by 5|Percent} {percent |}"
+        "{to |} {set|turn down|turn up|adjust} {the|my |} {-|Location} {volume|ItemName} to {0-100 by 5|Percent} {percent |}"
     ],
     // Set target temperature for house HVAC
     'SetTemp': [
@@ -272,10 +300,10 @@ config.utterances = {
     ],
     // Get current item state values
     'GetState': [
-        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
-        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}",
-        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|MetricName}",
-        "whats {the|my |} {temperature|humidity|luminance|power consumption|MetricName} {in the |} {-|Location}"
+        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}",
+        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        "whats {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}"
 
     ],
     // Get current house/lighting/security/etc scene
@@ -310,7 +338,10 @@ config.utterances = {
     ],
     // Stop Intent
     'Stop': [
-        "{to |} stop {that |}"
+        "{to |} stop {that |}",
+        "{to |} quit {that |}",
+        "{to |} exit {that |}",
+        "{to |} never mind {that |}"
     ],
     // Cancel Intent
     'Cancel': [
