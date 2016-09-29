@@ -14,7 +14,7 @@ Alexa HA provides tight integration between [Amazon Echo] and your Home Automati
 - Automatically generates the Skill '[utterances]' based on configured devices/rooms, which trains Echo voice model for boosted accuracy
 - Crude support for Text-To-Speech 'announcements' by pairing the Echo with your HA server over Bluetooth
 
-The current version is focused on perfecting support for [OpenHAB]; other HA solutions may be added in the future.
+The current version is focused on perfecting support for [OpenHAB]; other HA solutions may be added in the future.  OpenHAB v1.x is currently well tested and supported, OpenHAB v2.x support is coming in due time.
 
 ### TECHNOLOGY STACK
 Alexa HA's technology stack is primarily comprised of the following key open source projects:
@@ -42,6 +42,7 @@ Currently you cannot simply install Alexa HA through the Alexa App's Skills page
  * [INSTALL.md]
 
 ### VERSION HISTORY
+* 0.1.8 (09/29/2016) - Updated documentation
 * 0.1.7 (04/01/2016) - Added support for volume controls, minor bug fixes, documentation fixes & refinements
 * 0.1.6 (03/09/2016) - Log audit trails, added 'password' as an endpoint URL parameter, stub settings for controlling locks & roller shutters, stub settings for checking outdoor Temp/Humidity
 * 0.1.5 (03/07/2016) - Interaction Model expansion, validation/error handling improvements, documentation refinements, and new ability to 'GetMode'
