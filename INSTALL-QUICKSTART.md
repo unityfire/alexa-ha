@@ -73,6 +73,7 @@ Switch ECHO_Switch "ECHO Switch [%s]"
 
 #### Setup a self signed SSL cert (optional, if you do not have a trusted SSL cert available!)
 ```
+cd ~/node_modules/alexa-app-server/api
 mkdir sslcert
 cd sslcert
 openssl genrsa -out private-key.pem 1024
