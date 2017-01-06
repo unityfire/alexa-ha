@@ -150,6 +150,11 @@ language.help = {
     console.log('switchError');
     return 'I cannot currently switch your ' + location + ' ' + itemName;
   }
+  language.couldNotGetState = 'I cannot get that devices state';
+  language.replyGetState = function replyGetState (location, metricName, state, HA_unit ){
+    return 'Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit;
+  }
+
 
   language.translateAction = function translateAction(action){
     return action

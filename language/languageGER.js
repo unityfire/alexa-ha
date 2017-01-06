@@ -6,7 +6,9 @@ var language = {};
 language.utterances = {
     // Switch devices ON/OFF in a particular room
     'Switch': [
-        "{schalte|mache|mach} {den|die|das|mein|meinen|meins|meine} {-|ItemName} {in der|im|an der|am} {-|Location} {-|Action}",
+      "{schalte|mache|mach|fahre} {den|die|das|mein|meinen|meins|meine|} {-|ItemName} {in der|im|an der|am} {-|Location} {-|Action}",
+      "{schalte|mache|mach|fahre} {den|die|das|mein|meinen|meins|meine|} {-|Location} {-|ItemName} {-|Action}",
+
     ],
     // Set HSB color values for lights in a particular room
     'SetColor': [
@@ -38,10 +40,11 @@ language.utterances = {
     ],
     // Get current item state values
     'GetState': [
-        "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
-        "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}",
-        "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
-        "whats {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}"
+        // "{to |} {get|check} {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        // "{to |} {get|check} {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}",
+        // "whats {the|my |} {-|Location} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName}",
+        // "whats {the|my |} {temperature|humidity|luminance|power consumption|visibility|pressure|wind|humidex|MetricName} {in the |} {-|Location}"
+        "wie ist {die|der|das|} {-|MetricName} {in der|im|an der|am} {-|Location}",
 
     ],
     // Get current house/lighting/security/etc scene
@@ -117,11 +120,9 @@ language.utterances = {
 // Help response & card
 language.help = {
     'say':  [
-            'Hallo Meister Philipp und Meisterin Isa, Ihr könnt mich alles Fragen.' ],
+            'Im Moment behersche ich das schalten von Lampen und das hoch und runter fahren von Rolläden' ],
     'card': [
-            'Cheat sheet: Switch on all lights / Dim living room lights to 50%  / Set office color to Blue' +
-            ' / Set house thermostat to 72 degrees / Set house mode to relax / What is the kitchen humidity / What is the house power consumption / ' +
-            'Research why is the sky blue'
+            'Cheat sheet: kommt noch'
             ]
 };
   language.bye = 'tschüss!';
@@ -130,12 +131,18 @@ language.help = {
   language.noIntent = "Ich bin unsicher was du meinst. Bitte versuche es noch einmal!";
 
   //Switches
-  language.noSwitch = 'Das kann ich nicht schalten!';
+  language.noSwitch = 'Das kann ich nicht schalten! Es gibt kein solches Item!';
   language.switchAlreadyInState = function switchAlreadyInState(location,itemName,action){
     return 'Dein '+ itemName  + ' ist bereits ' +action;
   }
   language.switchToState = function switchToState(location, itemName, action) {
-    return 'Schalte ' + itemName + ' ' + action ;
+    if (itemName === 'licht' || itemName === 'lampe'){
+      return 'Ich habe das Licht' + ' ' + action + ' geschaltet';
+    }
+    if (itemName === 'rolladen'){
+      return 'Ich habe den Rolladen' + ' ' + action + ' gefahren';
+    }
+
   }
   language.switchUndefinedItem = function switchUndefinedItem(location,itemName,action) {
     return 'Ich kann ' + itemName + 'nicht ' + action + ' schalten'
@@ -147,9 +154,24 @@ language.help = {
   language.translateAction = function translateAction(action){
     if (action === 'EIN' || action === 'AN'){
       return 'ON'
-    } else {
+    }
+    if (action === 'AUS') {
       return 'OFF'
     }
+    if (action === 'HOCH'|| action === 'NACH OBEN'){
+      return '0'
+    }
+    if (action === 'RUNTER'|| action === 'NACH UNTEN'){
+      return '100'
+    }
   }
+
+  language.couldNotGetState = 'ich konnte den Wert nicht holen';
+  language.replyGetState = function replyGetState (location, metricName, state, HA_unit ){
+    state = state.replace('.',',');
+    state = state.substr(0,4);
+    return 'die aktuelle ' + metricName + ' beträgt ' + state  +' '+HA_unit;
+  }
+  language.greeting = "openhab zu Diensten!"
 
 module.exports = language;
