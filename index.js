@@ -2,8 +2,10 @@
 var config = require('./config');
 var helper = require('./helper');
 var alexa = require('alexa-app');
+var language = require ('./language/languageGER');
 
 var wolfram = require('./lib/wolfram');
+
 
 // Load supporting library depending on the configured Home Automation controller
 if (config.HA_name === 'OpenHAB') {
@@ -25,23 +27,24 @@ var app = new alexa.app(appName);
 app.launch(function(request,response) {
     // Store the Launch Intent in session, which later keeps the session going for multiple requests/commands
     response.session ('launched', 'true');
-    
-    response.say(config.greeting);
+
+    response.say(language.greeting);
     if (config.chime) {
         response.say(config.chime);
     }
-    
-    response.shouldEndSession(false, "How can I help?");
+
+    response.shouldEndSession(false, language.launch);
 });
 
 app.sessionEnded(function(request,response) {
-    response.say('Bye');
+  response.say(language.bye);
+  // response.say('bye');
 });
 
-app.messages.NO_INTENT_FOUND = "I am uncertain what you mean.  Kindly rephrase...";
+app.messages.NO_INTENT_FOUND = language.noIntent;
 
 // Pre-execution security checks - ensure each requests applicationId / userId / password match configured values
-app.pre = function(request,response,type) {    
+app.pre = function(request,response,type) {
     // Extract values from various levels of the nested request object
     var address = request.data.remoteAddress;
     var password = request.data.password;
@@ -50,10 +53,10 @@ app.pre = function(request,response,type) {
     var sessionId = request.sessionId;
     var userId = request.sessionDetails.userId;
     var applicationId = request.sessionDetails.application.applicationId;
-    
+
     // Log the request
     console.log(address + ' - ' + timestamp + ' - ' + ' AWS ASK ' + type + ' received: ' + requestId + ' / ' + sessionId);
-    
+
     if (applicationId !== config.applicationId) {
         console.log(address + ' - ' + timestamp + ' - ERROR: Invalid application ID in request:' + applicationId);
         response.fail("Invalid application ID");
@@ -84,28 +87,30 @@ app.pre = function(request,response,type) {
 
 // Switch devices ON/OFF
 app.intent('Switch', {
-    "slots":{"Action":"LITERAL","ItemName":"LITERAL","Location":"LOCATION_TYPE"}
+    "slots":{"Action":"ACTION_TYPE","ItemName":"ITEM_TYPE","Location":"LOCATION_TYPE"}
     ,"utterances":config.utterances.Switch
 },function(request,response) {
     var action = request.slot('Action').toUpperCase();
     var itemName = request.slot('ItemName');
     var location = request.slot('Location');
- 
+
     // DEBUG response
     //console.log('RawResponseData: ',request.data);
     console.log('REQUEST: Switch Intent slots are: ' + action + '/' + itemName + '/' + location);
-    
+
     // Handle undefined ASK slots
     if (itemName && location) {
         var HA_item = helper.getItem(itemName, location);
+        console.log(HA_item);
     }
     else {
-        replyWith('I cannot switch that', response);
+      console.log('hier bin ich');
+        replyWith(language.noSwitch, response);
         return;
     }
-    
+
     // TODO validate location slot with checkLocation(location)
-    
+
     if (action && itemName && location && HA_item) {
         // Get current state
         HA.getState(HA_item, function (err, state) {
@@ -113,22 +118,23 @@ app.intent('Switch', {
                 console.log('HA getState failed:  ' + err.message);
             }
             // Check if the items current state and action match
-            if (state === action) {
-                replyWith('Your ' + location + ' ' + itemName + ' is already ' + action, response);
+            if (state === language.translateAction(action)) {
+                replyWith(language.switchAlreadyInState(location,itemName,action), response);
             }
             // Set the new state for the item
-            else if (state !== action) {
-                HA.setState(HA_item, action);
-                replyWith('Switching ' + action + ' your ' + location + ' ' + itemName, response);
+            else if (state !== language.translateAction(action)) {
+                HA.setState(HA_item, language.translateAction(action));
+                replyWith(language.switchToState(location,itemName,action), response);
             }
             // Unidentified item
             else {
-                replyWith('I could not switch ' + action + ' your ' + location + ' ' + itemName, response);
+                replyWith(language.switchUndefinedItem(location,itemName,action), response);
             }
         });
     } else {
-        replyWith('I cannot currently switch your ' + location + ' ' + itemName, response);
-    } 
+        console.log('ging nicht');
+        replyWith(language.switchError(location,itemName), response);
+    }
     return false;
 });
 
@@ -154,7 +160,7 @@ app.intent('SetColor', {
         replyWith('I cannot set that color', response);
         return;
     }
-    
+
     if (color && location && HSBColor && HA_item) {
         // Get current color
         HA.getState(HA_item, function (err, state) {
@@ -184,7 +190,7 @@ app.intent('SetColor', {
 
 // Set dimming levels of lights
 app.intent('SetLevel', {
-    "slots":{"Percent":"NUMBER","ItemName":"LITERAL","Location":"LOCATION_TYPE"}
+    "slots":{"Percent":"NUMBER","ItemName":"ITEM_TYPE","Location":"LOCATION_TYPE"}
     ,"utterances":config.utterances.SetLevel
 },function(request,response) {
     var percent = request.slot('Percent');
@@ -203,7 +209,7 @@ app.intent('SetLevel', {
         replyWith('I cannot dim that device', response);
         return;
     }
-    
+
     if ((percent && itemName && location && HA_item) && (percent >= 0 && percent <= 100)) {
         // Get current color
         HA.getState(HA_item, function (err, state) {
@@ -251,7 +257,7 @@ app.intent('SetTemp', {
         replyWith('I cannot set that temperature', response);
         return;
     }
-    
+
     if (degree && degree > 60 && degree < 80 && HA_item) {
         // Get current temp
         HA.getState(HA_item, function (err, state) {
@@ -281,7 +287,7 @@ app.intent('SetTemp', {
 
 // Set modes (house/lighting/security scenes)
 app.intent('SetMode', {
-    "slots":{"ModeType":"LITERAL","ModeName":"LITERAL"}
+    "slots":{"ModeType":"MODE_TYPE","ModeName":"MODENAME_TYPE"}
     ,"utterances":config.utterances.SetMode
 },function(request,response) {
     var modeType = request.slot('ModeType');
@@ -311,7 +317,7 @@ app.intent('SetMode', {
 
 // Check the state of an itemName
 app.intent('GetState', {
-    "slots":{"MetricName":"LITERAL", "Location":"LOCATION_TYPE"}
+    "slots":{"MetricName":"METRICNAME_TYPE", "Location":"LOCATION_TYPE"}
     ,"utterances":config.utterances.GetState
 },function(request,response) {
     var metricName = request.slot('MetricName');
@@ -328,7 +334,7 @@ app.intent('GetState', {
         var HA_unit = helper.getUnit(metricName);
     }
     else {
-        replyWith('I cannot get that devices state', response);
+        replyWith(language.couldNotGetState, response);
         return;
     }
 
@@ -337,7 +343,7 @@ app.intent('GetState', {
             if (err) {
                 console.log('HA getState failed:  ' + err.message);
             } else if (state) {
-                replyWith('Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit, response);
+                replyWith(language.replyGetState (location, metricName, state, HA_unit) , response);
             }
         });
     }
@@ -349,7 +355,7 @@ app.intent('GetState', {
 
 // Get current mode (house/lighting/security scenes)
 app.intent('GetMode', {
-    "slots":{"ModeType":"LITERAL"}
+    "slots":{"ModeType":"MODE_TYPE"}
     ,"utterances":config.utterances.GetMode
 },function(request,response) {
     var modeType = request.slot('ModeType');
@@ -360,11 +366,11 @@ app.intent('GetMode', {
 
     if (modeType) {
         var HA_item = helper.getItem('mode', modeType);
-        
+
         if (!HA_item) {
             replyWith('I could not get the ' + modeType + ' mode', response);
         }
-        
+
         HA.getState(HA_item, function (err, modeId) {
             if (err) {
                 console.log('HA getState failed:  ' + err.message);
@@ -382,7 +388,7 @@ app.intent('GetMode', {
 
 // Handle arbitrary voice commands, passed to HA VoiceCommand item which then executes server side rules
 app.intent('VoiceCMD', {
-    "slots":{"Input":"LITERAL"}
+    "slots":{"Input":"VOICECMD_TYPE"}
     ,"utterances":config.utterances.VoiceCMD
 },function(request,response) {
     var voiceCMD = request.slot('Input');
@@ -406,7 +412,7 @@ app.intent('VoiceCMD', {
 
 // Research almost anything via wolfram alpha (API Key required)
 app.intent('Research', {
-    "slots":{"Question":"LITERAL"}
+    "slots":{"Question":"DUMMY_TYPE"}
     ,"utterances":config.utterances.Research
 },function(request,response) {
     var question = request.slot('Question');
@@ -430,14 +436,14 @@ app.intent('StopIntent',
     {"utterances":config.utterances.Stop
     },function(request,response) {
         console.log('REQUEST:  Stopping...');
-        response.say("Bye").send();
+        response.say(language.bye).send();
     });
 
 app.intent('CancelIntent',
     {"utterances":config.utterances.Cancel
     },function(request,response) {
         console.log('REQUEST:  Cancelling...');
-        response.say("Bye").send();
+        response.say(language.bye).send();
     });
 
 app.intent('HelpIntent',
@@ -471,18 +477,18 @@ app.intent('HelpIntent',
 function replyWith(speechOutput,response) {
     // Log the response to console
     console.log('RESPONSE: ' + speechOutput);
-    
+
     // 'Say' the response on the ECHO
     response.say(speechOutput);
-    
+
     // Show a 'Card' in the Alexa App
     response.card(appName,speechOutput);
-    
+
     // If this is a Launch request, do not end session and handle multiple commands
-    if (response.session ('launched') === 'true') { 
-        response.shouldEndSession (false); 
+    if (response.session ('launched') === 'true') {
+        response.shouldEndSession (false);
     }
-    
+
     // 'Send' the response to end upstream asynchronous requests
     response.send();
 }
