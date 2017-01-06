@@ -28,7 +28,7 @@ app.launch(function(request,response) {
     // Store the Launch Intent in session, which later keeps the session going for multiple requests/commands
     response.session ('launched', 'true');
 
-    response.say(config.greeting);
+    response.say(language.greeting);
     if (config.chime) {
         response.say(config.chime);
     }
@@ -334,7 +334,7 @@ app.intent('GetState', {
         var HA_unit = helper.getUnit(metricName);
     }
     else {
-        replyWith('I cannot get that devices state', response);
+        replyWith(language.couldNotGetState, response);
         return;
     }
 
@@ -343,7 +343,7 @@ app.intent('GetState', {
             if (err) {
                 console.log('HA getState failed:  ' + err.message);
             } else if (state) {
-                replyWith('Your ' + location + ' ' + metricName + ' is currently ' + state + ' ' + HA_unit, response);
+                replyWith(language.replyGetState (location, metricName, state, HA_unit) , response);
             }
         });
     }
