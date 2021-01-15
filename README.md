@@ -1,3 +1,8 @@
+# DEPRECATED
+This project is no longer being maintained; in favor of OpenHAB's official Alexa Skill:
+
+https://www.openhab.org/docs/ecosystem/alexa/
+
 # ALEXA HOME AUTOMATION
 Alexa HA provides tight integration between [Amazon Echo] and your Home Automation. This free and open source Skill for has been developed using the [Alexa Skills Kit].  Amazon Echo combined with the Alexa-HA Skill and a supported Home Automation solution delivers voice control and verbal feedback for practically anything in your home and beyond! The key feature highlights include: 
 
